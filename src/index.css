@@ -1,0 +1,204 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Azul profundo para transmitir confiabilidad y profesionalismo */
+    --primary: 220 70% 33%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Verde esmeralda para elementos relacionados con ingresos y crecimiento */
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Ámbar para alertas y notificaciones */
+    --accent: 35 92% 43%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 220 70% 33%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 70% 33%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 220 70% 23%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 70% 43%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 70% 38%;
+    --sidebar-ring: 210 40% 98%;
+  }
+
+  .dark {
+    --background: 222.2 47% 11.2%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 47% 11.2%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 47% 11.2%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Azul profundo para transmitir confiabilidad y profesionalismo (versión oscura) */
+    --primary: 220 70% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    /* Verde esmeralda para elementos relacionados con ingresos y crecimiento (versión oscura) */
+    --secondary: 160 84% 45%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    /* Ámbar para alertas y notificaciones (versión oscura) */
+    --accent: 35 92% 50%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 220 70% 50%;
+
+    --sidebar-background: 220 70% 15%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 220 70% 50%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 220 70% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 70% 20%;
+    --sidebar-ring: 220 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Efectos de vidrio mejorados */
+  .glass-morphism {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg transition-all duration-300;
+  }
+
+  .dark .glass-morphism {
+    @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-lg;
+  }
+
+  .sidebar-glass {
+    @apply bg-white/90 backdrop-blur-md transition-all duration-300;
+  }
+
+  .dark .sidebar-glass {
+    @apply bg-black/60 backdrop-blur-md;
+  }
+
+  /* Efectos de hover mejorados */
+  .hover-scale {
+    @apply transition-transform duration-300 ease-out hover:scale-105;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 ease-out hover:shadow-[0_0_15px_rgba(59,130,246,0.5)];
+  }
+
+  .dark .hover-glow {
+    @apply hover:shadow-[0_0_15px_rgba(59,130,246,0.3)];
+  }
+
+  /* Animaciones de entrada */
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-in-up 0.4s ease-out;
+  }
+
+  .animate-slide-down {
+    animation: slide-in-down 0.4s ease-out;
+  }
+
+  .animate-slide-left {
+    animation: slide-in-left 0.4s ease-out;
+  }
+
+  .animate-slide-right {
+    animation: slide-in-right 0.4s ease-out;
+  }
+
+  .animate-scale {
+    animation: scale-in 0.3s ease-out;
+  }
+
+  /* Animaciones para elementos del panel */
+  .panel-card {
+    @apply glass-morphism hover-lift;
+  }
+
+  .stat-card {
+    @apply glass-morphism hover-lift transition-all duration-300;
+  }
+
+  /* Animaciones para elementos interactivos */
+  .interactive-element {
+    @apply transition-all duration-300 ease-out hover:brightness-110;
+  }
+
+  /* Gradientes sutiles */
+  .gradient-primary {
+    @apply bg-gradient-to-br from-contable-primary to-contable-primary/80;
+  }
+
+  .gradient-success {
+    @apply bg-gradient-to-br from-contable-success to-contable-success/80;
+  }
+
+  .gradient-danger {
+    @apply bg-gradient-to-br from-contable-danger to-contable-danger/80;
+  }
+
+  .gradient-warning {
+    @apply bg-gradient-to-br from-contable-warning to-contable-warning/80;
+  }
+
+  /* Efectos de carga - sin animaciones de pulso */
+  .loading-static {
+    @apply bg-muted/50;
+  }
+
+  /* Transiciones de página */
+  .page-transition-enter {
+    animation: fade-in 0.3s ease-out;
+  }
+}
