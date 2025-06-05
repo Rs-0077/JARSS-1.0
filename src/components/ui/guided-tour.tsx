@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
-import { Checkbox } from '@/components/ui/checkbox';
-import { STORAGE_KEYS } from '@/core/config';
+import React, { useState, useEffect } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { STORAGE_KEYS } from "@/core/config";
 
 export interface TourStep {
   target: string;
   title: string;
   content: string;
-  placement?: 'top' | 'right' | 'bottom' | 'left';
+  placement?: "top" | "right" | "bottom" | "left";
 }
 
 interface GuidedTourProps {
@@ -28,7 +28,7 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
   useEffect(() => {
     // Check if the tour has been completed or skipped
     const tourCompleted = localStorage.getItem(STORAGE_KEYS.tourCompleted);
-    if (tourCompleted === 'true') {
+    if (tourCompleted === "true") {
       return;
     }
 
@@ -52,64 +52,69 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
 
     const step = steps[currentStep];
     const element = document.querySelector(step.target) as HTMLElement;
-    
+
     if (element) {
       setTargetElement(element);
-      positionTooltip(element, step.placement || 'bottom');
-      
+      positionTooltip(element, step.placement || "bottom");
+
       // Add highlight effect to the target element
-      element.classList.add('tour-highlight');
-      
+      element.classList.add("tour-highlight");
+
       // Scroll element into view if needed
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
-  const positionTooltip = (element: HTMLElement, placement: 'top' | 'right' | 'bottom' | 'left') => {
+  const positionTooltip = (
+    element: HTMLElement,
+    placement: "top" | "right" | "bottom" | "left",
+  ) => {
     const rect = element.getBoundingClientRect();
     const tooltipWidth = 320;
     const tooltipHeight = 180;
     const spacing = 12;
-    
+
     let top = 0;
     let left = 0;
-    
+
     switch (placement) {
-      case 'top':
+      case "top":
         top = rect.top - tooltipHeight - spacing;
-        left = rect.left + (rect.width / 2) - (tooltipWidth / 2);
+        left = rect.left + rect.width / 2 - tooltipWidth / 2;
         break;
-      case 'right':
-        top = rect.top + (rect.height / 2) - (tooltipHeight / 2);
+      case "right":
+        top = rect.top + rect.height / 2 - tooltipHeight / 2;
         left = rect.right + spacing;
         break;
-      case 'bottom':
+      case "bottom":
         top = rect.bottom + spacing;
-        left = rect.left + (rect.width / 2) - (tooltipWidth / 2);
+        left = rect.left + rect.width / 2 - tooltipWidth / 2;
         break;
-      case 'left':
-        top = rect.top + (rect.height / 2) - (tooltipHeight / 2);
+      case "left":
+        top = rect.top + rect.height / 2 - tooltipHeight / 2;
         left = rect.left - tooltipWidth - spacing;
         break;
     }
-    
+
     // Ensure the tooltip stays within viewport
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
-    
+
     if (left < 20) left = 20;
-    if (left + tooltipWidth > viewportWidth - 20) left = viewportWidth - tooltipWidth - 20;
+    if (left + tooltipWidth > viewportWidth - 20)
+      left = viewportWidth - tooltipWidth - 20;
     if (top < 20) top = 20;
-    if (top + tooltipHeight > viewportHeight - 20) top = viewportHeight - tooltipHeight - 20;
-    
+    if (top + tooltipHeight > viewportHeight - 20)
+      top = viewportHeight - tooltipHeight - 20;
+
     setTooltipPosition({ top, left });
   };
 
   const handleNext = () => {
     if (targetElement) {
-      targetElement.classList.remove('tour-highlight');
+      targetElement.classList.remove("tour-highlight");
     }
-    
+
     if (currentStep < steps.length - 1) {
       setCurrentStep(currentStep + 1);
     } else {
@@ -119,9 +124,9 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
 
   const handlePrevious = () => {
     if (targetElement) {
-      targetElement.classList.remove('tour-highlight');
+      targetElement.classList.remove("tour-highlight");
     }
-    
+
     if (currentStep > 0) {
       setCurrentStep(currentStep - 1);
     }
@@ -129,15 +134,15 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
 
   const handleSkip = () => {
     if (targetElement) {
-      targetElement.classList.remove('tour-highlight');
+      targetElement.classList.remove("tour-highlight");
     }
-    
+
     if (dontShowAgain) {
-      localStorage.setItem(STORAGE_KEYS.tourCompleted, 'true');
+      localStorage.setItem(STORAGE_KEYS.tourCompleted, "true");
     }
-    
+
     setIsVisible(false);
-    
+
     if (onSkip) {
       onSkip();
     }
@@ -145,15 +150,15 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
 
   const completeTour = () => {
     if (targetElement) {
-      targetElement.classList.remove('tour-highlight');
+      targetElement.classList.remove("tour-highlight");
     }
-    
+
     if (dontShowAgain) {
-      localStorage.setItem(STORAGE_KEYS.tourCompleted, 'true');
+      localStorage.setItem(STORAGE_KEYS.tourCompleted, "true");
     }
-    
+
     setIsVisible(false);
-    
+
     if (onComplete) {
       onComplete();
     }
@@ -168,8 +173,12 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
   return (
     <>
       {/* Overlay */}
-      <div className="fixed inset-0 bg-black/50 z-50" onClick={handleSkip} />
-      
+      <div
+        className="fixed inset-0 bg-black/50 z-50"
+        onClick={handleSkip}
+        data-oid="timwcn2"
+      />
+
       {/* Tooltip */}
       <div
         className="fixed z-[60] w-80 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 animate-fade-in"
@@ -177,74 +186,101 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
           top: `${tooltipPosition.top}px`,
           left: `${tooltipPosition.left}px`,
         }}
+        data-oid="karg-yf"
       >
-        <div className="flex justify-between items-center mb-2">
-          <h3 className="font-medium text-lg">{currentTourStep.title}</h3>
-          <Button variant="ghost" size="icon" onClick={handleSkip}>
-            <X className="h-4 w-4" />
-            <span className="sr-only">Cerrar</span>
+        <div
+          className="flex justify-between items-center mb-2"
+          data-oid="y7kqbx8"
+        >
+          <h3 className="font-medium text-lg" data-oid="lua4fb9">
+            {currentTourStep.title}
+          </h3>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={handleSkip}
+            data-oid="tyqzrke"
+          >
+            <X className="h-4 w-4" data-oid="qye:nsl" />
+            <span className="sr-only" data-oid="hrbh0a3">
+              Cerrar
+            </span>
           </Button>
         </div>
-        
-        <div className="text-sm text-muted-foreground mb-4">
+
+        <div className="text-sm text-muted-foreground mb-4" data-oid="w.5l15v">
           {currentTourStep.content}
         </div>
-        
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Checkbox 
-              id="dont-show-again" 
-              checked={dontShowAgain} 
-              onCheckedChange={(checked) => setDontShowAgain(checked as boolean)} 
+
+        <div className="flex items-center justify-between" data-oid="uioloa7">
+          <div className="flex items-center space-x-2" data-oid="uxphc4m">
+            <Checkbox
+              id="dont-show-again"
+              checked={dontShowAgain}
+              onCheckedChange={(checked) =>
+                setDontShowAgain(checked as boolean)
+              }
+              data-oid="d.q-f-i"
             />
-            <label 
-              htmlFor="dont-show-again" 
+
+            <label
+              htmlFor="dont-show-again"
               className="text-xs text-muted-foreground cursor-pointer"
+              data-oid="dw9:n._"
             >
               No mostrar de nuevo
             </label>
           </div>
-          
-          <div className="flex space-x-2">
+
+          <div className="flex space-x-2" data-oid="kt_1z:c">
             {currentStep > 0 && (
-              <Button variant="outline" size="sm" onClick={handlePrevious}>
-                <ChevronLeft className="h-4 w-4 mr-1" />
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handlePrevious}
+                data-oid="m7hah32"
+              >
+                <ChevronLeft className="h-4 w-4 mr-1" data-oid="h14:1al" />
                 Anterior
               </Button>
             )}
-            
-            <Button variant="default" size="sm" onClick={handleNext}>
+
+            <Button
+              variant="default"
+              size="sm"
+              onClick={handleNext}
+              data-oid="ukkapy."
+            >
               {currentStep < steps.length - 1 ? (
                 <>
                   Siguiente
-                  <ChevronRight className="h-4 w-4 ml-1" />
+                  <ChevronRight className="h-4 w-4 ml-1" data-oid="l-.jk01" />
                 </>
               ) : (
-                'Finalizar'
+                "Finalizar"
               )}
             </Button>
           </div>
         </div>
-        
-        <div className="mt-3 flex justify-center">
-          <div className="flex space-x-1">
+
+        <div className="mt-3 flex justify-center" data-oid="bzx3:7r">
+          <div className="flex space-x-1" data-oid="s2sl1.l">
             {steps.map((_, index) => (
               <div
                 key={index}
                 className={cn(
                   "h-1.5 rounded-full transition-all duration-300",
-                  index === currentStep
-                    ? "w-6 bg-primary"
-                    : "w-1.5 bg-muted"
+                  index === currentStep ? "w-6 bg-primary" : "w-1.5 bg-muted",
                 )}
+                data-oid="q117ok1"
               />
             ))}
           </div>
         </div>
       </div>
-      
+
       {/* Add global styles for the tour highlight */}
-      <style jsx global>{`
+      <style jsx global data-oid="chty9qi">{`
         .tour-highlight {
           position: relative;
           z-index: 55;
@@ -252,9 +288,10 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
           border-radius: 4px;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
-        
+
         @keyframes pulse {
-          0%, 100% {
+          0%,
+          100% {
             box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
           }
           50% {

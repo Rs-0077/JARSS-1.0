@@ -7,17 +7,29 @@ interface PageLoaderProps {
   text?: string;
 }
 
-export function PageLoader({ className, text = "Cargando..." }: PageLoaderProps) {
+export function PageLoader({
+  className,
+  text = "Cargando...",
+}: PageLoaderProps) {
   return (
     <div
       className={cn(
         "fixed inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm z-50",
-        className
+        className,
       )}
+      data-oid="aj33nlt"
     >
-      <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-card shadow-lg">
-        <Spinner size="xl" color="primary" />
-        <p className="text-lg font-medium text-card-foreground">{text}</p>
+      <div
+        className="flex flex-col items-center gap-4 p-6 rounded-lg bg-card shadow-lg"
+        data-oid="ypq-1ox"
+      >
+        <Spinner size="xl" color="primary" data-oid="z4.pszo" />
+        <p
+          className="text-lg font-medium text-card-foreground"
+          data-oid="ygz01i6"
+        >
+          {text}
+        </p>
       </div>
     </div>
   );

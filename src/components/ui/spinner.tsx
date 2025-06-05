@@ -7,7 +7,11 @@ interface SpinnerProps {
   color?: "primary" | "secondary" | "white";
 }
 
-export function Spinner({ size = "md", className, color = "primary" }: SpinnerProps) {
+export function Spinner({
+  size = "md",
+  className,
+  color = "primary",
+}: SpinnerProps) {
   const sizeClasses = {
     sm: "w-4 h-4",
     md: "w-6 h-6",
@@ -27,11 +31,14 @@ export function Spinner({ size = "md", className, color = "primary" }: SpinnerPr
         "inline-block animate-spin rounded-full border-2 border-solid border-current border-r-transparent",
         sizeClasses[size],
         colorClasses[color],
-        className
+        className,
       )}
       role="status"
+      data-oid="10gjtj4"
     >
-      <span className="sr-only">Cargando...</span>
+      <span className="sr-only" data-oid="2bwy5y7">
+        Cargando...
+      </span>
     </div>
   );
 }

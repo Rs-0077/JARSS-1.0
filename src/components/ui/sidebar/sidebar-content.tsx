@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
@@ -14,9 +13,10 @@ export const SidebarInput = React.forwardRef<
       data-sidebar="input"
       className={cn(
         "h-8 w-full bg-background shadow-none focus-visible:ring-2 focus-visible:ring-sidebar-ring",
-        className
+        className,
       )}
       {...props}
+      data-oid="cnn6a8q"
     />
   );
 });
@@ -32,6 +32,7 @@ export const SidebarHeader = React.forwardRef<
       data-sidebar="header"
       className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
+      data-oid="9_9s6-z"
     />
   );
 });
@@ -47,6 +48,7 @@ export const SidebarFooter = React.forwardRef<
       data-sidebar="footer"
       className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
+      data-oid="h5emkt4"
     />
   );
 });
@@ -62,6 +64,7 @@ export const SidebarSeparator = React.forwardRef<
       data-sidebar="separator"
       className={cn("mx-2 w-auto bg-sidebar-border", className)}
       {...props}
+      data-oid="i3s8l48"
     />
   );
 });
@@ -77,9 +80,10 @@ export const SidebarContent = React.forwardRef<
       data-sidebar="content"
       className={cn(
         "flex min-h-0 flex-1 flex-col gap-2 overflow-auto group-data-[collapsible=icon]:overflow-hidden",
-        className
+        className,
       )}
       {...props}
+      data-oid="p:.ngzx"
     />
   );
 });
@@ -95,6 +99,7 @@ export const SidebarGroup = React.forwardRef<
       data-sidebar="group"
       className={cn("relative flex w-full min-w-0 flex-col p-2", className)}
       {...props}
+      data-oid="e5e22u:"
     />
   );
 });
@@ -113,9 +118,10 @@ export const SidebarGroupLabel = React.forwardRef<
       className={cn(
         "duration-200 flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] ease-linear focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
         "group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0",
-        className
+        className,
       )}
       {...props}
+      data-oid="f17iz7u"
     />
   );
 });
@@ -136,9 +142,10 @@ export const SidebarGroupAction = React.forwardRef<
         // Increases the hit area of the button on mobile.
         "after:absolute after:-inset-2 after:md:hidden",
         "group-data-[collapsible=icon]:hidden",
-        className
+        className,
       )}
       {...props}
+      data-oid=".2vz5:j"
     />
   );
 });
@@ -153,6 +160,7 @@ export const SidebarGroupContent = React.forwardRef<
     data-sidebar="group-content"
     className={cn("w-full text-sm", className)}
     {...props}
+    data-oid="zbwwn6x"
   />
 ));
 SidebarGroupContent.displayName = "SidebarGroupContent";

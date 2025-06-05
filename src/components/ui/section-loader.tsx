@@ -26,12 +26,25 @@ export function SectionLoader({
       <div
         className={cn(
           "absolute inset-0 flex flex-col items-center justify-center bg-background/60 backdrop-blur-[1px] z-10 rounded-md",
-          className
+          className,
         )}
+        data-oid="rja-.ju"
       >
-        <div className="flex flex-col items-center gap-2">
-          <Spinner size={spinnerSize[size]} color="primary" />
-          {text && <p className="text-sm font-medium text-foreground">{text}</p>}
+        <div className="flex flex-col items-center gap-2" data-oid="swe1lql">
+          <Spinner
+            size={spinnerSize[size]}
+            color="primary"
+            data-oid="l2:dzeh"
+          />
+
+          {text && (
+            <p
+              className="text-sm font-medium text-foreground"
+              data-oid=".41ypy."
+            >
+              {text}
+            </p>
+          )}
         </div>
       </div>
     );
@@ -41,12 +54,17 @@ export function SectionLoader({
     <div
       className={cn(
         "flex flex-col items-center justify-center py-8",
-        className
+        className,
       )}
+      data-oid="on20y.z"
     >
-      <div className="flex flex-col items-center gap-2">
-        <Spinner size={spinnerSize[size]} color="primary" />
-        {text && <p className="text-sm font-medium text-foreground">{text}</p>}
+      <div className="flex flex-col items-center gap-2" data-oid="vpo0-4k">
+        <Spinner size={spinnerSize[size]} color="primary" data-oid="-2o2jdg" />
+        {text && (
+          <p className="text-sm font-medium text-foreground" data-oid="tm2jo-j">
+            {text}
+          </p>
+        )}
       </div>
     </div>
   );

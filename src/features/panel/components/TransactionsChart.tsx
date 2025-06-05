@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/shared/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/shared/components/ui/card";
 import {
   Area,
   AreaChart,
@@ -6,7 +12,7 @@ import {
   ResponsiveContainer,
   Tooltip,
   XAxis,
-  YAxis
+  YAxis,
 } from "recharts";
 
 // Datos de ejemplo para el gráfico
@@ -21,14 +27,18 @@ const data = [
 
 export function TransactionsChart() {
   return (
-    <Card className="col-span-3 panel-card animate-slide-up">
-      <CardHeader>
-        <CardTitle className="text-xl">Visión general financiera</CardTitle>
-        <CardDescription>Ingresos vs. Gastos en los últimos 6 meses</CardDescription>
+    <Card className="col-span-3 panel-card animate-slide-up" data-oid="kp_:p87">
+      <CardHeader data-oid="ig.n9dt">
+        <CardTitle className="text-xl" data-oid="51w2v.q">
+          Visión general financiera
+        </CardTitle>
+        <CardDescription data-oid="3cb0a55">
+          Ingresos vs. Gastos en los últimos 6 meses
+        </CardDescription>
       </CardHeader>
-      <CardContent>
-        <div className="h-[300px]">
-          <ResponsiveContainer width="100%" height="100%">
+      <CardContent data-oid="boot2w6">
+        <div className="h-[300px]" data-oid="nq-as1r">
+          <ResponsiveContainer width="100%" height="100%" data-oid="20hct9e">
             <AreaChart
               data={data}
               margin={{
@@ -37,44 +47,96 @@ export function TransactionsChart() {
                 left: 0,
                 bottom: 0,
               }}
+              data-oid="95smzga"
             >
-              <defs>
-                <linearGradient id="colorIngresos" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#059669" stopOpacity={0.8}/>
-                  <stop offset="95%" stopColor="#059669" stopOpacity={0.1}/>
+              <defs data-oid="ott8lnf">
+                <linearGradient
+                  id="colorIngresos"
+                  x1="0"
+                  y1="0"
+                  x2="0"
+                  y2="1"
+                  data-oid="cae9hf6"
+                >
+                  <stop
+                    offset="5%"
+                    stopColor="#059669"
+                    stopOpacity={0.8}
+                    data-oid="j8wgxdb"
+                  />
+
+                  <stop
+                    offset="95%"
+                    stopColor="#059669"
+                    stopOpacity={0.1}
+                    data-oid="imir-a1"
+                  />
                 </linearGradient>
-                <linearGradient id="colorGastos" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#E63946" stopOpacity={0.8}/>
-                  <stop offset="95%" stopColor="#E63946" stopOpacity={0.1}/>
+                <linearGradient
+                  id="colorGastos"
+                  x1="0"
+                  y1="0"
+                  x2="0"
+                  y2="1"
+                  data-oid="25zcdl-"
+                >
+                  <stop
+                    offset="5%"
+                    stopColor="#E63946"
+                    stopOpacity={0.8}
+                    data-oid="5dlx9g9"
+                  />
+
+                  <stop
+                    offset="95%"
+                    stopColor="#E63946"
+                    stopOpacity={0.1}
+                    data-oid="c.arl0p"
+                  />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+              <CartesianGrid
+                strokeDasharray="3 3"
+                stroke="var(--border)"
+                data-oid="8act-9a"
+              />
+
               <XAxis
                 dataKey="name"
                 stroke="var(--muted-foreground)"
                 fontSize={12}
                 tickLine={false}
-                axisLine={{ stroke: 'var(--border)' }}
+                axisLine={{ stroke: "var(--border)" }}
+                data-oid="2x6jf3:"
               />
+
               <YAxis
                 stroke="var(--muted-foreground)"
                 fontSize={12}
                 tickLine={false}
-                axisLine={{ stroke: 'var(--border)' }}
+                axisLine={{ stroke: "var(--border)" }}
                 tickFormatter={(value) => `$${value}`}
+                data-oid="nern22c"
               />
+
               <Tooltip
                 contentStyle={{
-                  borderRadius: 'var(--radius)',
-                  backgroundColor: 'hsl(var(--card))',
-                  color: 'hsl(var(--card-foreground))',
-                  border: '1px solid hsl(var(--border))',
-                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(8px)'
+                  borderRadius: "var(--radius)",
+                  backgroundColor: "hsl(var(--card))",
+                  color: "hsl(var(--card-foreground))",
+                  border: "1px solid hsl(var(--border))",
+                  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                  backdropFilter: "blur(8px)",
                 }}
                 animationDuration={300}
-                cursor={{ stroke: 'var(--primary)', strokeWidth: 1, strokeDasharray: '5 5' }}
+                cursor={{
+                  stroke: "var(--primary)",
+                  strokeWidth: 1,
+                  strokeDasharray: "5 5",
+                }}
+                data-oid="zjo8dzw"
               />
+
               <Area
                 type="monotone"
                 dataKey="ingresos"
@@ -82,10 +144,17 @@ export function TransactionsChart() {
                 strokeWidth={2}
                 fillOpacity={1}
                 fill="url(#colorIngresos)"
-                activeDot={{ r: 6, stroke: '#059669', strokeWidth: 2, fill: '#fff' }}
+                activeDot={{
+                  r: 6,
+                  stroke: "#059669",
+                  strokeWidth: 2,
+                  fill: "#fff",
+                }}
                 animationDuration={1500}
                 animationEasing="ease-out"
+                data-oid="9al0dlz"
               />
+
               <Area
                 type="monotone"
                 dataKey="gastos"
@@ -93,9 +162,15 @@ export function TransactionsChart() {
                 strokeWidth={2}
                 fillOpacity={1}
                 fill="url(#colorGastos)"
-                activeDot={{ r: 6, stroke: '#E63946', strokeWidth: 2, fill: '#fff' }}
+                activeDot={{
+                  r: 6,
+                  stroke: "#E63946",
+                  strokeWidth: 2,
+                  fill: "#fff",
+                }}
                 animationDuration={1500}
                 animationEasing="ease-out"
+                data-oid="bfh01wp"
               />
             </AreaChart>
           </ResponsiveContainer>

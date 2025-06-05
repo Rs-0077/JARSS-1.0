@@ -1,4 +1,11 @@
-import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useCallback,
+  useEffect,
+  useRef,
+} from "react";
 
 interface LoadingContextType {
   isLoading: boolean;
@@ -51,16 +58,19 @@ export function LoadingProvider({ children }: { children: React.ReactNode }) {
   }, [clearAllTimeouts]);
 
   // Establecer carga con timeout
-  const setLoadingWithTimeout = useCallback((timeout = 500) => {
-    startLoading();
+  const setLoadingWithTimeout = useCallback(
+    (timeout = 500) => {
+      startLoading();
 
-    // Aseguramos que el tiempo no exceda el máximo
-    const safeTimeout = Math.min(timeout, MAX_LOADING_TIME);
+      // Aseguramos que el tiempo no exceda el máximo
+      const safeTimeout = Math.min(timeout, MAX_LOADING_TIME);
 
-    timeoutRef.current = setTimeout(() => {
-      stopLoading();
-    }, safeTimeout);
-  }, [startLoading, stopLoading]);
+      timeoutRef.current = setTimeout(() => {
+        stopLoading();
+      }, safeTimeout);
+    },
+    [startLoading, stopLoading],
+  );
 
   // Limpiar timeouts cuando el componente se desmonte
   useEffect(() => {
@@ -77,6 +87,7 @@ export function LoadingProvider({ children }: { children: React.ReactNode }) {
         stopLoading,
         setLoadingWithTimeout,
       }}
+      data-oid="_d.i6fg"
     >
       {children}
     </LoadingContext.Provider>

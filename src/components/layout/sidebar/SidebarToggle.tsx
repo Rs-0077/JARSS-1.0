@@ -1,4 +1,3 @@
-
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,8 +13,13 @@ export function SidebarToggle({ isOpen, toggleSidebar }: SidebarToggleProps) {
       size="icon"
       className="fixed top-4 left-4 z-50 lg:hidden rounded-full bg-white/90 backdrop-blur-sm shadow-md dark:bg-gray-900/90 border border-gray-200 dark:border-gray-800"
       onClick={toggleSidebar}
+      data-oid="8h3ssri"
     >
-      {isOpen ? <X size={20} /> : <Menu size={20} />}
+      {isOpen ? (
+        <X size={20} data-oid="aqxirhp" />
+      ) : (
+        <Menu size={20} data-oid="su7lsw_" />
+      )}
     </Button>
   );
 }

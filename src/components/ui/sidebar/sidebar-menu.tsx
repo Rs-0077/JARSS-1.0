@@ -1,8 +1,11 @@
-
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { TooltipContent, TooltipTrigger, Tooltip } from "@/components/ui/tooltip";
+import {
+  TooltipContent,
+  TooltipTrigger,
+  Tooltip,
+} from "@/components/ui/tooltip";
 import { useSidebar } from "./use-sidebar";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Slot } from "@radix-ui/react-slot";
@@ -16,6 +19,7 @@ export const SidebarMenu = React.forwardRef<
     data-sidebar="menu"
     className={cn("flex w-full min-w-0 flex-col gap-1", className)}
     {...props}
+    data-oid="a_dd_5e"
   />
 ));
 SidebarMenu.displayName = "SidebarMenu";
@@ -29,6 +33,7 @@ export const SidebarMenuItem = React.forwardRef<
     data-sidebar="menu-item"
     className={cn("group/menu-item relative", className)}
     {...props}
+    data-oid="y1i_gsv"
   />
 ));
 SidebarMenuItem.displayName = "SidebarMenuItem";
@@ -52,15 +57,15 @@ const sidebarMenuButtonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 export const SidebarMenuButton = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<"button"> & {
-    asChild?: boolean
-    isActive?: boolean
-    tooltip?: string | React.ComponentProps<typeof TooltipContent>
+    asChild?: boolean;
+    isActive?: boolean;
+    tooltip?: string | React.ComponentProps<typeof TooltipContent>;
   } & VariantProps<typeof sidebarMenuButtonVariants>
 >(
   (
@@ -73,7 +78,7 @@ export const SidebarMenuButton = React.forwardRef<
       className,
       ...props
     },
-    ref
+    ref,
   ) => {
     const Comp = asChild ? Slot : "button";
     const { isMobile, state } = useSidebar();
@@ -86,6 +91,7 @@ export const SidebarMenuButton = React.forwardRef<
         data-active={isActive}
         className={cn(sidebarMenuButtonVariants({ variant, size }), className)}
         {...props}
+        data-oid="ll4ikiu"
       />
     );
 
@@ -100,25 +106,28 @@ export const SidebarMenuButton = React.forwardRef<
     }
 
     return (
-      <Tooltip>
-        <TooltipTrigger asChild>{button}</TooltipTrigger>
+      <Tooltip data-oid="00s0h8m">
+        <TooltipTrigger asChild data-oid="dz.8mei">
+          {button}
+        </TooltipTrigger>
         <TooltipContent
           side="right"
           align="center"
           hidden={state !== "collapsed" || isMobile}
           {...tooltip}
+          data-oid="5e:u718"
         />
       </Tooltip>
     );
-  }
+  },
 );
 SidebarMenuButton.displayName = "SidebarMenuButton";
 
 export const SidebarMenuAction = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<"button"> & {
-    asChild?: boolean
-    showOnHover?: boolean
+    asChild?: boolean;
+    showOnHover?: boolean;
   }
 >(({ className, asChild = false, showOnHover = false, ...props }, ref) => {
   const Comp = asChild ? Slot : "button";
@@ -137,9 +146,10 @@ export const SidebarMenuAction = React.forwardRef<
         "group-data-[collapsible=icon]:hidden",
         showOnHover &&
           "group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground md:opacity-0",
-        className
+        className,
       )}
       {...props}
+      data-oid="tslfi10"
     />
   );
 });
@@ -159,9 +169,10 @@ export const SidebarMenuBadge = React.forwardRef<
       "peer-data-[size=default]/menu-button:top-1.5",
       "peer-data-[size=lg]/menu-button:top-2.5",
       "group-data-[collapsible=icon]:hidden",
-      className
+      className,
     )}
     {...props}
+    data-oid="5hy.o2:"
   />
 ));
 SidebarMenuBadge.displayName = "SidebarMenuBadge";
@@ -169,7 +180,7 @@ SidebarMenuBadge.displayName = "SidebarMenuBadge";
 export const SidebarMenuSkeleton = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> & {
-    showIcon?: boolean
+    showIcon?: boolean;
   }
 >(({ className, showIcon = false, ...props }, ref) => {
   // Random width between 50 to 90%.
@@ -183,11 +194,13 @@ export const SidebarMenuSkeleton = React.forwardRef<
       data-sidebar="menu-skeleton"
       className={cn("rounded-md h-8 flex gap-2 px-2 items-center", className)}
       {...props}
+      data-oid="ukvi-7d"
     >
       {showIcon && (
         <Skeleton
           className="size-4 rounded-md"
           data-sidebar="menu-skeleton-icon"
+          data-oid="sd8wtmn"
         />
       )}
       <Skeleton
@@ -198,6 +211,7 @@ export const SidebarMenuSkeleton = React.forwardRef<
             "--skeleton-width": width,
           } as React.CSSProperties
         }
+        data-oid="lgq5jt."
       />
     </div>
   );
@@ -214,9 +228,10 @@ export const SidebarMenuSub = React.forwardRef<
     className={cn(
       "mx-3.5 flex min-w-0 translate-x-px flex-col gap-1 border-l border-sidebar-border px-2.5 py-0.5",
       "group-data-[collapsible=icon]:hidden",
-      className
+      className,
     )}
     {...props}
+    data-oid="5eo9z.d"
   />
 ));
 SidebarMenuSub.displayName = "SidebarMenuSub";
@@ -224,15 +239,15 @@ SidebarMenuSub.displayName = "SidebarMenuSub";
 export const SidebarMenuSubItem = React.forwardRef<
   HTMLLIElement,
   React.ComponentProps<"li">
->(({ ...props }, ref) => <li ref={ref} {...props} />);
+>(({ ...props }, ref) => <li ref={ref} {...props} data-oid="nd59frq" />);
 SidebarMenuSubItem.displayName = "SidebarMenuSubItem";
 
 export const SidebarMenuSubButton = React.forwardRef<
   HTMLAnchorElement,
   React.ComponentProps<"a"> & {
-    asChild?: boolean
-    size?: "sm" | "md"
-    isActive?: boolean
+    asChild?: boolean;
+    size?: "sm" | "md";
+    isActive?: boolean;
   }
 >(({ asChild = false, size = "md", isActive, className, ...props }, ref) => {
   const Comp = asChild ? Slot : "a";
@@ -249,9 +264,10 @@ export const SidebarMenuSubButton = React.forwardRef<
         size === "sm" && "text-xs",
         size === "md" && "text-sm",
         "group-data-[collapsible=icon]:hidden",
-        className
+        className,
       )}
       {...props}
+      data-oid="7v8ozuc"
     />
   );
 });

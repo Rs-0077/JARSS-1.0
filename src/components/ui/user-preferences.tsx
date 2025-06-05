@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Save, RotateCcw, Moon, Sun, Bell, BellOff } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
-import { Switch } from '@/components/ui/switch';
-import { Label } from '@/components/ui/label';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Slider } from '@/components/ui/slider';
-import { STORAGE_KEYS } from '@/core/config';
-import { useTheme } from '@/components/theme-provider';
+import React, { useState, useEffect } from "react";
+import { Save, RotateCcw, Moon, Sun, Bell, BellOff } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Slider } from "@/components/ui/slider";
+import { STORAGE_KEYS } from "@/core/config";
+import { useTheme } from "@/components/theme-provider";
 
 export interface UserPreferences {
-  theme: 'light' | 'dark' | 'system';
+  theme: "light" | "dark" | "system";
   notifications: {
     enabled: boolean;
     email: boolean;
@@ -30,7 +30,7 @@ export interface UserPreferences {
 }
 
 const defaultPreferences: UserPreferences = {
-  theme: 'system',
+  theme: "system",
   notifications: {
     enabled: true,
     email: true,
@@ -54,8 +54,12 @@ interface UserPreferencesProps {
   className?: string;
 }
 
-export function UserPreferencesPanel({ onSave, className }: UserPreferencesProps) {
-  const [preferences, setPreferences] = useState<UserPreferences>(defaultPreferences);
+export function UserPreferencesPanel({
+  onSave,
+  className,
+}: UserPreferencesProps) {
+  const [preferences, setPreferences] =
+    useState<UserPreferences>(defaultPreferences);
   const [hasChanges, setHasChanges] = useState(false);
   const { setTheme } = useTheme();
 
@@ -67,59 +71,62 @@ export function UserPreferencesPanel({ onSave, className }: UserPreferencesProps
         const parsed = JSON.parse(savedPreferences);
         setPreferences(parsed);
       } catch (error) {
-        console.error('Error parsing saved preferences:', error);
+        console.error("Error parsing saved preferences:", error);
       }
     }
   }, []);
 
   const handleChange = (path: string[], value: any) => {
-    setPreferences(prev => {
+    setPreferences((prev) => {
       const newPreferences = { ...prev };
       let current: any = newPreferences;
-      
+
       // Navigate to the nested property
       for (let i = 0; i < path.length - 1; i++) {
         current = current[path[i]];
       }
-      
+
       // Set the value
       current[path[path.length - 1]] = value;
-      
+
       return newPreferences;
     });
-    
+
     setHasChanges(true);
   };
 
   const handleSave = () => {
     // Save to localStorage
-    localStorage.setItem(STORAGE_KEYS.userPreferences, JSON.stringify(preferences));
-    
+    localStorage.setItem(
+      STORAGE_KEYS.userPreferences,
+      JSON.stringify(preferences),
+    );
+
     // Apply theme
     setTheme(preferences.theme);
-    
+
     // Apply font size
     document.documentElement.style.fontSize = `${preferences.accessibility.fontSize}%`;
-    
+
     // Apply reduced motion
     if (preferences.accessibility.reducedMotion) {
-      document.documentElement.classList.add('reduce-motion');
+      document.documentElement.classList.add("reduce-motion");
     } else {
-      document.documentElement.classList.remove('reduce-motion');
+      document.documentElement.classList.remove("reduce-motion");
     }
-    
+
     // Apply high contrast
     if (preferences.accessibility.contrastMode) {
-      document.documentElement.classList.add('high-contrast');
+      document.documentElement.classList.add("high-contrast");
     } else {
-      document.documentElement.classList.remove('high-contrast');
+      document.documentElement.classList.remove("high-contrast");
     }
-    
+
     // Callback
     if (onSave) {
       onSave(preferences);
     }
-    
+
     setHasChanges(false);
   };
 
@@ -129,211 +136,353 @@ export function UserPreferencesPanel({ onSave, className }: UserPreferencesProps
   };
 
   return (
-    <div className={cn("space-y-6", className)}>
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold">Preferencias de usuario</h2>
-        <div className="flex space-x-2">
-          <Button 
-            variant="outline" 
-            size="sm" 
+    <div className={cn("space-y-6", className)} data-oid="ugrz.oy">
+      <div className="flex justify-between items-center" data-oid="gcmr89q">
+        <h2 className="text-2xl font-semibold" data-oid="-e0yt7c">
+          Preferencias de usuario
+        </h2>
+        <div className="flex space-x-2" data-oid=".rb46tk">
+          <Button
+            variant="outline"
+            size="sm"
             onClick={handleReset}
             disabled={!hasChanges}
+            data-oid="yo63qk_"
           >
-            <RotateCcw className="mr-2 h-4 w-4" />
+            <RotateCcw className="mr-2 h-4 w-4" data-oid="veaskgw" />
             Restablecer
           </Button>
-          <Button 
-            size="sm" 
+          <Button
+            size="sm"
             onClick={handleSave}
             disabled={!hasChanges}
+            data-oid="sxwba:9"
           >
-            <Save className="mr-2 h-4 w-4" />
+            <Save className="mr-2 h-4 w-4" data-oid="-e6ikg0" />
             Guardar cambios
           </Button>
         </div>
       </div>
-      
-      <Tabs defaultValue="general" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="general">General</TabsTrigger>
-          <TabsTrigger value="notifications">Notificaciones</TabsTrigger>
-          <TabsTrigger value="accessibility">Accesibilidad</TabsTrigger>
+
+      <Tabs defaultValue="general" className="w-full" data-oid="7.0.is6">
+        <TabsList className="grid w-full grid-cols-3" data-oid="q06tt_-">
+          <TabsTrigger value="general" data-oid="mu26vee">
+            General
+          </TabsTrigger>
+          <TabsTrigger value="notifications" data-oid=".cy8evs">
+            Notificaciones
+          </TabsTrigger>
+          <TabsTrigger value="accessibility" data-oid="5.dcwd4">
+            Accesibilidad
+          </TabsTrigger>
         </TabsList>
-        
-        <TabsContent value="general" className="space-y-4 pt-4">
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-medium mb-2">Tema</h3>
-              <div className="grid grid-cols-3 gap-4">
-                <div 
+
+        <TabsContent
+          value="general"
+          className="space-y-4 pt-4"
+          data-oid="v:cpu__"
+        >
+          <div className="space-y-4" data-oid="j3wfzi_">
+            <div data-oid="mt0gcuw">
+              <h3 className="text-lg font-medium mb-2" data-oid="wbikulm">
+                Tema
+              </h3>
+              <div className="grid grid-cols-3 gap-4" data-oid="6tn_rbz">
+                <div
                   className={cn(
                     "flex flex-col items-center justify-center p-4 rounded-lg border-2 cursor-pointer transition-all",
-                    preferences.theme === 'light' 
-                      ? "border-primary bg-primary/10" 
-                      : "border-muted hover:border-primary/50"
+                    preferences.theme === "light"
+                      ? "border-primary bg-primary/10"
+                      : "border-muted hover:border-primary/50",
                   )}
-                  onClick={() => handleChange(['theme'], 'light')}
+                  onClick={() => handleChange(["theme"], "light")}
+                  data-oid=".c5cx6q"
                 >
-                  <Sun className="h-8 w-8 mb-2 text-yellow-500" />
-                  <span>Claro</span>
+                  <Sun
+                    className="h-8 w-8 mb-2 text-yellow-500"
+                    data-oid="-ltqyl:"
+                  />
+
+                  <span data-oid="fsxd4no">Claro</span>
                 </div>
-                
-                <div 
+
+                <div
                   className={cn(
                     "flex flex-col items-center justify-center p-4 rounded-lg border-2 cursor-pointer transition-all",
-                    preferences.theme === 'dark' 
-                      ? "border-primary bg-primary/10" 
-                      : "border-muted hover:border-primary/50"
+                    preferences.theme === "dark"
+                      ? "border-primary bg-primary/10"
+                      : "border-muted hover:border-primary/50",
                   )}
-                  onClick={() => handleChange(['theme'], 'dark')}
+                  onClick={() => handleChange(["theme"], "dark")}
+                  data-oid="l.c4rs."
                 >
-                  <Moon className="h-8 w-8 mb-2 text-indigo-400" />
-                  <span>Oscuro</span>
+                  <Moon
+                    className="h-8 w-8 mb-2 text-indigo-400"
+                    data-oid="d.m-zte"
+                  />
+
+                  <span data-oid="i3nc5_d">Oscuro</span>
                 </div>
-                
-                <div 
+
+                <div
                   className={cn(
                     "flex flex-col items-center justify-center p-4 rounded-lg border-2 cursor-pointer transition-all",
-                    preferences.theme === 'system' 
-                      ? "border-primary bg-primary/10" 
-                      : "border-muted hover:border-primary/50"
+                    preferences.theme === "system"
+                      ? "border-primary bg-primary/10"
+                      : "border-muted hover:border-primary/50",
                   )}
-                  onClick={() => handleChange(['theme'], 'system')}
+                  onClick={() => handleChange(["theme"], "system")}
+                  data-oid="9gbfboo"
                 >
-                  <div className="h-8 w-8 mb-2 flex">
-                    <Sun className="h-8 w-4 text-yellow-500" />
-                    <Moon className="h-8 w-4 text-indigo-400" />
+                  <div className="h-8 w-8 mb-2 flex" data-oid="pl10vx2">
+                    <Sun
+                      className="h-8 w-4 text-yellow-500"
+                      data-oid=".m.f35j"
+                    />
+
+                    <Moon
+                      className="h-8 w-4 text-indigo-400"
+                      data-oid="._r_jmu"
+                    />
                   </div>
-                  <span>Sistema</span>
+                  <span data-oid="d93oye:">Sistema</span>
                 </div>
               </div>
             </div>
-            
-            <div className="space-y-2">
-              <h3 className="text-lg font-medium mb-2">Visualización</h3>
-              
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label htmlFor="compact-mode">Modo compacto</Label>
-                  <p className="text-sm text-muted-foreground">
+
+            <div className="space-y-2" data-oid="mgs7jmq">
+              <h3 className="text-lg font-medium mb-2" data-oid="ly_4l40">
+                Visualización
+              </h3>
+
+              <div
+                className="flex items-center justify-between"
+                data-oid="xwwoj2:"
+              >
+                <div className="space-y-0.5" data-oid="07g5flx">
+                  <Label htmlFor="compact-mode" data-oid="j2t02qv">
+                    Modo compacto
+                  </Label>
+                  <p
+                    className="text-sm text-muted-foreground"
+                    data-oid="7p7tw8k"
+                  >
                     Reduce el espaciado y tamaño de los elementos
                   </p>
                 </div>
                 <Switch
                   id="compact-mode"
                   checked={preferences.display.compactMode}
-                  onCheckedChange={(checked) => handleChange(['display', 'compactMode'], checked)}
+                  onCheckedChange={(checked) =>
+                    handleChange(["display", "compactMode"], checked)
+                  }
+                  data-oid="if43ipp"
                 />
               </div>
-              
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label htmlFor="show-tips">Mostrar consejos</Label>
-                  <p className="text-sm text-muted-foreground">
+
+              <div
+                className="flex items-center justify-between"
+                data-oid="a8l2ssh"
+              >
+                <div className="space-y-0.5" data-oid="wd7q7if">
+                  <Label htmlFor="show-tips" data-oid="upbes_g">
+                    Mostrar consejos
+                  </Label>
+                  <p
+                    className="text-sm text-muted-foreground"
+                    data-oid="vln9f12"
+                  >
                     Muestra consejos y sugerencias mientras usas la aplicación
                   </p>
                 </div>
                 <Switch
                   id="show-tips"
                   checked={preferences.display.showTips}
-                  onCheckedChange={(checked) => handleChange(['display', 'showTips'], checked)}
+                  onCheckedChange={(checked) =>
+                    handleChange(["display", "showTips"], checked)
+                  }
+                  data-oid="mf0:00n"
                 />
               </div>
-              
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label htmlFor="welcome-screen">Pantalla de bienvenida</Label>
-                  <p className="text-sm text-muted-foreground">
+
+              <div
+                className="flex items-center justify-between"
+                data-oid="a3l23t:"
+              >
+                <div className="space-y-0.5" data-oid="y:zemw:">
+                  <Label htmlFor="welcome-screen" data-oid="7mo1ekl">
+                    Pantalla de bienvenida
+                  </Label>
+                  <p
+                    className="text-sm text-muted-foreground"
+                    data-oid="ok:9ji0"
+                  >
                     Muestra la pantalla de bienvenida al iniciar la aplicación
                   </p>
                 </div>
                 <Switch
                   id="welcome-screen"
                   checked={preferences.display.showWelcomeScreen}
-                  onCheckedChange={(checked) => handleChange(['display', 'showWelcomeScreen'], checked)}
+                  onCheckedChange={(checked) =>
+                    handleChange(["display", "showWelcomeScreen"], checked)
+                  }
+                  data-oid="74hwd.y"
                 />
               </div>
             </div>
           </div>
         </TabsContent>
-        
-        <TabsContent value="notifications" className="space-y-4 pt-4">
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <div className="space-y-0.5">
-                <Label htmlFor="notifications-enabled" className="text-base font-medium">
+
+        <TabsContent
+          value="notifications"
+          className="space-y-4 pt-4"
+          data-oid="926kes-"
+        >
+          <div className="space-y-4" data-oid="bzho-4b">
+            <div
+              className="flex items-center justify-between"
+              data-oid="9kb5q5b"
+            >
+              <div className="space-y-0.5" data-oid="nx2v8.q">
+                <Label
+                  htmlFor="notifications-enabled"
+                  className="text-base font-medium"
+                  data-oid="i:dqzh_"
+                >
                   Notificaciones
                 </Label>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground" data-oid="fk81z_8">
                   Habilitar o deshabilitar todas las notificaciones
                 </p>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2" data-oid="z3-t1mg">
                 {preferences.notifications.enabled ? (
-                  <Bell className="h-4 w-4 text-primary" />
+                  <Bell className="h-4 w-4 text-primary" data-oid="uv6r_8i" />
                 ) : (
-                  <BellOff className="h-4 w-4 text-muted-foreground" />
+                  <BellOff
+                    className="h-4 w-4 text-muted-foreground"
+                    data-oid="nc4zd2c"
+                  />
                 )}
                 <Switch
                   id="notifications-enabled"
                   checked={preferences.notifications.enabled}
-                  onCheckedChange={(checked) => handleChange(['notifications', 'enabled'], checked)}
+                  onCheckedChange={(checked) =>
+                    handleChange(["notifications", "enabled"], checked)
+                  }
+                  data-oid="-u_oy4s"
                 />
               </div>
             </div>
-            
-            <div className="space-y-2 pl-2 border-l-2 border-muted">
-              <div className="flex items-center justify-between">
-                <Label htmlFor="email-notifications" className="flex-1">
+
+            <div
+              className="space-y-2 pl-2 border-l-2 border-muted"
+              data-oid="30phh2-"
+            >
+              <div
+                className="flex items-center justify-between"
+                data-oid="-0ojo5a"
+              >
+                <Label
+                  htmlFor="email-notifications"
+                  className="flex-1"
+                  data-oid="zf4ooxh"
+                >
                   Notificaciones por correo electrónico
                 </Label>
                 <Switch
                   id="email-notifications"
-                  checked={preferences.notifications.email && preferences.notifications.enabled}
-                  onCheckedChange={(checked) => handleChange(['notifications', 'email'], checked)}
+                  checked={
+                    preferences.notifications.email &&
+                    preferences.notifications.enabled
+                  }
+                  onCheckedChange={(checked) =>
+                    handleChange(["notifications", "email"], checked)
+                  }
                   disabled={!preferences.notifications.enabled}
+                  data-oid="28_uad3"
                 />
               </div>
-              
-              <div className="flex items-center justify-between">
-                <Label htmlFor="app-notifications" className="flex-1">
+
+              <div
+                className="flex items-center justify-between"
+                data-oid="_t_zzgh"
+              >
+                <Label
+                  htmlFor="app-notifications"
+                  className="flex-1"
+                  data-oid="x_3rb3b"
+                >
                   Notificaciones en la aplicación
                 </Label>
                 <Switch
                   id="app-notifications"
-                  checked={preferences.notifications.app && preferences.notifications.enabled}
-                  onCheckedChange={(checked) => handleChange(['notifications', 'app'], checked)}
+                  checked={
+                    preferences.notifications.app &&
+                    preferences.notifications.enabled
+                  }
+                  onCheckedChange={(checked) =>
+                    handleChange(["notifications", "app"], checked)
+                  }
                   disabled={!preferences.notifications.enabled}
+                  data-oid="g8l_gbd"
                 />
               </div>
-              
-              <div className="flex items-center justify-between">
-                <Label htmlFor="sound-notifications" className="flex-1">
+
+              <div
+                className="flex items-center justify-between"
+                data-oid="vur1l8r"
+              >
+                <Label
+                  htmlFor="sound-notifications"
+                  className="flex-1"
+                  data-oid="depnas2"
+                >
                   Sonidos de notificación
                 </Label>
                 <Switch
                   id="sound-notifications"
-                  checked={preferences.notifications.sound && preferences.notifications.enabled}
-                  onCheckedChange={(checked) => handleChange(['notifications', 'sound'], checked)}
+                  checked={
+                    preferences.notifications.sound &&
+                    preferences.notifications.enabled
+                  }
+                  onCheckedChange={(checked) =>
+                    handleChange(["notifications", "sound"], checked)
+                  }
                   disabled={!preferences.notifications.enabled}
+                  data-oid="_pz8_my"
                 />
               </div>
             </div>
           </div>
         </TabsContent>
-        
-        <TabsContent value="accessibility" className="space-y-4 pt-4">
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <div className="flex justify-between items-center">
-                <Label htmlFor="font-size" className="text-base font-medium">
+
+        <TabsContent
+          value="accessibility"
+          className="space-y-4 pt-4"
+          data-oid="upk8o90"
+        >
+          <div className="space-y-6" data-oid="083fwx-">
+            <div className="space-y-2" data-oid="f96iu:h">
+              <div
+                className="flex justify-between items-center"
+                data-oid="-t6dyb7"
+              >
+                <Label
+                  htmlFor="font-size"
+                  className="text-base font-medium"
+                  data-oid="-h7kdvf"
+                >
                   Tamaño de fuente: {preferences.accessibility.fontSize}%
                 </Label>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   size="sm"
-                  onClick={() => handleChange(['accessibility', 'fontSize'], 100)}
+                  onClick={() =>
+                    handleChange(["accessibility", "fontSize"], 100)
+                  }
                   disabled={preferences.accessibility.fontSize === 100}
+                  data-oid="_od-tah"
                 >
                   Restablecer
                 </Button>
@@ -344,41 +493,70 @@ export function UserPreferencesPanel({ onSave, className }: UserPreferencesProps
                 max={150}
                 step={5}
                 value={[preferences.accessibility.fontSize]}
-                onValueChange={(value) => handleChange(['accessibility', 'fontSize'], value[0])}
+                onValueChange={(value) =>
+                  handleChange(["accessibility", "fontSize"], value[0])
+                }
+                data-oid="54w-xg."
               />
-              <div className="flex justify-between text-xs text-muted-foreground">
-                <span>Pequeño</span>
-                <span>Normal</span>
-                <span>Grande</span>
+
+              <div
+                className="flex justify-between text-xs text-muted-foreground"
+                data-oid="_tjkm5e"
+              >
+                <span data-oid="b6oqemt">Pequeño</span>
+                <span data-oid=":s9vj8p">Normal</span>
+                <span data-oid="wh16:-l">Grande</span>
               </div>
             </div>
-            
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label htmlFor="contrast-mode">Modo de alto contraste</Label>
-                  <p className="text-sm text-muted-foreground">
+
+            <div className="space-y-2" data-oid="2e1x.zo">
+              <div
+                className="flex items-center justify-between"
+                data-oid="2ja:c0o"
+              >
+                <div className="space-y-0.5" data-oid="-bywywm">
+                  <Label htmlFor="contrast-mode" data-oid="6honz_k">
+                    Modo de alto contraste
+                  </Label>
+                  <p
+                    className="text-sm text-muted-foreground"
+                    data-oid="vx:3hz3"
+                  >
                     Aumenta el contraste para mejorar la legibilidad
                   </p>
                 </div>
                 <Switch
                   id="contrast-mode"
                   checked={preferences.accessibility.contrastMode}
-                  onCheckedChange={(checked) => handleChange(['accessibility', 'contrastMode'], checked)}
+                  onCheckedChange={(checked) =>
+                    handleChange(["accessibility", "contrastMode"], checked)
+                  }
+                  data-oid="gc74b3r"
                 />
               </div>
-              
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label htmlFor="reduced-motion">Movimiento reducido</Label>
-                  <p className="text-sm text-muted-foreground">
+
+              <div
+                className="flex items-center justify-between"
+                data-oid="lar2mcn"
+              >
+                <div className="space-y-0.5" data-oid="zxochw9">
+                  <Label htmlFor="reduced-motion" data-oid="3x:67zf">
+                    Movimiento reducido
+                  </Label>
+                  <p
+                    className="text-sm text-muted-foreground"
+                    data-oid="r45d.eb"
+                  >
                     Reduce o elimina las animaciones y transiciones
                   </p>
                 </div>
                 <Switch
                   id="reduced-motion"
                   checked={preferences.accessibility.reducedMotion}
-                  onCheckedChange={(checked) => handleChange(['accessibility', 'reducedMotion'], checked)}
+                  onCheckedChange={(checked) =>
+                    handleChange(["accessibility", "reducedMotion"], checked)
+                  }
+                  data-oid="8_rwx9i"
                 />
               </div>
             </div>

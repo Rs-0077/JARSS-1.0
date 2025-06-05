@@ -9,7 +9,7 @@ import {
   Users,
   BarChartHorizontal,
   CreditCard,
-  Settings
+  Settings,
 } from "lucide-react";
 
 import { SidebarLink } from "./sidebar/SidebarLink";
@@ -27,16 +27,23 @@ type SidebarLinkType = {
 
 const sidebarLinks: SidebarLinkType[] = [
   { name: "Panel", icon: BarChart3, href: "/" },
-  { name: "Gestión Financiera", icon: Wallet, href: "/finanzas",
+  {
+    name: "Gestión Financiera",
+    icon: Wallet,
+    href: "/finanzas",
     submenu: [
       { name: "Ingresos", href: "/finanzas/ingresos" },
       { name: "Gastos", href: "/finanzas/gastos" },
-      { name: "Inversiones", href: "/finanzas/inversiones" }
-    ]
+      { name: "Inversiones", href: "/finanzas/inversiones" },
+    ],
   },
   { name: "Reportes", icon: FileText, href: "/reportes" },
   { name: "Cumplimiento Fiscal", icon: PieChart, href: "/impuestos" },
-  { name: "Control Presupuestario", icon: BarChartHorizontal, href: "/presupuestos" },
+  {
+    name: "Control Presupuestario",
+    icon: BarChartHorizontal,
+    href: "/presupuestos",
+  },
   { name: "Nómina", icon: Users, href: "/nomina" },
   { name: "Bancos y Proveedores", icon: CreditCard, href: "/bank-accounts" },
   { name: "Configuración", icon: Settings, href: "/configuracion" },
@@ -54,8 +61,8 @@ export function Sidebar() {
 
   // Set active submenu based on current route
   useEffect(() => {
-    const currentLink = sidebarLinks.find(link =>
-      link.submenu?.some(subItem => location.pathname === subItem.href)
+    const currentLink = sidebarLinks.find((link) =>
+      link.submenu?.some((subItem) => location.pathname === subItem.href),
     );
 
     if (currentLink) {
@@ -80,23 +87,31 @@ export function Sidebar() {
 
   return (
     <>
-      <SidebarToggle isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <SidebarToggle
+        isOpen={isOpen}
+        toggleSidebar={toggleSidebar}
+        data-oid="e7bwtvp"
+      />
 
       <div
         className={cn(
           "fixed inset-y-0 left-0 z-40 transition-all duration-300 transform bg-sidebar border-r border-sidebar-border shadow-md",
           isOpen ? "w-64" : "w-20",
-          "translate-x-0 lg:translate-x-0"
+          "translate-x-0 lg:translate-x-0",
         )}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        data-oid="z730fho"
       >
-        <div className="flex flex-col h-full">
-          <SidebarHeader isIconOnly={isIconOnly} />
+        <div className="flex flex-col h-full" data-oid="zkeufds">
+          <SidebarHeader isIconOnly={isIconOnly} data-oid="3q9qp8." />
 
-          <nav className="flex-1 px-3 py-4 space-y-2 overflow-y-auto">
+          <nav
+            className="flex-1 px-3 py-4 space-y-2 overflow-y-auto"
+            data-oid="yhl6u9u"
+          >
             {sidebarLinks.map((link) => (
-              <div key={link.name} className="mb-2">
+              <div key={link.name} className="mb-2" data-oid="7cul0uo">
                 {link.submenu ? (
                   <SidebarSubmenu
                     name={link.name}
@@ -107,6 +122,7 @@ export function Sidebar() {
                     isIconOnly={isIconOnly}
                     currentPath={location.pathname}
                     onToggle={toggleSubmenu}
+                    data-oid=":zghrn1"
                   />
                 ) : (
                   <SidebarLink
@@ -115,13 +131,14 @@ export function Sidebar() {
                     href={link.href}
                     isActive={location.pathname === link.href}
                     isIconOnly={isIconOnly}
+                    data-oid=":-1i_hl"
                   />
                 )}
               </div>
             ))}
           </nav>
 
-          <SidebarProfile isIconOnly={isIconOnly} />
+          <SidebarProfile isIconOnly={isIconOnly} data-oid="wjqji42" />
         </div>
       </div>
     </>

@@ -1,4 +1,3 @@
-
 import { Search, HelpCircle, User, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,10 +6,13 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ThemeToggle } from "@/shared/components/theme-toggle";
-import { NotificationCenter, type Notification } from "@/components/ui/notification-center";
+import {
+  NotificationCenter,
+  type Notification,
+} from "@/components/ui/notification-center";
 import { useState, useEffect } from "react";
 import { STORAGE_KEYS } from "@/core/config";
 import {
@@ -35,53 +37,73 @@ export function Header() {
         const parsed = JSON.parse(savedNotifications);
         setNotifications(parsed);
       } catch (error) {
-        console.error('Error parsing saved notifications:', error);
+        console.error("Error parsing saved notifications:", error);
       }
     } else {
       // Notificaciones de ejemplo si no hay guardadas
       const exampleNotifications: Notification[] = [
         {
-          id: '1',
-          title: 'Bienvenido a JARSS Inventory',
-          message: 'Gracias por usar nuestra aplicación. Explora todas las funcionalidades disponibles.',
-          type: 'info',
+          id: "1",
+          title: "Bienvenido a JARSS Inventory",
+          message:
+            "Gracias por usar nuestra aplicación. Explora todas las funcionalidades disponibles.",
+          type: "info",
           timestamp: new Date(),
           read: false,
-          actionLabel: 'Ver tour',
+          actionLabel: "Ver tour",
         },
         {
-          id: '2',
-          title: 'Nuevas funcionalidades disponibles',
-          message: 'Hemos añadido nuevas características para mejorar tu experiencia.',
-          type: 'success',
+          id: "2",
+          title: "Nuevas funcionalidades disponibles",
+          message:
+            "Hemos añadido nuevas características para mejorar tu experiencia.",
+          type: "success",
           timestamp: new Date(Date.now() - 24 * 60 * 60 * 1000), // 1 día atrás
           read: false,
-        }
+        },
       ];
+
       setNotifications(exampleNotifications);
-      localStorage.setItem(STORAGE_KEYS.notifications, JSON.stringify(exampleNotifications));
+      localStorage.setItem(
+        STORAGE_KEYS.notifications,
+        JSON.stringify(exampleNotifications),
+      );
     }
   }, []);
 
   // Funciones para gestionar notificaciones
   const handleMarkAsRead = (id: string) => {
-    const updatedNotifications = notifications.map(notification =>
-      notification.id === id ? { ...notification, read: true } : notification
+    const updatedNotifications = notifications.map((notification) =>
+      notification.id === id ? { ...notification, read: true } : notification,
     );
     setNotifications(updatedNotifications);
-    localStorage.setItem(STORAGE_KEYS.notifications, JSON.stringify(updatedNotifications));
+    localStorage.setItem(
+      STORAGE_KEYS.notifications,
+      JSON.stringify(updatedNotifications),
+    );
   };
 
   const handleMarkAllAsRead = () => {
-    const updatedNotifications = notifications.map(notification => ({ ...notification, read: true }));
+    const updatedNotifications = notifications.map((notification) => ({
+      ...notification,
+      read: true,
+    }));
     setNotifications(updatedNotifications);
-    localStorage.setItem(STORAGE_KEYS.notifications, JSON.stringify(updatedNotifications));
+    localStorage.setItem(
+      STORAGE_KEYS.notifications,
+      JSON.stringify(updatedNotifications),
+    );
   };
 
   const handleDismiss = (id: string) => {
-    const updatedNotifications = notifications.filter(notification => notification.id !== id);
+    const updatedNotifications = notifications.filter(
+      (notification) => notification.id !== id,
+    );
     setNotifications(updatedNotifications);
-    localStorage.setItem(STORAGE_KEYS.notifications, JSON.stringify(updatedNotifications));
+    localStorage.setItem(
+      STORAGE_KEYS.notifications,
+      JSON.stringify(updatedNotifications),
+    );
   };
 
   const handleClearAll = () => {
@@ -90,24 +112,40 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-border bg-background/80 px-4 md:px-6 backdrop-blur-sm transition-all duration-300">
-      <div className="flex items-center gap-2 lg:hidden">
-        <span className="text-xl font-bold text-contable-primary">JARSS</span>
+    <header
+      className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-border bg-background/80 px-4 md:px-6 backdrop-blur-sm transition-all duration-300"
+      data-oid="aeu7wd:"
+    >
+      <div className="flex items-center gap-2 lg:hidden" data-oid="n8rj98y">
+        <span
+          className="text-xl font-bold text-contable-primary"
+          data-oid="8wun0oj"
+        >
+          JARSS
+        </span>
       </div>
 
-      <div className="hidden md:flex md:flex-1 md:items-center md:gap-4 lg:gap-8">
-        <div className="relative flex-1 max-w-md">
-          <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
+      <div
+        className="hidden md:flex md:flex-1 md:items-center md:gap-4 lg:gap-8"
+        data-oid="m:.7v_w"
+      >
+        <div className="relative flex-1 max-w-md" data-oid="cuj08fc">
+          <Search
+            className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500"
+            data-oid="8hsp7gp"
+          />
+
           <input
             type="search"
             placeholder="Buscar transacciones, contactos..."
             className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 pl-8 pr-4 py-2 text-sm outline-none focus:border-contable-primary"
+            data-oid="c9l-:za"
           />
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
-        <ThemeToggle />
+      <div className="flex items-center gap-4" data-oid="i9nkcsx">
+        <ThemeToggle data-oid="3s0.zt_" />
 
         {/* Centro de notificaciones */}
         <NotificationCenter
@@ -116,6 +154,7 @@ export function Header() {
           onMarkAllAsRead={handleMarkAllAsRead}
           onDismiss={handleDismiss}
           onClearAll={handleClearAll}
+          data-oid="kmeoo8l"
         />
 
         {/* Botón de ayuda */}
@@ -127,46 +166,63 @@ export function Header() {
             // Aquí se podría abrir un diálogo de ayuda o un tour guiado
             const helpNotification: Notification = {
               id: Date.now().toString(),
-              title: 'Centro de ayuda',
-              message: 'Encuentra guías, tutoriales y respuestas a preguntas frecuentes.',
-              type: 'info',
+              title: "Centro de ayuda",
+              message:
+                "Encuentra guías, tutoriales y respuestas a preguntas frecuentes.",
+              type: "info",
               timestamp: new Date(),
               read: false,
-              actionLabel: 'Ver ayuda',
+              actionLabel: "Ver ayuda",
             };
             setNotifications([helpNotification, ...notifications]);
-            localStorage.setItem(STORAGE_KEYS.notifications, JSON.stringify([helpNotification, ...notifications]));
+            localStorage.setItem(
+              STORAGE_KEYS.notifications,
+              JSON.stringify([helpNotification, ...notifications]),
+            );
           }}
+          data-oid="nbar8y0"
         >
-          <HelpCircle className="h-5 w-5" />
+          <HelpCircle className="h-5 w-5" data-oid="4qnf2h9" />
         </Button>
 
         {/* Menú de usuario */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+        <DropdownMenu data-oid="qfo-an:">
+          <DropdownMenuTrigger asChild data-oid="-._wam2">
             <Button
               variant="ghost"
               size="icon"
               className="rounded-full h-9 w-9 gradient-primary text-white hover:brightness-110 transition-all duration-300"
+              data-oid="zpyjvm0"
             >
-              <User className="h-5 w-5" />
+              <User className="h-5 w-5" data-oid="ikyzwqq" />
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="w-56 bg-card text-card-foreground border border-border animate-scale-in">
-            <DropdownMenuLabel>Mi cuenta</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200">
+          <DropdownMenuContent
+            align="end"
+            className="w-56 bg-card text-card-foreground border border-border animate-scale-in"
+            data-oid="vstfuyc"
+          >
+            <DropdownMenuLabel data-oid="scwzd0p">Mi cuenta</DropdownMenuLabel>
+            <DropdownMenuSeparator data-oid="u.xgeu4" />
+            <DropdownMenuItem
+              className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
+              data-oid="0o7aan0"
+            >
               Perfil
             </DropdownMenuItem>
             <DropdownMenuItem
               className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
               onClick={() => setPreferencesOpen(true)}
+              data-oid="_391y2a"
             >
-              <Settings className="h-4 w-4 mr-2" />
+              <Settings className="h-4 w-4 mr-2" data-oid="wlfrrpv" />
               Preferencias
             </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200">
+            <DropdownMenuSeparator data-oid="bt6dn-a" />
+            <DropdownMenuItem
+              className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
+              data-oid="1aa:a3."
+            >
               Cerrar sesión
             </DropdownMenuItem>
           </DropdownMenuContent>
@@ -174,10 +230,16 @@ export function Header() {
       </div>
 
       {/* Diálogo de preferencias de usuario */}
-      <Dialog open={preferencesOpen} onOpenChange={setPreferencesOpen}>
-        <DialogContent className="sm:max-w-[600px]">
-          <DialogHeader>
-            <DialogTitle>Preferencias de usuario</DialogTitle>
+      <Dialog
+        open={preferencesOpen}
+        onOpenChange={setPreferencesOpen}
+        data-oid="c5zo-jg"
+      >
+        <DialogContent className="sm:max-w-[600px]" data-oid="gap89zv">
+          <DialogHeader data-oid="w082n_z">
+            <DialogTitle data-oid=":fc2ofp">
+              Preferencias de usuario
+            </DialogTitle>
           </DialogHeader>
           <UserPreferencesPanel
             onSave={() => {
@@ -185,15 +247,20 @@ export function Header() {
               // Notificar al usuario que se guardaron las preferencias
               const prefsNotification: Notification = {
                 id: Date.now().toString(),
-                title: 'Preferencias guardadas',
-                message: 'Tus preferencias han sido actualizadas correctamente.',
-                type: 'success',
+                title: "Preferencias guardadas",
+                message:
+                  "Tus preferencias han sido actualizadas correctamente.",
+                type: "success",
                 timestamp: new Date(),
                 read: false,
               };
               setNotifications([prefsNotification, ...notifications]);
-              localStorage.setItem(STORAGE_KEYS.notifications, JSON.stringify([prefsNotification, ...notifications]));
+              localStorage.setItem(
+                STORAGE_KEYS.notifications,
+                JSON.stringify([prefsNotification, ...notifications]),
+              );
             }}
+            data-oid="lp-j4hn"
           />
         </DialogContent>
       </Dialog>

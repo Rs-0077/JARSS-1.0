@@ -28,7 +28,7 @@ export const SidebarProvider = React.forwardRef<
       children,
       ...props
     },
-    ref
+    ref,
   ) => {
     const isMobile = useIsMobile();
     const [openMobile, setOpenMobile] = React.useState(false);
@@ -49,7 +49,7 @@ export const SidebarProvider = React.forwardRef<
         // This sets the cookie to keep the sidebar state.
         document.cookie = `${SIDEBAR_COOKIE_NAME}=${openState}; path=/; max-age=${SIDEBAR_COOKIE_MAX_AGE}`;
       },
-      [setOpenProp, open]
+      [setOpenProp, open],
     );
 
     // Helper to toggle the sidebar.
@@ -89,12 +89,20 @@ export const SidebarProvider = React.forwardRef<
         setOpenMobile,
         toggleSidebar,
       }),
-      [state, open, setOpen, isMobile, openMobile, setOpenMobile, toggleSidebar]
+      [
+        state,
+        open,
+        setOpen,
+        isMobile,
+        openMobile,
+        setOpenMobile,
+        toggleSidebar,
+      ],
     );
 
     return (
-      <sidebarContext.Provider value={contextValue}>
-        <TooltipProvider delayDuration={0}>
+      <sidebarContext.Provider value={contextValue} data-oid="0we9r-k">
+        <TooltipProvider delayDuration={0} data-oid="t6u.c8y">
           <div
             style={
               {
@@ -105,17 +113,18 @@ export const SidebarProvider = React.forwardRef<
             }
             className={cn(
               "group/sidebar-wrapper flex min-h-svh w-full has-[[data-variant=inset]]:bg-sidebar",
-              className
+              className,
             )}
             ref={ref}
             {...props}
+            data-oid="8ejuu7b"
           >
             {children}
           </div>
         </TooltipProvider>
       </sidebarContext.Provider>
     );
-  }
+  },
 );
 
 SidebarProvider.displayName = "SidebarProvider";

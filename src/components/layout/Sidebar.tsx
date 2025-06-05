@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -10,7 +9,7 @@ import {
   Users,
   BarChartHorizontal,
   CreditCard,
-  Settings
+  Settings,
 } from "lucide-react";
 
 import { SidebarLink } from "./sidebar/SidebarLink";
@@ -28,16 +27,23 @@ type SidebarLinkType = {
 
 const sidebarLinks: SidebarLinkType[] = [
   { name: "Dashboard", icon: BarChart3, href: "/" },
-  { name: "Gestión Financiera", icon: Wallet, href: "/finanzas",
+  {
+    name: "Gestión Financiera",
+    icon: Wallet,
+    href: "/finanzas",
     submenu: [
       { name: "Ingresos", href: "/finanzas/ingresos" },
       { name: "Gastos", href: "/finanzas/gastos" },
-      { name: "Inversiones", href: "/finanzas/inversiones" }
-    ]
+      { name: "Inversiones", href: "/finanzas/inversiones" },
+    ],
   },
   { name: "Reportes", icon: FileText, href: "/reportes" },
   { name: "Cumplimiento Fiscal", icon: PieChart, href: "/impuestos" },
-  { name: "Control Presupuestario", icon: BarChartHorizontal, href: "/presupuestos" },
+  {
+    name: "Control Presupuestario",
+    icon: BarChartHorizontal,
+    href: "/presupuestos",
+  },
   { name: "Nómina", icon: Users, href: "/nomina" },
   { name: "Bancos y Proveedores", icon: CreditCard, href: "/bank-accounts" },
   { name: "Configuración", icon: Settings, href: "/configuracion" },
@@ -61,16 +67,16 @@ export function Sidebar() {
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [openSubmenu]);
 
   // Set active submenu based on current route
   useEffect(() => {
-    const currentLink = sidebarLinks.find(link =>
-      link.submenu?.some(subItem => location.pathname === subItem.href)
+    const currentLink = sidebarLinks.find((link) =>
+      link.submenu?.some((subItem) => location.pathname === subItem.href),
     );
 
     if (currentLink) {
@@ -96,24 +102,32 @@ export function Sidebar() {
 
   return (
     <>
-      <SidebarToggle isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <SidebarToggle
+        isOpen={isOpen}
+        toggleSidebar={toggleSidebar}
+        data-oid="ttetm2l"
+      />
 
       <div
         id="sidebar-container"
         className={cn(
           "fixed inset-y-0 left-0 z-40 bg-sidebar border-r border-sidebar-border shadow-md",
           "translate-x-0 lg:translate-x-0 transition-all duration-300 ease-in-out",
-          isOpen ? "w-64" : "w-16"
+          isOpen ? "w-64" : "w-16",
         )}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        data-oid="a_-0hsc"
       >
-        <div className="flex flex-col h-full">
-          <SidebarHeader isIconOnly={isIconOnly} />
+        <div className="flex flex-col h-full" data-oid="2pw9po7">
+          <SidebarHeader isIconOnly={isIconOnly} data-oid="wzij5qv" />
 
-          <nav className="flex-1 px-3 py-4 space-y-2 overflow-y-auto">
+          <nav
+            className="flex-1 px-3 py-4 space-y-2 overflow-y-auto"
+            data-oid="5msd9sk"
+          >
             {sidebarLinks.map((link) => (
-              <div key={link.name} className="mb-6 relative">
+              <div key={link.name} className="mb-6 relative" data-oid="j2v4:z0">
                 {link.submenu ? (
                   <SidebarSubmenu
                     name={link.name}
@@ -124,6 +138,7 @@ export function Sidebar() {
                     isIconOnly={isIconOnly}
                     currentPath={location.pathname}
                     onToggle={toggleSubmenu}
+                    data-oid=":8c0fn-"
                   />
                 ) : (
                   <SidebarLink
@@ -132,13 +147,14 @@ export function Sidebar() {
                     href={link.href}
                     isActive={location.pathname === link.href}
                     isIconOnly={isIconOnly}
+                    data-oid="5q0dfu8"
                   />
                 )}
               </div>
             ))}
           </nav>
 
-          <SidebarProfile isIconOnly={isIconOnly} />
+          <SidebarProfile isIconOnly={isIconOnly} data-oid="athh8j9" />
         </div>
       </div>
     </>
