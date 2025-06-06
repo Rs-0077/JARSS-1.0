@@ -32,7 +32,7 @@ Para ejecutar el proyecto localmente, sigue estos pasos:
 
 ```sh
 # Paso 1: Clonar el repositorio
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/Rs-0077/JARSS-1.0.git
 
 # Paso 2: Navegar al directorio del proyecto
 cd jarrs-inventory
