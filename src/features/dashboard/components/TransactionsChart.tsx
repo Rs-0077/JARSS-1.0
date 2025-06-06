@@ -110,6 +110,10 @@ export function TransactionsChart() {
                 fontSize={12}
                 tickLine={false}
                 axisLine={{ stroke: "var(--border)" }}
+                tick={{
+                  fill: "currentColor",
+                  className: "text-muted-foreground dark:text-white"
+                }}
                 data-oid="m:r3ih4"
               />
 
@@ -119,6 +123,10 @@ export function TransactionsChart() {
                 tickLine={false}
                 axisLine={{ stroke: "var(--border)" }}
                 tickFormatter={(value) => `$${value}`}
+                tick={{
+                  fill: "currentColor",
+                  className: "text-muted-foreground dark:text-white"
+                }}
                 data-oid="nznopno"
               />
 

@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,6 +97,15 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Estilos para elementos SVG en modo oscuro */
+  .dark svg text {
+    fill: white !important;
+  }
+
+  .dark .recharts-cartesian-axis-tick text {
+    fill: white !important;
   }
 }
 
