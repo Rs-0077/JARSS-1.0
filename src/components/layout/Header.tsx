@@ -138,7 +138,7 @@ export function Header() {
           <input
             type="search"
             placeholder="Buscar transacciones, contactos..."
-            className="w-full rounded-md border border-input bg-background text-foreground pl-8 pr-4 py-2 text-sm outline-none focus:border-contable-primary placeholder:text-muted-foreground"
+            className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 pl-8 pr-4 py-2 text-sm outline-none focus:border-contable-primary"
             data-oid="c9l-:za"
           />
         </div>
