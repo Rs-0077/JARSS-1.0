@@ -19,7 +19,7 @@ export const SidebarMenu = React.forwardRef<
     data-sidebar="menu"
     className={cn("flex w-full min-w-0 flex-col gap-1", className)}
     {...props}
-    data-oid="a_dd_5e"
+    data-oid="ccn6xh2"
   />
 ));
 SidebarMenu.displayName = "SidebarMenu";
@@ -33,7 +33,7 @@ export const SidebarMenuItem = React.forwardRef<
     data-sidebar="menu-item"
     className={cn("group/menu-item relative", className)}
     {...props}
-    data-oid="y1i_gsv"
+    data-oid="4hd_blo"
   />
 ));
 SidebarMenuItem.displayName = "SidebarMenuItem";
@@ -91,7 +91,7 @@ export const SidebarMenuButton = React.forwardRef<
         data-active={isActive}
         className={cn(sidebarMenuButtonVariants({ variant, size }), className)}
         {...props}
-        data-oid="ll4ikiu"
+        data-oid="_q.ntsa"
       />
     );
 
@@ -106,8 +106,8 @@ export const SidebarMenuButton = React.forwardRef<
     }
 
     return (
-      <Tooltip data-oid="00s0h8m">
-        <TooltipTrigger asChild data-oid="dz.8mei">
+      <Tooltip data-oid="jz12qlm">
+        <TooltipTrigger asChild data-oid="6v3kgrm">
           {button}
         </TooltipTrigger>
         <TooltipContent
@@ -115,7 +115,7 @@ export const SidebarMenuButton = React.forwardRef<
           align="center"
           hidden={state !== "collapsed" || isMobile}
           {...tooltip}
-          data-oid="5e:u718"
+          data-oid="d1iwn5c"
         />
       </Tooltip>
     );
@@ -149,7 +149,7 @@ export const SidebarMenuAction = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="tslfi10"
+      data-oid="p98robo"
     />
   );
 });
@@ -172,7 +172,7 @@ export const SidebarMenuBadge = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="5hy.o2:"
+    data-oid="ogytyv1"
   />
 ));
 SidebarMenuBadge.displayName = "SidebarMenuBadge";
@@ -194,13 +194,13 @@ export const SidebarMenuSkeleton = React.forwardRef<
       data-sidebar="menu-skeleton"
       className={cn("rounded-md h-8 flex gap-2 px-2 items-center", className)}
       {...props}
-      data-oid="ukvi-7d"
+      data-oid="9:9ws1h"
     >
       {showIcon && (
         <Skeleton
           className="size-4 rounded-md"
           data-sidebar="menu-skeleton-icon"
-          data-oid="sd8wtmn"
+          data-oid="hjhe32c"
         />
       )}
       <Skeleton
@@ -211,7 +211,7 @@ export const SidebarMenuSkeleton = React.forwardRef<
             "--skeleton-width": width,
           } as React.CSSProperties
         }
-        data-oid="lgq5jt."
+        data-oid="jdxo-an"
       />
     </div>
   );
@@ -231,7 +231,7 @@ export const SidebarMenuSub = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="5eo9z.d"
+    data-oid="4k3gp:f"
   />
 ));
 SidebarMenuSub.displayName = "SidebarMenuSub";
@@ -239,7 +239,7 @@ SidebarMenuSub.displayName = "SidebarMenuSub";
 export const SidebarMenuSubItem = React.forwardRef<
   HTMLLIElement,
   React.ComponentProps<"li">
->(({ ...props }, ref) => <li ref={ref} {...props} data-oid="nd59frq" />);
+>(({ ...props }, ref) => <li ref={ref} {...props} data-oid="hrt-ad4" />);
 SidebarMenuSubItem.displayName = "SidebarMenuSubItem";
 
 export const SidebarMenuSubButton = React.forwardRef<
@@ -267,7 +267,7 @@ export const SidebarMenuSubButton = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="7v8ozuc"
+      data-oid="zo_gngl"
     />
   );
 });

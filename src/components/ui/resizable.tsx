@@ -13,7 +13,7 @@ const ResizablePanelGroup = ({
       className,
     )}
     {...props}
-    data-oid=".qv:1kj"
+    data-oid="nojjgc8"
   />
 );
 
@@ -32,14 +32,14 @@ const ResizableHandle = ({
       className,
     )}
     {...props}
-    data-oid="0oz3:b9"
+    data-oid="mv4p_n8"
   >
     {withHandle && (
       <div
         className="z-10 flex h-4 w-3 items-center justify-center rounded-sm border bg-border"
-        data-oid="xssw:v."
+        data-oid="zrb1p-8"
       >
-        <GripVertical className="h-2.5 w-2.5" data-oid="erq5:zo" />
+        <GripVertical className="h-2.5 w-2.5" data-oid=":zt_fq-" />
       </div>
     )}
   </ResizablePrimitive.PanelResizeHandle>

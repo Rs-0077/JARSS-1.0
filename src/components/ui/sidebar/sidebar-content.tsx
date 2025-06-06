@@ -16,7 +16,7 @@ export const SidebarInput = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="cnn6a8q"
+      data-oid="s.kgtbc"
     />
   );
 });
@@ -32,7 +32,7 @@ export const SidebarHeader = React.forwardRef<
       data-sidebar="header"
       className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
-      data-oid="9_9s6-z"
+      data-oid="kxn858-"
     />
   );
 });
@@ -48,7 +48,7 @@ export const SidebarFooter = React.forwardRef<
       data-sidebar="footer"
       className={cn("flex flex-col gap-2 p-2", className)}
       {...props}
-      data-oid="h5emkt4"
+      data-oid="zxi9qab"
     />
   );
 });
@@ -64,7 +64,7 @@ export const SidebarSeparator = React.forwardRef<
       data-sidebar="separator"
       className={cn("mx-2 w-auto bg-sidebar-border", className)}
       {...props}
-      data-oid="i3s8l48"
+      data-oid="8q2avew"
     />
   );
 });
@@ -83,7 +83,7 @@ export const SidebarContent = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="p:.ngzx"
+      data-oid="vszq9ho"
     />
   );
 });
@@ -99,7 +99,7 @@ export const SidebarGroup = React.forwardRef<
       data-sidebar="group"
       className={cn("relative flex w-full min-w-0 flex-col p-2", className)}
       {...props}
-      data-oid="e5e22u:"
+      data-oid="oh68h9-"
     />
   );
 });
@@ -121,7 +121,7 @@ export const SidebarGroupLabel = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="f17iz7u"
+      data-oid="uy3d7aj"
     />
   );
 });
@@ -145,7 +145,7 @@ export const SidebarGroupAction = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid=".2vz5:j"
+      data-oid="2zwc_ff"
     />
   );
 });
@@ -160,7 +160,7 @@ export const SidebarGroupContent = React.forwardRef<
     data-sidebar="group-content"
     className={cn("w-full text-sm", className)}
     {...props}
-    data-oid="zbwwn6x"
+    data-oid="acb34wk"
   />
 ));
 SidebarGroupContent.displayName = "SidebarGroupContent";

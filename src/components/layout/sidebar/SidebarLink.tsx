@@ -24,11 +24,11 @@ export function SidebarLink({
   isIconOnly,
 }: SidebarLinkProps) {
   return (
-    <TooltipProvider data-oid="odjs1c1">
-      <Tooltip data-oid="9g0h3.:">
-        <div className="flex items-center" data-oid="985djbd">
+    <TooltipProvider data-oid="ybsupsh">
+      <Tooltip data-oid="20knwto">
+        <div className="flex items-center" data-oid="zqg:za2">
           {/* Contenedor del icono (siempre visible y estático) */}
-          <TooltipTrigger asChild data-oid="k0f2:np">
+          <TooltipTrigger asChild data-oid="bs35ud7">
             <Link
               to={href}
               className={cn(
@@ -37,9 +37,9 @@ export function SidebarLink({
                   ? "bg-sidebar-primary text-sidebar-primary-foreground"
                   : "text-sidebar-foreground hover:text-sidebar-accent-foreground",
               )}
-              data-oid="ojuqi_v"
+              data-oid="f::2sl2"
             >
-              <Icon className="h-5 w-5" data-oid="po8y2az" />
+              <Icon className="h-5 w-5" data-oid="6d4:k8g" />
             </Link>
           </TooltipTrigger>
 
@@ -60,16 +60,16 @@ export function SidebarLink({
                 display: "flex",
                 alignItems: "center",
               }}
-              data-oid="fa82gqo"
+              data-oid="zbwzjlk"
             >
-              <span className="text-sm" data-oid="73j8neq">
+              <span className="text-sm" data-oid=":ifis.4">
                 {name}
               </span>
             </Link>
           )}
         </div>
         {isIconOnly && (
-          <TooltipContent side="right" data-oid="3b2obbh">
+          <TooltipContent side="right" data-oid="-umk0cd">
             {name}
           </TooltipContent>
         )}

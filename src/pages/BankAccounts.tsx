@@ -55,63 +55,63 @@ export default function BankAccounts() {
   }, []);
 
   return (
-    <MainLayout data-oid="bkh7o1q">
-      <div className="container mx-auto p-4" data-oid="8.eu9tq">
+    <MainLayout data-oid="ij9a7qz">
+      <div className="container mx-auto p-4" data-oid="aeifybv">
         <div
           className="flex justify-between items-center mb-6"
-          data-oid="dggt239"
+          data-oid="bsadkxi"
         >
-          <h1 className="text-2xl font-bold" data-oid="aj20n3c">
+          <h1 className="text-2xl font-bold" data-oid="3um5-1r">
             Bank Accounts
           </h1>
-          <Button onClick={loadAccounts} disabled={loading} data-oid="bnow6s2">
+          <Button onClick={loadAccounts} disabled={loading} data-oid="t4r_v:e">
             {loading ? "Loading..." : "Refresh"}
           </Button>
         </div>
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-          data-oid="ai-_eok"
+          data-oid="_0kxuu7"
         >
           {accounts.map((account) => (
             <Card
               key={account.id}
               className="overflow-hidden"
-              data-oid="bcjls_-"
+              data-oid="a2iz910"
             >
-              <CardHeader className="bg-gray-50" data-oid="_qxxc35">
-                <CardTitle data-oid="4xrt8:v">
+              <CardHeader className="bg-gray-50" data-oid="25col1:">
+                <CardTitle data-oid="ua7jta:">
                   {sanitizeContent(account.name)}
                 </CardTitle>
-                <CardDescription data-oid="uic741_">
+                <CardDescription data-oid="xppm92b">
                   {account.bank_name
                     ? sanitizeContent(account.bank_name)
                     : "N/A"}{" "}
                   - {account.type}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="pt-4" data-oid="0089h3c">
-                <p className="text-sm text-gray-500" data-oid="j4pqy.h">
+              <CardContent className="pt-4" data-oid="jsxiwjw">
+                <p className="text-sm text-gray-500" data-oid="4ylz3fx">
                   Account Number
                 </p>
-                <p className="font-mono" data-oid=".lztfzn">
+                <p className="font-mono" data-oid="jqvscnh">
                   {account.account_number
                     ? `${account.account_number.substring(0, 4)}****${account.account_number.substring(account.account_number.length - 4)}`
                     : "N/A"}
                 </p>
-                <Separator className="my-4" data-oid="v6-h-0h" />
-                <p className="text-sm text-gray-500" data-oid="0kc6za0">
+                <Separator className="my-4" data-oid=":sfx_mv" />
+                <p className="text-sm text-gray-500" data-oid="2f6e7rk">
                   Current Balance
                 </p>
-                <p className="text-2xl font-bold" data-oid=".4zp5sn">
+                <p className="text-2xl font-bold" data-oid="wgyyom1">
                   {new Intl.NumberFormat("es-MX", {
                     style: "currency",
                     currency: account.currency,
                   }).format(account.current_balance || 0)}
                 </p>
               </CardContent>
-              <CardFooter className="bg-gray-50" data-oid="z6as640">
-                <Button variant="outline" className="w-full" data-oid="ombld.8">
+              <CardFooter className="bg-gray-50" data-oid="qe6b-fb">
+                <Button variant="outline" className="w-full" data-oid=":cyh_2n">
                   View Transactions
                 </Button>
               </CardFooter>
@@ -119,8 +119,8 @@ export default function BankAccounts() {
           ))}
 
           {accounts.length === 0 && !loading && (
-            <div className="col-span-full text-center py-10" data-oid="mlwy8x0">
-              <p className="text-gray-500" data-oid="3.59wu4">
+            <div className="col-span-full text-center py-10" data-oid="bd01fcl">
+              <p className="text-gray-500" data-oid="b-tyubq">
                 No accounts found. Add your first account to get started.
               </p>
             </div>

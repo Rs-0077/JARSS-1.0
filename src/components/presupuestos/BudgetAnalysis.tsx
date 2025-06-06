@@ -9,127 +9,127 @@ import { AlertTriangle, PieChart } from "lucide-react";
 
 export const BudgetAnalysis = () => {
   return (
-    <Card className="glass-morphism" data-oid=".q6b5-u">
-      <CardHeader data-oid="w2waxyf">
-        <CardTitle data-oid="onxx2gx">Análisis de Variaciones</CardTitle>
-        <CardDescription data-oid="f09472w">
+    <Card className="glass-morphism" data-oid="8xr6-ui">
+      <CardHeader data-oid="x_gmmd_">
+        <CardTitle data-oid="c3cn:28">Análisis de Variaciones</CardTitle>
+        <CardDescription data-oid="b:4q-am">
           Identifique desviaciones y sus causas
         </CardDescription>
       </CardHeader>
-      <CardContent data-oid="ufd3t1m">
-        <div className="space-y-6" data-oid=":5npvp-">
+      <CardContent data-oid="6vnn4.g">
+        <div className="space-y-6" data-oid="v13k_50">
           <div
             className="bg-red-50/10 p-4 rounded-lg border border-red-200/20"
-            data-oid="i.ut2gr"
+            data-oid="i-.s3is"
           >
-            <div className="flex items-center" data-oid="h0.so4:">
+            <div className="flex items-center" data-oid="4eqtl4i">
               <AlertTriangle
                 className="h-5 w-5 text-red-500 mr-2"
-                data-oid=".myalyt"
+                data-oid="21j-zc:"
               />
 
-              <h3 className="font-medium text-red-700" data-oid="rhpmi9z">
+              <h3 className="font-medium text-red-700" data-oid="jr6es:y">
                 Alerta de Desviación Crítica
               </h3>
             </div>
-            <p className="text-sm text-red-600 mt-1" data-oid="lh:ga.j">
+            <p className="text-sm text-red-600 mt-1" data-oid="xrgexh2">
               El departamento de Marketing ha superado el 80% de su presupuesto
               trimestral a mitad del periodo.
             </p>
 
-            <div className="mt-3" data-oid="z5hppp-">
+            <div className="mt-3" data-oid="6uptcr2">
               <h4
                 className="text-sm font-medium text-red-700"
-                data-oid="i0_:5i0"
+                data-oid="z74f:jm"
               >
                 Análisis de Causas:
               </h4>
               <ul
                 className="list-disc list-inside text-sm text-red-600 mt-1"
-                data-oid="rq.c2i2"
+                data-oid="7r:-av_"
               >
-                <li data-oid="ag9plj_">
+                <li data-oid="crk:s7-">
                   Campaña publicitaria no planificada ($15,000)
                 </li>
-                <li data-oid="0oi9_q0">
+                <li data-oid="zf37xvm">
                   Aumento en costos de medios digitales ($5,200)
                 </li>
-                <li data-oid="dw97x83">
+                <li data-oid="sj6dvf3">
                   Contratación de agencia externa no presupuestada ($8,500)
                 </li>
               </ul>
             </div>
 
-            <div className="mt-3" data-oid="hlkkalb">
+            <div className="mt-3" data-oid="qf_oc05">
               <h4
                 className="text-sm font-medium text-red-700"
-                data-oid="hmbu:ag"
+                data-oid="k86o6a:"
               >
                 Recomendaciones:
               </h4>
               <ul
                 className="list-disc list-inside text-sm text-red-600 mt-1"
-                data-oid="o621xdn"
+                data-oid="teqd1c4"
               >
-                <li data-oid="5zlxdbq">Reducir gasto publicitario en Q3</li>
-                <li data-oid="_ly:ul5">Reasignar fondos de otras partidas</li>
-                <li data-oid="_tbq53d">Revisar contrato con agencia externa</li>
+                <li data-oid="55fpv7b">Reducir gasto publicitario en Q3</li>
+                <li data-oid="ovwd70t">Reasignar fondos de otras partidas</li>
+                <li data-oid="shh7qsz">Revisar contrato con agencia externa</li>
               </ul>
             </div>
           </div>
 
           <div
             className="bg-amber-50/10 p-4 rounded-lg border border-amber-200/20"
-            data-oid="r1h0:l4"
+            data-oid="1s5t28_"
           >
-            <div className="flex items-center" data-oid="ozcpa_q">
+            <div className="flex items-center" data-oid="3tm68px">
               <AlertTriangle
                 className="h-5 w-5 text-amber-500 mr-2"
-                data-oid="djkk2kv"
+                data-oid="d3s32ym"
               />
 
-              <h3 className="font-medium text-amber-700" data-oid="xnd..b2">
+              <h3 className="font-medium text-amber-700" data-oid="a26mex.">
                 Alerta de Desviación Moderada
               </h3>
             </div>
-            <p className="text-sm text-amber-600 mt-1" data-oid="lhfdlyz">
+            <p className="text-sm text-amber-600 mt-1" data-oid="83g1v20">
               El proyecto de desarrollo de software está ligeramente por encima
               del presupuesto proyectado.
             </p>
 
-            <div className="mt-3" data-oid="z4t-c3z">
+            <div className="mt-3" data-oid="i3ofc9m">
               <h4
                 className="text-sm font-medium text-amber-700"
-                data-oid="k0xo_19"
+                data-oid=":xx_a8p"
               >
                 Análisis de Causas:
               </h4>
               <ul
                 className="list-disc list-inside text-sm text-amber-600 mt-1"
-                data-oid="2cqdubf"
+                data-oid="q8482pz"
               >
-                <li data-oid="hzihdh8">
+                <li data-oid="01ba09:">
                   Retrasos en entregas (aumento de horas de desarrollo)
                 </li>
-                <li data-oid="u0i0x32">
+                <li data-oid="9.09a6g">
                   Cambios en requerimientos no contemplados
                 </li>
               </ul>
             </div>
 
-            <div className="mt-3" data-oid="l2o2bb.">
+            <div className="mt-3" data-oid="ug-sxda">
               <h4
                 className="text-sm font-medium text-amber-700"
-                data-oid="sfrl7uc"
+                data-oid="h569u6b"
               >
                 Recomendaciones:
               </h4>
               <ul
                 className="list-disc list-inside text-sm text-amber-600 mt-1"
-                data-oid="_9s9l43"
+                data-oid="4254t.0"
               >
-                <li data-oid="pf7fzpm">Revisar cronograma y ajustar plazos</li>
-                <li data-oid="we::w7l">
+                <li data-oid="dpxb2:d">Revisar cronograma y ajustar plazos</li>
+                <li data-oid="d566i30">
                   Implementar control de cambios más estricto
                 </li>
               </ul>
@@ -138,58 +138,58 @@ export const BudgetAnalysis = () => {
 
           <div
             className="bg-green-50/10 p-4 rounded-lg border border-green-200/20"
-            data-oid="96-l1z6"
+            data-oid="dgv9w.u"
           >
-            <div className="flex items-center" data-oid="fio24ps">
+            <div className="flex items-center" data-oid="twz4kn8">
               <PieChart
                 className="h-5 w-5 text-green-500 mr-2"
-                data-oid="irnb37f"
+                data-oid="7j3q_z_"
               />
 
-              <h3 className="font-medium text-green-700" data-oid="jt9haqm">
+              <h3 className="font-medium text-green-700" data-oid="67b7kxu">
                 Optimización Identificada
               </h3>
             </div>
-            <p className="text-sm text-green-600 mt-1" data-oid="yv81om7">
+            <p className="text-sm text-green-600 mt-1" data-oid="vxedqo7">
               El departamento de Administración está significativamente por
               debajo del presupuesto proyectado.
             </p>
 
-            <div className="mt-3" data-oid="zmucd7y">
+            <div className="mt-3" data-oid="wjzhq:c">
               <h4
                 className="text-sm font-medium text-green-700"
-                data-oid="n5:ucai"
+                data-oid="5:1m5g."
               >
                 Análisis de Causas:
               </h4>
               <ul
                 className="list-disc list-inside text-sm text-green-600 mt-1"
-                data-oid="t:t6ca-"
+                data-oid="ot0c4.l"
               >
-                <li data-oid="s3uvv0f">
+                <li data-oid="aj2p6i3">
                   Digitalización de procesos ha reducido costos operativos
                 </li>
-                <li data-oid="u8h5lm2">
+                <li data-oid="u1:7_g1">
                   Renegociación de contratos con proveedores
                 </li>
               </ul>
             </div>
 
-            <div className="mt-3" data-oid="5-o8esn">
+            <div className="mt-3" data-oid="nj6fket">
               <h4
                 className="text-sm font-medium text-green-700"
-                data-oid="sz5rzu3"
+                data-oid="2qo1xn5"
               >
                 Recomendaciones:
               </h4>
               <ul
                 className="list-disc list-inside text-sm text-green-600 mt-1"
-                data-oid="287w-1p"
+                data-oid=".kfjbgi"
               >
-                <li data-oid="dp37v:l">
+                <li data-oid="e.f:r95">
                   Reasignar fondos a departamentos con necesidades
                 </li>
-                <li data-oid="p8p6t08">
+                <li data-oid=":yhdiov">
                   Documentar prácticas eficientes para replicar en otros
                   departamentos
                 </li>

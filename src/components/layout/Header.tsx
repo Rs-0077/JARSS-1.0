@@ -114,12 +114,12 @@ export function Header() {
   return (
     <header
       className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-border bg-background/80 px-4 md:px-6 backdrop-blur-sm transition-all duration-300"
-      data-oid="aeu7wd:"
+      data-oid="gn1oc28"
     >
-      <div className="flex items-center gap-2 lg:hidden" data-oid="n8rj98y">
+      <div className="flex items-center gap-2 lg:hidden" data-oid="ib1xegk">
         <span
           className="text-xl font-bold text-contable-primary"
-          data-oid="8wun0oj"
+          data-oid="q7wg77e"
         >
           JARSS
         </span>
@@ -127,25 +127,25 @@ export function Header() {
 
       <div
         className="hidden md:flex md:flex-1 md:items-center md:gap-4 lg:gap-8"
-        data-oid="m:.7v_w"
+        data-oid="sl6dg-q"
       >
-        <div className="relative flex-1 max-w-md" data-oid="cuj08fc">
+        <div className="relative flex-1 max-w-md" data-oid="6mzob8n">
           <Search
             className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500"
-            data-oid="8hsp7gp"
+            data-oid="_k5-bht"
           />
 
           <input
             type="search"
             placeholder="Buscar transacciones, contactos..."
             className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 pl-8 pr-4 py-2 text-sm outline-none focus:border-contable-primary"
-            data-oid="c9l-:za"
+            data-oid="wpyq.8a"
           />
         </div>
       </div>
 
-      <div className="flex items-center gap-4" data-oid="i9nkcsx">
-        <ThemeToggle data-oid="3s0.zt_" />
+      <div className="flex items-center gap-4" data-oid="u148i_o">
+        <ThemeToggle data-oid="me4pe7z" />
 
         {/* Centro de notificaciones */}
         <NotificationCenter
@@ -154,7 +154,7 @@ export function Header() {
           onMarkAllAsRead={handleMarkAllAsRead}
           onDismiss={handleDismiss}
           onClearAll={handleClearAll}
-          data-oid="kmeoo8l"
+          data-oid="ie:sxig"
         />
 
         {/* Botón de ayuda */}
@@ -180,48 +180,48 @@ export function Header() {
               JSON.stringify([helpNotification, ...notifications]),
             );
           }}
-          data-oid="nbar8y0"
+          data-oid="9:nq6ur"
         >
-          <HelpCircle className="h-5 w-5" data-oid="4qnf2h9" />
+          <HelpCircle className="h-5 w-5" data-oid="g5ee-4z" />
         </Button>
 
         {/* Menú de usuario */}
-        <DropdownMenu data-oid="qfo-an:">
-          <DropdownMenuTrigger asChild data-oid="-._wam2">
+        <DropdownMenu data-oid="dscqmbk">
+          <DropdownMenuTrigger asChild data-oid=".k1a3o.">
             <Button
               variant="ghost"
               size="icon"
               className="rounded-full h-9 w-9 gradient-primary text-white hover:brightness-110 transition-all duration-300"
-              data-oid="zpyjvm0"
+              data-oid="9h6kw4_"
             >
-              <User className="h-5 w-5" data-oid="ikyzwqq" />
+              <User className="h-5 w-5" data-oid="c1ko9uz" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent
             align="end"
             className="w-56 bg-card text-card-foreground border border-border animate-scale-in"
-            data-oid="vstfuyc"
+            data-oid="5lr:xd."
           >
-            <DropdownMenuLabel data-oid="scwzd0p">Mi cuenta</DropdownMenuLabel>
-            <DropdownMenuSeparator data-oid="u.xgeu4" />
+            <DropdownMenuLabel data-oid="99q7kad">Mi cuenta</DropdownMenuLabel>
+            <DropdownMenuSeparator data-oid="3cuk6ld" />
             <DropdownMenuItem
               className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
-              data-oid="0o7aan0"
+              data-oid=".6cpc:y"
             >
               Perfil
             </DropdownMenuItem>
             <DropdownMenuItem
               className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
               onClick={() => setPreferencesOpen(true)}
-              data-oid="_391y2a"
+              data-oid="vdw66qa"
             >
-              <Settings className="h-4 w-4 mr-2" data-oid="wlfrrpv" />
+              <Settings className="h-4 w-4 mr-2" data-oid="8ypv270" />
               Preferencias
             </DropdownMenuItem>
-            <DropdownMenuSeparator data-oid="bt6dn-a" />
+            <DropdownMenuSeparator data-oid="ug0v_rz" />
             <DropdownMenuItem
               className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
-              data-oid="1aa:a3."
+              data-oid="_iiiinu"
             >
               Cerrar sesión
             </DropdownMenuItem>
@@ -233,11 +233,11 @@ export function Header() {
       <Dialog
         open={preferencesOpen}
         onOpenChange={setPreferencesOpen}
-        data-oid="c5zo-jg"
+        data-oid="59.sm5q"
       >
-        <DialogContent className="sm:max-w-[600px]" data-oid="gap89zv">
-          <DialogHeader data-oid="w082n_z">
-            <DialogTitle data-oid=":fc2ofp">
+        <DialogContent className="sm:max-w-[600px]" data-oid="pxquayl">
+          <DialogHeader data-oid="w_sq98l">
+            <DialogTitle data-oid="snvw-4w">
               Preferencias de usuario
             </DialogTitle>
           </DialogHeader>
@@ -260,7 +260,7 @@ export function Header() {
                 JSON.stringify([prefsNotification, ...notifications]),
               );
             }}
-            data-oid="lp-j4hn"
+            data-oid="t-qaz2q"
           />
         </DialogContent>
       </Dialog>

@@ -65,30 +65,30 @@ export function RecentTransactions() {
     <Card
       className="col-span-3 dashboard-card animate-slide-up"
       style={{ animationDelay: "100ms" }}
-      data-oid="a7wcn15"
+      data-oid="ur7hciu"
     >
-      <CardHeader data-oid="x:vs7ac">
-        <CardTitle className="text-xl" data-oid="333g9vo">
+      <CardHeader data-oid=":awpya:">
+        <CardTitle className="text-xl" data-oid="_7um2a0">
           Transacciones Recientes
         </CardTitle>
-        <CardDescription data-oid="x_j4:9.">
+        <CardDescription data-oid="awtnsoq">
           Últimas operaciones financieras registradas
         </CardDescription>
       </CardHeader>
-      <CardContent data-oid="3l3mkm_">
-        <div className="rounded-md overflow-hidden" data-oid="39-678k">
-          <Table data-oid="79xxetb">
-            <TableHeader className="bg-muted/50" data-oid="g4uu_qh">
-              <TableRow data-oid="zio93bf">
-                <TableHead data-oid="6rr38-e">Descripción</TableHead>
-                <TableHead data-oid="cev69ly">Fecha</TableHead>
-                <TableHead data-oid=".ndzt.o">Categoría</TableHead>
-                <TableHead className="text-right" data-oid="75cdow6">
+      <CardContent data-oid="uscmo2d">
+        <div className="rounded-md overflow-hidden" data-oid="gw7k6uk">
+          <Table data-oid="1t_l3ml">
+            <TableHeader className="bg-muted/50" data-oid="92xni:2">
+              <TableRow data-oid="xcz_r.i">
+                <TableHead data-oid=":a359__">Descripción</TableHead>
+                <TableHead data-oid="z:f4mc9">Fecha</TableHead>
+                <TableHead data-oid="x5psmf5">Categoría</TableHead>
+                <TableHead className="text-right" data-oid="7dbds9i">
                   Monto
                 </TableHead>
               </TableRow>
             </TableHeader>
-            <TableBody data-oid="5yaigun">
+            <TableBody data-oid="6ojkyv4">
               {transactions.map((transaction, index) => (
                 <TableRow
                   key={transaction.id}
@@ -98,13 +98,13 @@ export function RecentTransactions() {
                     animation: "fade-in 0.5s ease-out forwards",
                     opacity: 0,
                   }}
-                  data-oid="ktm00-w"
+                  data-oid="emax11c"
                 >
-                  <TableCell className="font-medium" data-oid="9wiehzq">
+                  <TableCell className="font-medium" data-oid="_390b8x">
                     {transaction.description}
                   </TableCell>
-                  <TableCell data-oid="0:qgn_n">{transaction.date}</TableCell>
-                  <TableCell data-oid="arw.c_0">
+                  <TableCell data-oid="o-lgm1x">{transaction.date}</TableCell>
+                  <TableCell data-oid="gq6mvs-">
                     <span
                       className={cn(
                         "px-2 py-1 rounded-full text-xs transition-all duration-200",
@@ -112,27 +112,27 @@ export function RecentTransactions() {
                           ? "bg-contable-danger/10 text-contable-danger"
                           : "bg-contable-success/10 text-contable-success",
                       )}
-                      data-oid=".tc17-k"
+                      data-oid="4zyek_0"
                     >
                       {transaction.category}
                     </span>
                   </TableCell>
-                  <TableCell className="text-right" data-oid="u2ogydj">
+                  <TableCell className="text-right" data-oid="p9aboyr">
                     <div
                       className="flex items-center justify-end"
-                      data-oid="am_.foo"
+                      data-oid="2sy21x_"
                     >
                       {transaction.amount < 0 ? (
                         <ArrowDownLeft
                           className="mr-1 h-4 w-4 text-contable-danger animate-bounce-light"
                           style={{ animationDelay: `${index * 100}ms` }}
-                          data-oid="fynxfqu"
+                          data-oid="pnw9.x5"
                         />
                       ) : (
                         <ArrowUpRight
                           className="mr-1 h-4 w-4 text-contable-success animate-bounce-light"
                           style={{ animationDelay: `${index * 100}ms` }}
-                          data-oid="ltfwl9-"
+                          data-oid="h7b.s8u"
                         />
                       )}
                       <span
@@ -140,7 +140,7 @@ export function RecentTransactions() {
                           "text-contable-danger": transaction.amount < 0,
                           "text-contable-success": transaction.amount > 0,
                         })}
-                        data-oid="rwm9:ed"
+                        data-oid="j0psslj"
                       >
                         ${Math.abs(transaction.amount).toLocaleString("es-MX")}
                       </span>

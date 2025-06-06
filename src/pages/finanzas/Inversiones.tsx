@@ -16,25 +16,25 @@ const Inversiones = () => {
   };
 
   return (
-    <MainLayout data-oid="wy2kub3">
-      <div className="space-y-4" data-oid="q9l9j20">
-        <div className="flex items-center justify-between" data-oid="y3kycl9">
-          <h1 className="text-2xl font-bold" data-oid="wj8nht4">
+    <MainLayout data-oid="ywjli4x">
+      <div className="space-y-4" data-oid="6tebh.i">
+        <div className="flex items-center justify-between" data-oid="f7bnm8t">
+          <h1 className="text-2xl font-bold" data-oid="d5-chgz">
             Gestión de Inversiones
           </h1>
-          <Button className="gap-1" data-oid="7v35ei6">
-            <Plus className="h-4 w-4" data-oid="eie3wq8" />
-            <span data-oid="q9v_p:3">Nueva Inversión</span>
+          <Button className="gap-1" data-oid="ezvp3zh">
+            <Plus className="h-4 w-4" data-oid="tijx_el" />
+            <span data-oid="9a1mu52">Nueva Inversión</span>
           </Button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4" data-oid="09y.0vk">
+        <div className="grid md:grid-cols-2 gap-4" data-oid="8.c_mxo">
           <InvestmentForm
             onInvestmentAdded={handleInvestmentAdded}
-            data-oid="114ckap"
+            data-oid="_iyvug3"
           />
 
-          <InvestmentList refreshTrigger={refreshCounter} data-oid="bokteo3" />
+          <InvestmentList refreshTrigger={refreshCounter} data-oid="p:_-c89" />
         </div>
       </div>
     </MainLayout>

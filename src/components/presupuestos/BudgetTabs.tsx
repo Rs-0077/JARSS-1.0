@@ -5,29 +5,29 @@ import { BudgetAnalysis } from "./BudgetAnalysis";
 
 export const BudgetTabs = () => {
   return (
-    <Tabs defaultValue="seguimiento" data-oid="-ve-vw_">
-      <TabsList className="grid w-full grid-cols-3 max-w-md" data-oid="vls-bd5">
-        <TabsTrigger value="seguimiento" data-oid="q5fjxzs">
+    <Tabs defaultValue="seguimiento" data-oid="r0y-22z">
+      <TabsList className="grid w-full grid-cols-3 max-w-md" data-oid="z24b6..">
+        <TabsTrigger value="seguimiento" data-oid="84rrxtj">
           Seguimiento
         </TabsTrigger>
-        <TabsTrigger value="creacion" data-oid="luuzbti">
+        <TabsTrigger value="creacion" data-oid="2jedz0t">
           Creación
         </TabsTrigger>
-        <TabsTrigger value="analisis" data-oid="3hgjv1h">
+        <TabsTrigger value="analisis" data-oid="yqt5i.p">
           Análisis
         </TabsTrigger>
       </TabsList>
 
-      <TabsContent value="seguimiento" data-oid="l6gcex:">
-        <BudgetCalendar data-oid="eg6v_k3" />
+      <TabsContent value="seguimiento" data-oid="2-.ylf:">
+        <BudgetCalendar data-oid="fnlmqp3" />
       </TabsContent>
 
-      <TabsContent value="creacion" data-oid="hxyq5:.">
-        <BudgetForm data-oid="ujnh2z4" />
+      <TabsContent value="creacion" data-oid="1tdi0eq">
+        <BudgetForm data-oid="-.k49os" />
       </TabsContent>
 
-      <TabsContent value="analisis" data-oid="g-10cun">
-        <BudgetAnalysis data-oid="r8a0hlp" />
+      <TabsContent value="analisis" data-oid="0frje80">
+        <BudgetAnalysis data-oid="qutpj-6" />
       </TabsContent>
     </Tabs>
   );

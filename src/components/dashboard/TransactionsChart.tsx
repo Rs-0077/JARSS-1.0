@@ -29,19 +29,19 @@ export function TransactionsChart() {
   return (
     <Card
       className="col-span-3 dashboard-card animate-slide-up"
-      data-oid="387.yt9"
+      data-oid="gcj_-3-"
     >
-      <CardHeader data-oid="l8jxp-u">
-        <CardTitle className="text-xl" data-oid="tflo403">
+      <CardHeader data-oid="m.-6vn8">
+        <CardTitle className="text-xl" data-oid="y0dkuz:">
           Visión general financiera
         </CardTitle>
-        <CardDescription data-oid=".32hwzr">
+        <CardDescription data-oid="4oq-a_6">
           Ingresos vs. Gastos en los últimos 6 meses
         </CardDescription>
       </CardHeader>
-      <CardContent data-oid="gnlvusf">
-        <div className="h-[300px]" data-oid="mz0xvly">
-          <ResponsiveContainer width="100%" height="100%" data-oid="3h2f:hw">
+      <CardContent data-oid="xk2zdq6">
+        <div className="h-[300px]" data-oid="5.3gh:l">
+          <ResponsiveContainer width="100%" height="100%" data-oid="hlulu6m">
             <AreaChart
               data={data}
               margin={{
@@ -50,29 +50,29 @@ export function TransactionsChart() {
                 left: 0,
                 bottom: 0,
               }}
-              data-oid="rylziva"
+              data-oid="gedsm7v"
             >
-              <defs data-oid="g:mxuu2">
+              <defs data-oid="-o:9cmc">
                 <linearGradient
                   id="colorIngresos"
                   x1="0"
                   y1="0"
                   x2="0"
                   y2="1"
-                  data-oid="xcrbcxv"
+                  data-oid="2897qmi"
                 >
                   <stop
                     offset="5%"
                     stopColor="#059669"
                     stopOpacity={0.8}
-                    data-oid=":fjttkc"
+                    data-oid="kbi5xnl"
                   />
 
                   <stop
                     offset="95%"
                     stopColor="#059669"
                     stopOpacity={0.1}
-                    data-oid="-9.fs55"
+                    data-oid="xksxg7e"
                   />
                 </linearGradient>
                 <linearGradient
@@ -81,27 +81,27 @@ export function TransactionsChart() {
                   y1="0"
                   x2="0"
                   y2="1"
-                  data-oid="sq-s7sb"
+                  data-oid="wuqtf5t"
                 >
                   <stop
                     offset="5%"
                     stopColor="#E63946"
                     stopOpacity={0.8}
-                    data-oid="2jx950i"
+                    data-oid="u6j-ubm"
                   />
 
                   <stop
                     offset="95%"
                     stopColor="#E63946"
                     stopOpacity={0.1}
-                    data-oid="aj.vfee"
+                    data-oid="fgf4z57"
                   />
                 </linearGradient>
               </defs>
               <CartesianGrid
                 strokeDasharray="3 3"
                 stroke="var(--border)"
-                data-oid="7b-htz1"
+                data-oid="zhbrt2x"
               />
 
               <XAxis
@@ -110,7 +110,7 @@ export function TransactionsChart() {
                 fontSize={12}
                 tickLine={false}
                 axisLine={{ stroke: "var(--border)" }}
-                data-oid="l46rot."
+                data-oid="fz2tf:e"
               />
 
               <YAxis
@@ -119,7 +119,7 @@ export function TransactionsChart() {
                 tickLine={false}
                 axisLine={{ stroke: "var(--border)" }}
                 tickFormatter={(value) => `$${value}`}
-                data-oid="b.o782t"
+                data-oid="kydm.hh"
               />
 
               <Tooltip
@@ -137,7 +137,7 @@ export function TransactionsChart() {
                   strokeWidth: 1,
                   strokeDasharray: "5 5",
                 }}
-                data-oid="n4qh8af"
+                data-oid="1zvcmie"
               />
 
               <Area
@@ -155,7 +155,7 @@ export function TransactionsChart() {
                 }}
                 animationDuration={1500}
                 animationEasing="ease-out"
-                data-oid="2m.skoj"
+                data-oid=".9yg1.:"
               />
 
               <Area
@@ -173,7 +173,7 @@ export function TransactionsChart() {
                 }}
                 animationDuration={1500}
                 animationEasing="ease-out"
-                data-oid="f4y5k.z"
+                data-oid="whr2c4e"
               />
             </AreaChart>
           </ResponsiveContainer>

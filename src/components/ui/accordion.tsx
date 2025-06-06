@@ -14,7 +14,7 @@ const AccordionItem = React.forwardRef<
     ref={ref}
     className={cn("border-b", className)}
     {...props}
-    data-oid="px:8len"
+    data-oid="x35snad"
   />
 ));
 AccordionItem.displayName = "AccordionItem";
@@ -23,7 +23,7 @@ const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex" data-oid="czfiu87">
+  <AccordionPrimitive.Header className="flex" data-oid="5.e:qz4">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
@@ -31,12 +31,12 @@ const AccordionTrigger = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="t.:_bm0"
+      data-oid="hi3cv79"
     >
       {children}
       <ChevronDown
         className="h-4 w-4 shrink-0 transition-transform duration-200"
-        data-oid="if3ar_n"
+        data-oid="jyownjd"
       />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
@@ -51,9 +51,9 @@ const AccordionContent = React.forwardRef<
     ref={ref}
     className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
-    data-oid="wl1qeh_"
+    data-oid="xrw9vxs"
   >
-    <div className={cn("pb-4 pt-0", className)} data-oid="grwgxti">
+    <div className={cn("pb-4 pt-0", className)} data-oid="95mgag:">
       {children}
     </div>
   </AccordionPrimitive.Content>

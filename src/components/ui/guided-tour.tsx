@@ -176,7 +176,7 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
       <div
         className="fixed inset-0 bg-black/50 z-50"
         onClick={handleSkip}
-        data-oid="timwcn2"
+        data-oid="k-8h5wx"
       />
 
       {/* Tooltip */}
@@ -186,61 +186,61 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
           top: `${tooltipPosition.top}px`,
           left: `${tooltipPosition.left}px`,
         }}
-        data-oid="karg-yf"
+        data-oid="lfykypx"
       >
         <div
           className="flex justify-between items-center mb-2"
-          data-oid="y7kqbx8"
+          data-oid="f:revlr"
         >
-          <h3 className="font-medium text-lg" data-oid="lua4fb9">
+          <h3 className="font-medium text-lg" data-oid="kgb_z:5">
             {currentTourStep.title}
           </h3>
           <Button
             variant="ghost"
             size="icon"
             onClick={handleSkip}
-            data-oid="tyqzrke"
+            data-oid="1r1_3yf"
           >
-            <X className="h-4 w-4" data-oid="qye:nsl" />
-            <span className="sr-only" data-oid="hrbh0a3">
+            <X className="h-4 w-4" data-oid="6y46s0b" />
+            <span className="sr-only" data-oid="16t44z-">
               Cerrar
             </span>
           </Button>
         </div>
 
-        <div className="text-sm text-muted-foreground mb-4" data-oid="w.5l15v">
+        <div className="text-sm text-muted-foreground mb-4" data-oid="8yungdg">
           {currentTourStep.content}
         </div>
 
-        <div className="flex items-center justify-between" data-oid="uioloa7">
-          <div className="flex items-center space-x-2" data-oid="uxphc4m">
+        <div className="flex items-center justify-between" data-oid=":z:.nq6">
+          <div className="flex items-center space-x-2" data-oid="z:jw07r">
             <Checkbox
               id="dont-show-again"
               checked={dontShowAgain}
               onCheckedChange={(checked) =>
                 setDontShowAgain(checked as boolean)
               }
-              data-oid="d.q-f-i"
+              data-oid="qwzk.oc"
             />
 
             <label
               htmlFor="dont-show-again"
               className="text-xs text-muted-foreground cursor-pointer"
-              data-oid="dw9:n._"
+              data-oid="k7bq3t2"
             >
               No mostrar de nuevo
             </label>
           </div>
 
-          <div className="flex space-x-2" data-oid="kt_1z:c">
+          <div className="flex space-x-2" data-oid="4rsl.u:">
             {currentStep > 0 && (
               <Button
                 variant="outline"
                 size="sm"
                 onClick={handlePrevious}
-                data-oid="m7hah32"
+                data-oid="amlx7-q"
               >
-                <ChevronLeft className="h-4 w-4 mr-1" data-oid="h14:1al" />
+                <ChevronLeft className="h-4 w-4 mr-1" data-oid="b5al7zi" />
                 Anterior
               </Button>
             )}
@@ -249,12 +249,12 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
               variant="default"
               size="sm"
               onClick={handleNext}
-              data-oid="ukkapy."
+              data-oid="a0-jhos"
             >
               {currentStep < steps.length - 1 ? (
                 <>
                   Siguiente
-                  <ChevronRight className="h-4 w-4 ml-1" data-oid="l-.jk01" />
+                  <ChevronRight className="h-4 w-4 ml-1" data-oid="ybzxi-q" />
                 </>
               ) : (
                 "Finalizar"
@@ -263,8 +263,8 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
           </div>
         </div>
 
-        <div className="mt-3 flex justify-center" data-oid="bzx3:7r">
-          <div className="flex space-x-1" data-oid="s2sl1.l">
+        <div className="mt-3 flex justify-center" data-oid="84.1pc8">
+          <div className="flex space-x-1" data-oid="d4g.ua9">
             {steps.map((_, index) => (
               <div
                 key={index}
@@ -272,7 +272,7 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
                   "h-1.5 rounded-full transition-all duration-300",
                   index === currentStep ? "w-6 bg-primary" : "w-1.5 bg-muted",
                 )}
-                data-oid="q117ok1"
+                data-oid="32_w_gq"
               />
             ))}
           </div>
@@ -280,7 +280,7 @@ export function GuidedTour({ steps, onComplete, onSkip }: GuidedTourProps) {
       </div>
 
       {/* Add global styles for the tour highlight */}
-      <style jsx global data-oid="chty9qi">{`
+      <style jsx global data-oid="l2yb58b">{`
         .tour-highlight {
           position: relative;
           z-index: 55;

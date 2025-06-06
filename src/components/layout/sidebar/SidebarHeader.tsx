@@ -9,18 +9,18 @@ export function SidebarHeader({ isIconOnly }: SidebarHeaderProps) {
   return (
     <div
       className="border-b border-sidebar-border h-16 flex items-center"
-      data-oid="w89l_zb"
+      data-oid="dtfe8qr"
     >
-      <div className="flex items-center" data-oid="8-xp08w">
+      <div className="flex items-center" data-oid="vv89c:.">
         {/* Logo (siempre visible y estático) */}
         <div
           className="flex items-center justify-center w-16 h-16"
-          data-oid="dq80oi5"
+          data-oid="58c0puk"
         >
           <JarssLogo
             size={40}
             className="text-sidebar-primary"
-            data-oid="u5n:iex"
+            data-oid="16_z51t"
           />
         </div>
 
@@ -33,17 +33,17 @@ export function SidebarHeader({ isIconOnly }: SidebarHeaderProps) {
               overflow: "hidden",
               whiteSpace: "nowrap",
             }}
-            data-oid="kicy9pu"
+            data-oid="n30_x0-"
           >
             <h1
               className="text-xl font-bold text-sidebar-primary"
-              data-oid="nxam5ej"
+              data-oid="q1noggi"
             >
               JARSS
             </h1>
             <p
               className="text-xs text-sidebar-foreground/70"
-              data-oid="z3683_5"
+              data-oid="w1_1get"
             >
               Inventory
             </p>

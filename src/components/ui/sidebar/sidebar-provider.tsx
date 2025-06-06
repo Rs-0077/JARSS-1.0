@@ -101,8 +101,8 @@ export const SidebarProvider = React.forwardRef<
     );
 
     return (
-      <sidebarContext.Provider value={contextValue} data-oid="0we9r-k">
-        <TooltipProvider delayDuration={0} data-oid="t6u.c8y">
+      <sidebarContext.Provider value={contextValue} data-oid="mvo:wv:">
+        <TooltipProvider delayDuration={0} data-oid="071_jq1">
           <div
             style={
               {
@@ -117,7 +117,7 @@ export const SidebarProvider = React.forwardRef<
             )}
             ref={ref}
             {...props}
-            data-oid="8ejuu7b"
+            data-oid="3u5rnvn"
           >
             {children}
           </div>

@@ -34,9 +34,9 @@ export function Spinner({
         className,
       )}
       role="status"
-      data-oid="10gjtj4"
+      data-oid="h9cixwc"
     >
-      <span className="sr-only" data-oid="2bwy5y7">
+      <span className="sr-only" data-oid="l.ych48">
         Cargando...
       </span>
     </div>

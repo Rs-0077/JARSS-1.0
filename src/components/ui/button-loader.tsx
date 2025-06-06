@@ -22,21 +22,21 @@ export function ButtonLoader({
       className={cn("relative", className)}
       disabled={disabled || isLoading}
       {...props}
-      data-oid="gt20qhb"
+      data-oid="_8.l:1:"
     >
       {isLoading && (
         <span
           className="absolute inset-0 flex items-center justify-center bg-inherit rounded-md"
-          data-oid="e.t46t7"
+          data-oid="4vcbz1s"
         >
           <Spinner
             size="sm"
             color={props.variant === "default" ? "white" : "primary"}
-            data-oid="d4fs7yp"
+            data-oid="5udg3s3"
           />
 
           {loadingText && (
-            <span className="ml-2" data-oid="pzcnf:n">
+            <span className="ml-2" data-oid="qjo2s52">
               {loadingText}
             </span>
           )}
@@ -44,7 +44,7 @@ export function ButtonLoader({
       )}
       <span
         className={cn(isLoading ? "invisible" : "visible")}
-        data-oid="czw_b5v"
+        data-oid="r_q6kia"
       >
         {children}
       </span>

@@ -25,7 +25,7 @@ const Menubar = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="_s:3li5"
+    data-oid="y2h0ypd"
   />
 ));
 Menubar.displayName = MenubarPrimitive.Root.displayName;
@@ -41,7 +41,7 @@ const MenubarTrigger = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="qot.sah"
+    data-oid="k4j2sxk"
   />
 ));
 MenubarTrigger.displayName = MenubarPrimitive.Trigger.displayName;
@@ -60,10 +60,10 @@ const MenubarSubTrigger = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="f64b.ly"
+    data-oid="kfscnt3"
   >
     {children}
-    <ChevronRight className="ml-auto h-4 w-4" data-oid=":mez69c" />
+    <ChevronRight className="ml-auto h-4 w-4" data-oid="3e7i6bu" />
   </MenubarPrimitive.SubTrigger>
 ));
 MenubarSubTrigger.displayName = MenubarPrimitive.SubTrigger.displayName;
@@ -79,7 +79,7 @@ const MenubarSubContent = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="n482whv"
+    data-oid="z.2q8k2"
   />
 ));
 MenubarSubContent.displayName = MenubarPrimitive.SubContent.displayName;
@@ -92,7 +92,7 @@ const MenubarContent = React.forwardRef<
     { className, align = "start", alignOffset = -4, sideOffset = 8, ...props },
     ref,
   ) => (
-    <MenubarPrimitive.Portal data-oid="9jixo58">
+    <MenubarPrimitive.Portal data-oid="_1rkm-w">
       <MenubarPrimitive.Content
         ref={ref}
         align={align}
@@ -103,7 +103,7 @@ const MenubarContent = React.forwardRef<
           className,
         )}
         {...props}
-        data-oid="qzcnt5k"
+        data-oid="ivba9dq"
       />
     </MenubarPrimitive.Portal>
   ),
@@ -124,7 +124,7 @@ const MenubarItem = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="bjshxwq"
+    data-oid="0nxrw5q"
   />
 ));
 MenubarItem.displayName = MenubarPrimitive.Item.displayName;
@@ -141,14 +141,14 @@ const MenubarCheckboxItem = React.forwardRef<
     )}
     checked={checked}
     {...props}
-    data-oid="qxx0goa"
+    data-oid="gj00pw_"
   >
     <span
       className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center"
-      data-oid="k3i2tc:"
+      data-oid="_8:fd0r"
     >
-      <MenubarPrimitive.ItemIndicator data-oid="7-q-l.j">
-        <Check className="h-4 w-4" data-oid="8:kb388" />
+      <MenubarPrimitive.ItemIndicator data-oid="9rtx9r1">
+        <Check className="h-4 w-4" data-oid="d325vf4" />
       </MenubarPrimitive.ItemIndicator>
     </span>
     {children}
@@ -167,14 +167,14 @@ const MenubarRadioItem = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="xj36ogu"
+    data-oid="xmqyyrj"
   >
     <span
       className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center"
-      data-oid="te3brfx"
+      data-oid="n7ibj06"
     >
-      <MenubarPrimitive.ItemIndicator data-oid="-vnyw9v">
-        <Circle className="h-2 w-2 fill-current" data-oid="utyc2hl" />
+      <MenubarPrimitive.ItemIndicator data-oid="a95mz2t">
+        <Circle className="h-2 w-2 fill-current" data-oid="uuufurn" />
       </MenubarPrimitive.ItemIndicator>
     </span>
     {children}
@@ -196,7 +196,7 @@ const MenubarLabel = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="7hr4j3_"
+    data-oid="8_alrox"
   />
 ));
 MenubarLabel.displayName = MenubarPrimitive.Label.displayName;
@@ -209,7 +209,7 @@ const MenubarSeparator = React.forwardRef<
     ref={ref}
     className={cn("-mx-1 my-1 h-px bg-muted", className)}
     {...props}
-    data-oid="1q8xm7e"
+    data-oid="oehctz6"
   />
 ));
 MenubarSeparator.displayName = MenubarPrimitive.Separator.displayName;
@@ -225,7 +225,7 @@ const MenubarShortcut = ({
         className,
       )}
       {...props}
-      data-oid="1dw526."
+      data-oid=".7mb5qo"
     />
   );
 };

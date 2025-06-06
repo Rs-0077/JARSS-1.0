@@ -90,7 +90,7 @@ export function Sidebar() {
       <SidebarToggle
         isOpen={isOpen}
         toggleSidebar={toggleSidebar}
-        data-oid="e7bwtvp"
+        data-oid="ap7d.1_"
       />
 
       <div
@@ -101,17 +101,17 @@ export function Sidebar() {
         )}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        data-oid="z730fho"
+        data-oid="5ry7se9"
       >
-        <div className="flex flex-col h-full" data-oid="zkeufds">
-          <SidebarHeader isIconOnly={isIconOnly} data-oid="3q9qp8." />
+        <div className="flex flex-col h-full" data-oid="aw5o3qi">
+          <SidebarHeader isIconOnly={isIconOnly} data-oid="qb7gjfy" />
 
           <nav
             className="flex-1 px-3 py-4 space-y-2 overflow-y-auto"
-            data-oid="yhl6u9u"
+            data-oid="knnk2k-"
           >
             {sidebarLinks.map((link) => (
-              <div key={link.name} className="mb-2" data-oid="7cul0uo">
+              <div key={link.name} className="mb-2" data-oid="z8i5_n3">
                 {link.submenu ? (
                   <SidebarSubmenu
                     name={link.name}
@@ -122,7 +122,7 @@ export function Sidebar() {
                     isIconOnly={isIconOnly}
                     currentPath={location.pathname}
                     onToggle={toggleSubmenu}
-                    data-oid=":zghrn1"
+                    data-oid="xlum:n-"
                   />
                 ) : (
                   <SidebarLink
@@ -131,14 +131,14 @@ export function Sidebar() {
                     href={link.href}
                     isActive={location.pathname === link.href}
                     isIconOnly={isIconOnly}
-                    data-oid=":-1i_hl"
+                    data-oid="5m5l1fn"
                   />
                 )}
               </div>
             ))}
           </nav>
 
-          <SidebarProfile isIconOnly={isIconOnly} data-oid="wjqji42" />
+          <SidebarProfile isIconOnly={isIconOnly} data-oid="2dcvoek" />
         </div>
       </div>
     </>

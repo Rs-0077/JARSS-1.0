@@ -14,12 +14,12 @@ export function Header() {
   return (
     <header
       className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-border bg-background px-4 md:px-6 backdrop-blur-sm transition-all duration-300"
-      data-oid="nv-ghdv"
+      data-oid="91djklt"
     >
-      <div className="flex items-center gap-2 lg:hidden" data-oid="vsc7k0b">
+      <div className="flex items-center gap-2 lg:hidden" data-oid="2f8t96f">
         <span
           className="text-xl font-bold text-contable-primary"
-          data-oid="mpr0-nd"
+          data-oid="wax8hgg"
         >
           JARSS
         </span>
@@ -27,75 +27,75 @@ export function Header() {
 
       <div
         className="hidden md:flex md:flex-1 md:items-center md:gap-4 lg:gap-8"
-        data-oid="1:u2cdc"
+        data-oid="yj.3n02"
       >
-        <div className="relative flex-1 max-w-md" data-oid="11.zwky">
+        <div className="relative flex-1 max-w-md" data-oid="-::vk6d">
           <Search
             className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500"
-            data-oid="ey69p1j"
+            data-oid="ndl6-sz"
           />
 
           <input
             type="search"
             placeholder="Buscar transacciones, contactos..."
             className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 pl-8 pr-4 py-2 text-sm outline-none focus:border-contable-primary"
-            data-oid="w21kk9w"
+            data-oid="-se10ho"
           />
         </div>
       </div>
 
-      <div className="flex items-center gap-4" data-oid="hk18oef">
-        <ThemeToggle data-oid="emqu_.p" />
+      <div className="flex items-center gap-4" data-oid="mu7..pd">
+        <ThemeToggle data-oid="lwjhmsd" />
         <Button
           variant="ghost"
           size="icon"
           className="text-gray-500 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
-          data-oid="28brc77"
+          data-oid="np0hopp"
         >
-          <Bell className="h-5 w-5" data-oid="j:b_d7-" />
+          <Bell className="h-5 w-5" data-oid="b5v59tf" />
         </Button>
         <Button
           variant="ghost"
           size="icon"
           className="text-gray-500 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
-          data-oid="v:_o59:"
+          data-oid="lv11dkw"
         >
-          <HelpCircle className="h-5 w-5" data-oid="55.6dqf" />
+          <HelpCircle className="h-5 w-5" data-oid="-ww_d-t" />
         </Button>
-        <DropdownMenu data-oid="y_9t06l">
-          <DropdownMenuTrigger asChild data-oid="wthr87y">
+        <DropdownMenu data-oid="gd7aeac">
+          <DropdownMenuTrigger asChild data-oid="kd9dkyv">
             <Button
               variant="ghost"
               size="icon"
               className="rounded-full h-9 w-9 gradient-primary text-white hover:brightness-110 transition-all duration-300"
-              data-oid="4zd5m-5"
+              data-oid=".x4vgk5"
             >
-              <User className="h-5 w-5" data-oid="5gy_uz_" />
+              <User className="h-5 w-5" data-oid="wwzu1:q" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent
             align="end"
             className="w-56 bg-card text-card-foreground border border-border animate-scale-in"
-            data-oid="04wh:vl"
+            data-oid="qla1nnb"
           >
-            <DropdownMenuLabel data-oid="1xsm459">Mi cuenta</DropdownMenuLabel>
-            <DropdownMenuSeparator data-oid="n9bk.yo" />
+            <DropdownMenuLabel data-oid="0e2ryx3">Mi cuenta</DropdownMenuLabel>
+            <DropdownMenuSeparator data-oid=":xj7-_x" />
             <DropdownMenuItem
               className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
-              data-oid="doa-lxv"
+              data-oid="m.x4tj3"
             >
               Perfil
             </DropdownMenuItem>
             <DropdownMenuItem
               className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
-              data-oid="xzduyqu"
+              data-oid="yjzm.bf"
             >
               Ajustes
             </DropdownMenuItem>
-            <DropdownMenuSeparator data-oid="ra.auy0" />
+            <DropdownMenuSeparator data-oid="56j708." />
             <DropdownMenuItem
               className="hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
-              data-oid="og9ep1m"
+              data-oid="s7qtqi_"
             >
               Cerrar sesión
             </DropdownMenuItem>

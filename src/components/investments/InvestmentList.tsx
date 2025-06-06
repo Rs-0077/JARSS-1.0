@@ -59,43 +59,43 @@ export const InvestmentList = ({ refreshTrigger }: InvestmentListProps) => {
   };
 
   return (
-    <Card className="glass-morphism" data-oid="g4p553z">
-      <CardHeader data-oid="q0inr75">
-        <CardTitle data-oid="vl_g_a5">Cartera de Inversiones</CardTitle>
-        <CardDescription data-oid="lc1ljhn">
+    <Card className="glass-morphism" data-oid="7lo2asu">
+      <CardHeader data-oid="sb57gyp">
+        <CardTitle data-oid="690u_5-">Cartera de Inversiones</CardTitle>
+        <CardDescription data-oid=":iiapt7">
           Inversiones activas y su rendimiento
         </CardDescription>
       </CardHeader>
-      <CardContent data-oid="ek.uw-j">
-        <div className="space-y-4" data-oid="-:zo:ka">
+      <CardContent data-oid="3wzglw:">
+        <div className="space-y-4" data-oid="0xcv1z2">
           {investments.length > 0 ? (
             investments.map((investment) => (
               <div
                 key={investment.id}
                 className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                data-oid=":dd-7:m"
+                data-oid="f_fvpf7"
               >
-                <div className="flex items-center gap-3" data-oid="lih1b6f">
+                <div className="flex items-center gap-3" data-oid="9vj6kz-">
                   <div
                     className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center"
-                    data-oid="1-g9s8z"
+                    data-oid=".7v1lkw"
                   >
                     <Wallet
                       className="h-4 w-4 text-blue-600"
-                      data-oid="gh3iltn"
+                      data-oid="3s_28et"
                     />
                   </div>
-                  <div data-oid="9auatd2">
-                    <p className="font-medium" data-oid="uq_pwf3">
+                  <div data-oid="hdah6qh">
+                    <p className="font-medium" data-oid="jaoc8bt">
                       {formatInvestmentType(investment.investment_type)}
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="a4a_f1b">
+                    <p className="text-sm text-gray-500" data-oid="eiwxos-">
                       {investment.description || "Sin descripción"}
                     </p>
                   </div>
                 </div>
-                <div className="text-right" data-oid="kqw89_n">
-                  <p className="font-medium text-blue-600" data-oid="okki30x">
+                <div className="text-right" data-oid="o.o5n7l">
+                  <p className="font-medium text-blue-600" data-oid="z4_-wk3">
                     $
                     {investment.amount.toLocaleString("es-MX", {
                       minimumFractionDigits: 2,
@@ -105,10 +105,10 @@ export const InvestmentList = ({ refreshTrigger }: InvestmentListProps) => {
                   {investment.expected_return && (
                     <div
                       className="flex items-center text-green-500 text-sm"
-                      data-oid="sy1vt2n"
+                      data-oid="bnn431p"
                     >
-                      <TrendingUp className="h-3 w-3 mr-1" data-oid="ho27d1_" />
-                      <span data-oid="9-.tqwz">
+                      <TrendingUp className="h-3 w-3 mr-1" data-oid="jug.p39" />
+                      <span data-oid="8ts1dpx">
                         +{investment.expected_return}%
                       </span>
                     </div>
@@ -117,7 +117,7 @@ export const InvestmentList = ({ refreshTrigger }: InvestmentListProps) => {
               </div>
             ))
           ) : (
-            <div className="text-center py-4 text-gray-500" data-oid="c_pxm23">
+            <div className="text-center py-4 text-gray-500" data-oid="5sn3g2l">
               No hay inversiones registradas
             </div>
           )}
@@ -126,74 +126,74 @@ export const InvestmentList = ({ refreshTrigger }: InvestmentListProps) => {
             <>
               <div
                 className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                data-oid=".fg2kgr"
+                data-oid="8cbwf1c"
               >
-                <div className="flex items-center gap-3" data-oid="bxagzdr">
+                <div className="flex items-center gap-3" data-oid=":3ds6gu">
                   <div
                     className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center"
-                    data-oid="9_qjo1m"
+                    data-oid="bs9ogm0"
                   >
                     <Wallet
                       className="h-4 w-4 text-blue-600"
-                      data-oid="tarkshp"
+                      data-oid="cs7g2g-"
                     />
                   </div>
-                  <div data-oid="r32znyg">
-                    <p className="font-medium" data-oid="9yubev5">
+                  <div data-oid=":c-g9-1">
+                    <p className="font-medium" data-oid="7ej5nhb">
                       Acciones - Ejemplo
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="wc02kmz">
+                    <p className="text-sm text-gray-500" data-oid="r_rm7gd">
                       100 acciones
                     </p>
                   </div>
                 </div>
-                <div className="text-right" data-oid="e3w3p-k">
-                  <p className="font-medium text-blue-600" data-oid="60_norh">
+                <div className="text-right" data-oid="1v3fkqf">
+                  <p className="font-medium text-blue-600" data-oid="v4bup5.">
                     $15,000.00
                   </p>
                   <div
                     className="flex items-center text-green-500 text-sm"
-                    data-oid="-f7-kna"
+                    data-oid="792u6ta"
                   >
-                    <TrendingUp className="h-3 w-3 mr-1" data-oid="1-evzby" />
-                    <span data-oid=".ji.5b3">+8.5%</span>
+                    <TrendingUp className="h-3 w-3 mr-1" data-oid="t-xjnmz" />
+                    <span data-oid="ikgcd98">+8.5%</span>
                   </div>
                 </div>
               </div>
 
               <div
                 className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                data-oid="u391x5r"
+                data-oid="jf0jr.z"
               >
-                <div className="flex items-center gap-3" data-oid="g2syw7x">
+                <div className="flex items-center gap-3" data-oid="or8et:z">
                   <div
                     className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center"
-                    data-oid="0ay56nw"
+                    data-oid="0a4z2_3"
                   >
                     <Wallet
                       className="h-4 w-4 text-blue-600"
-                      data-oid="60odquo"
+                      data-oid="xn26z0a"
                     />
                   </div>
-                  <div data-oid="ck70jqf">
-                    <p className="font-medium" data-oid="5buw133">
+                  <div data-oid="fy-:_nt">
+                    <p className="font-medium" data-oid="a4iopz6">
                       Fondo de Inversión Global
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="4xn9q2b">
+                    <p className="text-sm text-gray-500" data-oid="gi86ed1">
                       Participación
                     </p>
                   </div>
                 </div>
-                <div className="text-right" data-oid="axp6bby">
-                  <p className="font-medium text-blue-600" data-oid="a-gjfhr">
+                <div className="text-right" data-oid=".1iw.7x">
+                  <p className="font-medium text-blue-600" data-oid="olnyn69">
                     $25,000.00
                   </p>
                   <div
                     className="flex items-center text-green-500 text-sm"
-                    data-oid="d2:m3.g"
+                    data-oid="jwk667c"
                   >
-                    <TrendingUp className="h-3 w-3 mr-1" data-oid="aazd3bi" />
-                    <span data-oid="t39p2nj">+4.2%</span>
+                    <TrendingUp className="h-3 w-3 mr-1" data-oid="a914f02" />
+                    <span data-oid="xyuyxht">+4.2%</span>
                   </div>
                 </div>
               </div>

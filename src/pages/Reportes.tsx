@@ -12,105 +12,105 @@ import { Button } from "@/components/ui/button";
 
 const Reportes = () => {
   return (
-    <MainLayout data-oid="9dru:s.">
-      <div className="space-y-4" data-oid="ulbuucb">
-        <div className="flex items-center justify-between" data-oid="lz:r:k4">
-          <h1 className="text-2xl font-bold" data-oid="s369oib">
+    <MainLayout data-oid="g9hpxns">
+      <div className="space-y-4" data-oid="-rt:_zu">
+        <div className="flex items-center justify-between" data-oid="51u39gu">
+          <h1 className="text-2xl font-bold" data-oid="t_b:1qw">
             Reportes Financieros
           </h1>
-          <Button variant="outline" className="gap-1" data-oid="jckg5eu">
-            <Download className="h-4 w-4" data-oid="574idex" />
-            <span data-oid="z_vqxqm">Exportar</span>
+          <Button variant="outline" className="gap-1" data-oid="ug-78pb">
+            <Download className="h-4 w-4" data-oid="n8qb:go" />
+            <span data-oid=":bhfor:">Exportar</span>
           </Button>
         </div>
 
-        <Tabs defaultValue="balance" data-oid="lr38kxx">
+        <Tabs defaultValue="balance" data-oid="n5wu2ov">
           <TabsList
             className="grid w-full grid-cols-4 max-w-2xl"
-            data-oid="hexo95a"
+            data-oid="-qugl6."
           >
-            <TabsTrigger value="balance" data-oid="wimrze_">
+            <TabsTrigger value="balance" data-oid="x-iunwg">
               Balance General
             </TabsTrigger>
-            <TabsTrigger value="resultados" data-oid="y62myd:">
+            <TabsTrigger value="resultados" data-oid="0-hnuzr">
               Estado de Resultados
             </TabsTrigger>
-            <TabsTrigger value="flujo" data-oid="rmy1nvw">
+            <TabsTrigger value="flujo" data-oid="yj:0d86">
               Flujo de Efectivo
             </TabsTrigger>
-            <TabsTrigger value="personalizados" data-oid="s1ewrvk">
+            <TabsTrigger value="personalizados" data-oid="yj2acae">
               Personalizados
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="balance" data-oid="fvcr47_">
-            <Card data-oid="agh9vcr">
-              <CardHeader data-oid="28na2xy">
-                <CardTitle data-oid="drmhdwt">Balance General</CardTitle>
-                <CardDescription data-oid="uxp77oe">
+          <TabsContent value="balance" data-oid="n8iw6w7">
+            <Card data-oid="hkpce-9">
+              <CardHeader data-oid=".oxyuuc">
+                <CardTitle data-oid="_53ovw9">Balance General</CardTitle>
+                <CardDescription data-oid=":6z1qqh">
                   Estado financiero que muestra activos, pasivos y capital
                   contable
                 </CardDescription>
               </CardHeader>
-              <CardContent data-oid="d95:97x">
+              <CardContent data-oid="wz1rec_">
                 <p
                   className="text-center text-gray-500 py-8"
-                  data-oid="2w9c:k7"
+                  data-oid="kbvw9yw"
                 >
                   El reporte de balance general estará disponible próximamente
                 </p>
               </CardContent>
             </Card>
           </TabsContent>
-          <TabsContent value="resultados" data-oid="rczyotw">
-            <Card data-oid="1eoe9r_">
-              <CardHeader data-oid="5xw-09s">
-                <CardTitle data-oid="xe3.7z2">Estado de Resultados</CardTitle>
-                <CardDescription data-oid="7bf8vgg">
+          <TabsContent value="resultados" data-oid="t.ddauo">
+            <Card data-oid="b:_a2cc">
+              <CardHeader data-oid="h0-bc7o">
+                <CardTitle data-oid="g3ig6rw">Estado de Resultados</CardTitle>
+                <CardDescription data-oid="dfdosv4">
                   Informe de ingresos, gastos y beneficios en un período
                 </CardDescription>
               </CardHeader>
-              <CardContent data-oid="aguy_ej">
+              <CardContent data-oid="rkvz5bt">
                 <p
                   className="text-center text-gray-500 py-8"
-                  data-oid="vi:dsf-"
+                  data-oid=":idu:b1"
                 >
                   El estado de resultados estará disponible próximamente
                 </p>
               </CardContent>
             </Card>
           </TabsContent>
-          <TabsContent value="flujo" data-oid="-nz:l:9">
-            <Card data-oid="p2bwia1">
-              <CardHeader data-oid="091jw-.">
-                <CardTitle data-oid="ahy0akx">Flujo de Efectivo</CardTitle>
-                <CardDescription data-oid="4b:5xf7">
+          <TabsContent value="flujo" data-oid="yb7szeg">
+            <Card data-oid=".3yhcpl">
+              <CardHeader data-oid="uoppfqk">
+                <CardTitle data-oid="_8v1ujs">Flujo de Efectivo</CardTitle>
+                <CardDescription data-oid="wy2fis6">
                   Análisis del movimiento de efectivo de su empresa
                 </CardDescription>
               </CardHeader>
-              <CardContent data-oid="lo9fjb7">
+              <CardContent data-oid="skjwwak">
                 <p
                   className="text-center text-gray-500 py-8"
-                  data-oid="y439uaf"
+                  data-oid="pdri-8u"
                 >
                   El reporte de flujo de efectivo estará disponible próximamente
                 </p>
               </CardContent>
             </Card>
           </TabsContent>
-          <TabsContent value="personalizados" data-oid="mf.r6wm">
-            <Card data-oid="tg:25er">
-              <CardHeader data-oid="we67d.j">
-                <CardTitle data-oid="la2zx7c">
+          <TabsContent value="personalizados" data-oid="xz5e:dj">
+            <Card data-oid="pi94zil">
+              <CardHeader data-oid="wbj3am9">
+                <CardTitle data-oid="_qor_b4">
                   Reportes Personalizados
                 </CardTitle>
-                <CardDescription data-oid="y-ce4.f">
+                <CardDescription data-oid="j4avx7w">
                   Cree y gestione reportes a su medida
                 </CardDescription>
               </CardHeader>
-              <CardContent data-oid="7mipcui">
+              <CardContent data-oid="71_:3yg">
                 <p
                   className="text-center text-gray-500 py-8"
-                  data-oid="tyrcsqf"
+                  data-oid="gj2ikol"
                 >
                   Los reportes personalizados estarán disponibles próximamente
                 </p>

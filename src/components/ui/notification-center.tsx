@@ -61,20 +61,20 @@ export function NotificationCenter({
   const getNotificationIcon = (type: NotificationType) => {
     switch (type) {
       case "success":
-        return <Check className="h-5 w-5 text-green-500" data-oid="473yg3o" />;
+        return <Check className="h-5 w-5 text-green-500" data-oid="e9yl3wm" />;
       case "warning":
         return (
           <AlertTriangle
             className="h-5 w-5 text-amber-500"
-            data-oid="9a-_p4r"
+            data-oid="p_rxuvq"
           />
         );
 
       case "error":
-        return <Ban className="h-5 w-5 text-red-500" data-oid="h5go_5l" />;
+        return <Ban className="h-5 w-5 text-red-500" data-oid="za8mw5y" />;
       case "info":
       default:
-        return <Info className="h-5 w-5 text-blue-500" data-oid="wfqye75" />;
+        return <Info className="h-5 w-5 text-blue-500" data-oid="pgap000" />;
     }
   };
 
@@ -92,42 +92,42 @@ export function NotificationCenter({
   };
 
   return (
-    <Sheet open={open} onOpenChange={setOpen} data-oid="r_0d4i_">
-      <SheetTrigger asChild data-oid="_3t-_6z">
+    <Sheet open={open} onOpenChange={setOpen} data-oid="zg1dimp">
+      <SheetTrigger asChild data-oid="ict5fx-">
         <Button
           variant="ghost"
           size="icon"
           className="relative"
-          data-oid="841ynfv"
+          data-oid="2xnt885"
         >
-          <Bell className="h-5 w-5" data-oid="6pwes84" />
+          <Bell className="h-5 w-5" data-oid="ke-:tvy" />
           {unreadCount > 0 && (
             <Badge
               variant="destructive"
               className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-xs"
-              data-oid="l5yo4du"
+              data-oid=":p:6k-:"
             >
               {unreadCount}
             </Badge>
           )}
-          <span className="sr-only" data-oid="c3hw8zw">
+          <span className="sr-only" data-oid="3x374nk">
             Notificaciones
           </span>
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-full sm:max-w-md" data-oid="olz:wkr">
+      <SheetContent className="w-full sm:max-w-md" data-oid="858rgkt">
         <SheetHeader
           className="flex flex-row items-center justify-between"
-          data-oid="9z7aevi"
+          data-oid="t887bpa"
         >
-          <SheetTitle data-oid="d33:prn">Notificaciones</SheetTitle>
-          <div className="flex space-x-2" data-oid="5xev1-a">
+          <SheetTitle data-oid="eiislon">Notificaciones</SheetTitle>
+          <div className="flex space-x-2" data-oid="ub6_fi:">
             <Button
               variant="outline"
               size="sm"
               onClick={onMarkAllAsRead}
               disabled={unreadCount === 0}
-              data-oid="37re_i8"
+              data-oid="dyzr.71"
             >
               Marcar todo como leído
             </Button>
@@ -136,22 +136,22 @@ export function NotificationCenter({
               size="sm"
               onClick={onClearAll}
               disabled={notifications.length === 0}
-              data-oid="0h1e51g"
+              data-oid="3sxuu7z"
             >
               Limpiar todo
             </Button>
           </div>
         </SheetHeader>
 
-        <Tabs defaultValue="all" className="mt-4" data-oid="ftw282g">
-          <TabsList className="grid w-full grid-cols-3" data-oid="okl-21p">
-            <TabsTrigger value="all" data-oid="ip4rehv">
+        <Tabs defaultValue="all" className="mt-4" data-oid="a6nf3k1">
+          <TabsList className="grid w-full grid-cols-3" data-oid="fig9c_e">
+            <TabsTrigger value="all" data-oid="6fnzafs">
               Todas ({notifications.length})
             </TabsTrigger>
-            <TabsTrigger value="unread" data-oid="g70w9_n">
+            <TabsTrigger value="unread" data-oid="ipmrxz:">
               No leídas ({unreadCount})
             </TabsTrigger>
-            <TabsTrigger value="read" data-oid="oza5:0a">
+            <TabsTrigger value="read" data-oid="cv1cmh3">
               Leídas ({notifications.length - unreadCount})
             </TabsTrigger>
           </TabsList>
@@ -159,12 +159,12 @@ export function NotificationCenter({
           <TabsContent
             value="all"
             className="mt-4 max-h-[70vh] overflow-y-auto"
-            data-oid="hqv.f:e"
+            data-oid="rm9:tq."
           >
             {notifications.length === 0 ? (
               <div
                 className="text-center py-8 text-muted-foreground"
-                data-oid="zgddz55"
+                data-oid="k8lkfxv"
               >
                 No hay notificaciones
               </div>
@@ -177,16 +177,16 @@ export function NotificationCenter({
                     notification.read,
                   )}
                   onClick={() => handleNotificationClick(notification)}
-                  data-oid="wc1abym"
+                  data-oid="b5f43pz"
                 >
-                  <div className="flex items-start" data-oid="_-d6cq.">
-                    <div className="mr-3 mt-0.5" data-oid="muqntjx">
+                  <div className="flex items-start" data-oid="z:m6v0x">
+                    <div className="mr-3 mt-0.5" data-oid="y4f_b79">
                       {getNotificationIcon(notification.type)}
                     </div>
-                    <div className="flex-1" data-oid="k2qp:n:">
+                    <div className="flex-1" data-oid="__dzah0">
                       <div
                         className="flex justify-between items-start"
-                        data-oid="sat0sj3"
+                        data-oid="6ipxwk8"
                       >
                         <h4
                           className={cn(
@@ -195,7 +195,7 @@ export function NotificationCenter({
                               ? "text-foreground/80"
                               : "text-foreground",
                           )}
-                          data-oid="uzrghnk"
+                          data-oid=".k2mvk2"
                         >
                           {notification.title}
                         </h4>
@@ -205,27 +205,27 @@ export function NotificationCenter({
                             onDismiss(notification.id);
                           }}
                           className="text-muted-foreground hover:text-foreground"
-                          data-oid="smmmx4s"
+                          data-oid="s.g:lpt"
                         >
-                          <X className="h-4 w-4" data-oid="3k86aqb" />
-                          <span className="sr-only" data-oid="bn-3c9t">
+                          <X className="h-4 w-4" data-oid="w_g9p9j" />
+                          <span className="sr-only" data-oid="fr8dljq">
                             Descartar
                           </span>
                         </button>
                       </div>
                       <p
                         className="text-sm text-muted-foreground mt-1"
-                        data-oid="z3p1oqa"
+                        data-oid="ps6djma"
                       >
                         {notification.message}
                       </p>
                       <div
                         className="flex justify-between items-center mt-2"
-                        data-oid="gawbkdp"
+                        data-oid="-aztem:"
                       >
                         <span
                           className="text-xs text-muted-foreground"
-                          data-oid="4tbf4n4"
+                          data-oid="apo-ugk"
                         >
                           {new Date(notification.timestamp).toLocaleString()}
                         </span>
@@ -239,7 +239,7 @@ export function NotificationCenter({
                               if (notification.actionFn)
                                 notification.actionFn();
                             }}
-                            data-oid="89je3cw"
+                            data-oid="x3yb.2d"
                           >
                             {notification.actionLabel}
                           </Button>
@@ -255,12 +255,12 @@ export function NotificationCenter({
           <TabsContent
             value="unread"
             className="mt-4 max-h-[70vh] overflow-y-auto"
-            data-oid="w:lseh4"
+            data-oid="2znbktu"
           >
             {unreadCount === 0 ? (
               <div
                 className="text-center py-8 text-muted-foreground"
-                data-oid="ml5c8ah"
+                data-oid="py6s9vs"
               >
                 No hay notificaciones sin leer
               </div>
@@ -275,20 +275,20 @@ export function NotificationCenter({
                       notification.read,
                     )}
                     onClick={() => handleNotificationClick(notification)}
-                    data-oid="543q:p:"
+                    data-oid="j6kbnn_"
                   >
-                    <div className="flex items-start" data-oid="n4cotb:">
-                      <div className="mr-3 mt-0.5" data-oid="63hrbmu">
+                    <div className="flex items-start" data-oid="d5fwqq9">
+                      <div className="mr-3 mt-0.5" data-oid="u:7wrjt">
                         {getNotificationIcon(notification.type)}
                       </div>
-                      <div className="flex-1" data-oid="qu8qo9w">
+                      <div className="flex-1" data-oid="s00hasy">
                         <div
                           className="flex justify-between items-start"
-                          data-oid="_t2yiyi"
+                          data-oid="hk3..37"
                         >
                           <h4
                             className="text-sm font-medium"
-                            data-oid="2uiya.-"
+                            data-oid="uo86d19"
                           >
                             {notification.title}
                           </h4>
@@ -298,27 +298,27 @@ export function NotificationCenter({
                               onDismiss(notification.id);
                             }}
                             className="text-muted-foreground hover:text-foreground"
-                            data-oid="h.ccbwk"
+                            data-oid="a6u9--1"
                           >
-                            <X className="h-4 w-4" data-oid="q87.9-4" />
-                            <span className="sr-only" data-oid="gabrsao">
+                            <X className="h-4 w-4" data-oid="hzd.13n" />
+                            <span className="sr-only" data-oid="52t_0rd">
                               Descartar
                             </span>
                           </button>
                         </div>
                         <p
                           className="text-sm text-muted-foreground mt-1"
-                          data-oid=".hh44nd"
+                          data-oid="qm4op.7"
                         >
                           {notification.message}
                         </p>
                         <div
                           className="flex justify-between items-center mt-2"
-                          data-oid="nxd3e_f"
+                          data-oid="3hzwyz2"
                         >
                           <span
                             className="text-xs text-muted-foreground"
-                            data-oid="yeixa:8"
+                            data-oid="19jx49f"
                           >
                             {new Date(notification.timestamp).toLocaleString()}
                           </span>
@@ -332,7 +332,7 @@ export function NotificationCenter({
                                 if (notification.actionFn)
                                   notification.actionFn();
                               }}
-                              data-oid="snhze5d"
+                              data-oid="tqsf:bs"
                             >
                               {notification.actionLabel}
                             </Button>
@@ -348,12 +348,12 @@ export function NotificationCenter({
           <TabsContent
             value="read"
             className="mt-4 max-h-[70vh] overflow-y-auto"
-            data-oid="mkxbda6"
+            data-oid="s:.154y"
           >
             {notifications.filter((n) => n.read).length === 0 ? (
               <div
                 className="text-center py-8 text-muted-foreground"
-                data-oid="fiddee6"
+                data-oid="pp-olmr"
               >
                 No hay notificaciones leídas
               </div>
@@ -368,20 +368,20 @@ export function NotificationCenter({
                       notification.read,
                     )}
                     onClick={() => handleNotificationClick(notification)}
-                    data-oid="aank6kw"
+                    data-oid="1tfw11a"
                   >
-                    <div className="flex items-start" data-oid="zfwplqj">
-                      <div className="mr-3 mt-0.5" data-oid="69ftqzn">
+                    <div className="flex items-start" data-oid="v985m..">
+                      <div className="mr-3 mt-0.5" data-oid="tvtjg:h">
                         {getNotificationIcon(notification.type)}
                       </div>
-                      <div className="flex-1" data-oid="s0qi6c-">
+                      <div className="flex-1" data-oid="g452-c_">
                         <div
                           className="flex justify-between items-start"
-                          data-oid="2oupz-o"
+                          data-oid="z1dwuu3"
                         >
                           <h4
                             className="text-sm font-medium text-foreground/80"
-                            data-oid="p3d4a16"
+                            data-oid="a7cpq7o"
                           >
                             {notification.title}
                           </h4>
@@ -391,27 +391,27 @@ export function NotificationCenter({
                               onDismiss(notification.id);
                             }}
                             className="text-muted-foreground hover:text-foreground"
-                            data-oid=":n9qti_"
+                            data-oid="x2hhv5z"
                           >
-                            <X className="h-4 w-4" data-oid="jygyubv" />
-                            <span className="sr-only" data-oid="0nnkm.z">
+                            <X className="h-4 w-4" data-oid="l0qoln7" />
+                            <span className="sr-only" data-oid="a7ty3ig">
                               Descartar
                             </span>
                           </button>
                         </div>
                         <p
                           className="text-sm text-muted-foreground mt-1"
-                          data-oid="t9u3882"
+                          data-oid="2om05gw"
                         >
                           {notification.message}
                         </p>
                         <div
                           className="flex justify-between items-center mt-2"
-                          data-oid="wni5:2x"
+                          data-oid="b74gdcb"
                         >
                           <span
                             className="text-xs text-muted-foreground"
-                            data-oid="ei38zkf"
+                            data-oid="l9l808l"
                           >
                             {new Date(notification.timestamp).toLocaleString()}
                           </span>
@@ -425,7 +425,7 @@ export function NotificationCenter({
                                 if (notification.actionFn)
                                   notification.actionFn();
                               }}
-                              data-oid="bc8pm-o"
+                              data-oid="azp.toa"
                             >
                               {notification.actionLabel}
                             </Button>

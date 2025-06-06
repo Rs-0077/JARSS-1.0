@@ -26,107 +26,107 @@ export const BudgetForm = () => {
   };
 
   return (
-    <Card className="glass-morphism" data-oid="pje3tq_">
-      <CardHeader data-oid="o:cmfra">
-        <CardTitle data-oid="di31zb0">Crear Nuevo Presupuesto</CardTitle>
-        <CardDescription data-oid="o1709mz">
+    <Card className="glass-morphism" data-oid="erygo0a">
+      <CardHeader data-oid="2-.gkcc">
+        <CardTitle data-oid="vx49zk9">Crear Nuevo Presupuesto</CardTitle>
+        <CardDescription data-oid="ihx6e_j">
           Defina los parámetros para el nuevo presupuesto
         </CardDescription>
       </CardHeader>
-      <CardContent data-oid="zgql3mt">
+      <CardContent data-oid="y7_xw4s">
         <form
           className="space-y-4"
           onSubmit={(e) => {
             e.preventDefault();
             handleCreateBudget();
           }}
-          data-oid="iz7k0_t"
+          data-oid="m97by6f"
         >
-          <div className="grid md:grid-cols-2 gap-4" data-oid="x5i:bs8">
-            <div className="space-y-2" data-oid="go_pwlc">
-              <Label htmlFor="budgetName" data-oid="w38icxu">
+          <div className="grid md:grid-cols-2 gap-4" data-oid="7k_c2gl">
+            <div className="space-y-2" data-oid="v85xz4w">
+              <Label htmlFor="budgetName" data-oid="bl_7y-w">
                 Nombre del Presupuesto
               </Label>
               <Input
                 id="budgetName"
                 placeholder="Ej. Presupuesto Q3 2025"
-                data-oid="ei.vv5n"
+                data-oid="i856qcn"
               />
             </div>
 
-            <div className="space-y-2" data-oid="39p_gm1">
-              <Label htmlFor="budgetType" data-oid="7vby5yu">
+            <div className="space-y-2" data-oid="ta81n2:">
+              <Label htmlFor="budgetType" data-oid=".ek5gwq">
                 Tipo de Presupuesto
               </Label>
-              <Select defaultValue="departamento" data-oid="d6rw-hp">
-                <SelectTrigger id="budgetType" data-oid="xyh5:ma">
+              <Select defaultValue="departamento" data-oid="f-t8zpk">
+                <SelectTrigger id="budgetType" data-oid="ot-32go">
                   <SelectValue
                     placeholder="Seleccione tipo"
-                    data-oid="o-9-zss"
+                    data-oid="uauzr_5"
                   />
                 </SelectTrigger>
-                <SelectContent data-oid="rkae4sr">
-                  <SelectItem value="departamento" data-oid="ug29_x3">
+                <SelectContent data-oid="..v.ioy">
+                  <SelectItem value="departamento" data-oid="4sr0:9l">
                     Por Departamento
                   </SelectItem>
-                  <SelectItem value="proyecto" data-oid="ke7:tzg">
+                  <SelectItem value="proyecto" data-oid="r8:aop3">
                     Por Proyecto
                   </SelectItem>
-                  <SelectItem value="trimestral" data-oid="ignkb84">
+                  <SelectItem value="trimestral" data-oid="gu7gtoc">
                     Trimestral
                   </SelectItem>
-                  <SelectItem value="anual" data-oid="s6ddyv2">
+                  <SelectItem value="anual" data-oid="6nxk6o7">
                     Anual
                   </SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
-            <div className="space-y-2" data-oid="8oxe7xz">
-              <Label htmlFor="startDate" data-oid="jjmaq3t">
+            <div className="space-y-2" data-oid="1nidqgp">
+              <Label htmlFor="startDate" data-oid="lu.8i31">
                 Fecha de Inicio
               </Label>
-              <Input id="startDate" type="date" data-oid="l-lt915" />
+              <Input id="startDate" type="date" data-oid="x3x:f0f" />
             </div>
 
-            <div className="space-y-2" data-oid="1mush_2">
-              <Label htmlFor="endDate" data-oid="hmrabza">
+            <div className="space-y-2" data-oid=":wczcl4">
+              <Label htmlFor="endDate" data-oid="qcx-p0-">
                 Fecha de Finalización
               </Label>
-              <Input id="endDate" type="date" data-oid="mtt87ht" />
+              <Input id="endDate" type="date" data-oid="zvfz-vx" />
             </div>
 
-            <div className="space-y-2" data-oid="sj9g9wu">
-              <Label htmlFor="totalAmount" data-oid="-4bqr6h">
+            <div className="space-y-2" data-oid="a-p.c4n">
+              <Label htmlFor="totalAmount" data-oid="yxw-sv-">
                 Monto Total
               </Label>
               <Input
                 id="totalAmount"
                 placeholder="0.00"
                 type="number"
-                data-oid="li6lqho"
+                data-oid="if_ey_q"
               />
             </div>
 
-            <div className="space-y-2" data-oid=":hmsze4">
-              <Label htmlFor="currency" data-oid="tudjy2d">
+            <div className="space-y-2" data-oid="w_sbfx9">
+              <Label htmlFor="currency" data-oid="5qay515">
                 Moneda
               </Label>
-              <Select defaultValue="MXN" data-oid="6wti1n5">
-                <SelectTrigger id="currency" data-oid="7987yxs">
+              <Select defaultValue="MXN" data-oid="8xef_9s">
+                <SelectTrigger id="currency" data-oid="v4r4y1t">
                   <SelectValue
                     placeholder="Seleccione moneda"
-                    data-oid="c08xh6m"
+                    data-oid="32q0t3e"
                   />
                 </SelectTrigger>
-                <SelectContent data-oid="doyc4-4">
-                  <SelectItem value="MXN" data-oid="iujj_io">
+                <SelectContent data-oid=":hyqlnp">
+                  <SelectItem value="MXN" data-oid="n6anrnw">
                     Peso Mexicano (MXN)
                   </SelectItem>
-                  <SelectItem value="USD" data-oid="taoygkj">
+                  <SelectItem value="USD" data-oid="39du.5z">
                     Dólar (USD)
                   </SelectItem>
-                  <SelectItem value="EUR" data-oid="t3.2hh5">
+                  <SelectItem value="EUR" data-oid="0et8kkk">
                     Euro (EUR)
                   </SelectItem>
                 </SelectContent>
@@ -134,78 +134,78 @@ export const BudgetForm = () => {
             </div>
           </div>
 
-          <div className="space-y-2" data-oid="0q-0zdo">
-            <Label htmlFor="description" data-oid=":jf439o">
+          <div className="space-y-2" data-oid="lwm1ife">
+            <Label htmlFor="description" data-oid="gej3l.r">
               Descripción
             </Label>
             <Input
               id="description"
               placeholder="Describa el propósito de este presupuesto"
-              data-oid="rbsmyv0"
+              data-oid="gh2kqvc"
             />
           </div>
 
-          <h3 className="font-medium pt-4" data-oid="ajaiw01">
+          <h3 className="font-medium pt-4" data-oid="leq1hbr">
             Asignación por Departamento
           </h3>
 
-          <div className="space-y-4" data-oid="2xviu0a">
-            <div className="grid md:grid-cols-2 gap-4" data-oid="13.l-ld">
-              <div className="space-y-2" data-oid=":jg_354">
-                <Label htmlFor="deptMarketing" data-oid="8.c_tww">
+          <div className="space-y-4" data-oid="d:i_n00">
+            <div className="grid md:grid-cols-2 gap-4" data-oid="c1o4nj2">
+              <div className="space-y-2" data-oid="fotdy.-">
+                <Label htmlFor="deptMarketing" data-oid="-eaf8gj">
                   Marketing
                 </Label>
                 <Input
                   id="deptMarketing"
                   placeholder="0.00"
                   type="number"
-                  data-oid="_bxuu16"
+                  data-oid="2mfyk1_"
                 />
               </div>
 
-              <div className="space-y-2" data-oid="p1k2uqv">
-                <Label htmlFor="deptTech" data-oid="va92537">
+              <div className="space-y-2" data-oid="5ufgmbt">
+                <Label htmlFor="deptTech" data-oid="dyckmre">
                   Tecnología
                 </Label>
                 <Input
                   id="deptTech"
                   placeholder="0.00"
                   type="number"
-                  data-oid="5b-r8:c"
+                  data-oid="q_owmr-"
                 />
               </div>
 
-              <div className="space-y-2" data-oid="uu1vnof">
-                <Label htmlFor="deptSales" data-oid=":4vz95t">
+              <div className="space-y-2" data-oid="hm3_4dw">
+                <Label htmlFor="deptSales" data-oid="4wzy59-">
                   Ventas
                 </Label>
                 <Input
                   id="deptSales"
                   placeholder="0.00"
                   type="number"
-                  data-oid=".jhlms9"
+                  data-oid="nixp.9q"
                 />
               </div>
 
-              <div className="space-y-2" data-oid="0zb.a-h">
-                <Label htmlFor="deptAdmin" data-oid="wk1q9_i">
+              <div className="space-y-2" data-oid="638u_xh">
+                <Label htmlFor="deptAdmin" data-oid="8n8fjhl">
                   Administración
                 </Label>
                 <Input
                   id="deptAdmin"
                   placeholder="0.00"
                   type="number"
-                  data-oid="bn663.t"
+                  data-oid="8eyb7_n"
                 />
               </div>
             </div>
           </div>
 
-          <div className="flex justify-end space-x-2 pt-4" data-oid="s-a1_ur">
-            <Button variant="outline" data-oid="8aiii6.">
+          <div className="flex justify-end space-x-2 pt-4" data-oid="34nom7m">
+            <Button variant="outline" data-oid="9pi:kvd">
               Cancelar
             </Button>
-            <Button type="submit" data-oid=".hqpzv5">
+            <Button type="submit" data-oid="4xfrpu:">
               Guardar Presupuesto
             </Button>
           </div>

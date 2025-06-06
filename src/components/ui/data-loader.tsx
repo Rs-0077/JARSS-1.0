@@ -26,10 +26,10 @@ export function DataLoader({
           "flex flex-col items-center justify-center py-12",
           className,
         )}
-        data-oid="lh3mf99"
+        data-oid="eq10l0_"
       >
-        <Spinner size="lg" data-oid="wtowc4c" />
-        <p className="mt-4 text-muted-foreground" data-oid="858ui6t">
+        <Spinner size="lg" data-oid="r3:-y_f" />
+        <p className="mt-4 text-muted-foreground" data-oid="50y7a:g">
           {text}
         </p>
       </div>
@@ -47,11 +47,11 @@ export function DataLoader({
           "flex flex-col items-center justify-center py-12 text-center",
           className,
         )}
-        data-oid="4zopcds"
+        data-oid="b8rgfov"
       >
         <div
           className="rounded-full bg-destructive/10 p-3 text-destructive"
-          data-oid="im-ytva"
+          data-oid="_2afip_"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,18 +62,18 @@ export function DataLoader({
             strokeLinecap="round"
             strokeLinejoin="round"
             className="h-6 w-6"
-            data-oid="sppcw1l"
+            data-oid="227d7ae"
           >
-            <path d="M18 6 6 18" data-oid="hg7w-5i" />
-            <path d="m6 6 12 12" data-oid="fjf4tff" />
+            <path d="M18 6 6 18" data-oid="i:qd:5i" />
+            <path d="m6 6 12 12" data-oid="wf1gg7l" />
           </svg>
         </div>
-        <h3 className="mt-4 text-lg font-semibold" data-oid="vk03jeq">
+        <h3 className="mt-4 text-lg font-semibold" data-oid="ppnpmd0">
           Error al cargar los datos
         </h3>
         <p
           className="mt-2 text-sm text-muted-foreground max-w-md"
-          data-oid="nj4g4wr"
+          data-oid="ybs62vq"
         >
           {error.message ||
             "Ha ocurrido un error al cargar los datos. Por favor, inténtelo de nuevo."}
@@ -81,7 +81,7 @@ export function DataLoader({
         <button
           onClick={() => window.location.reload()}
           className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90"
-          data-oid="ib_t2p5"
+          data-oid="u8r2mo4"
         >
           Reintentar
         </button>

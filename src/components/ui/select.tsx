@@ -21,11 +21,11 @@ const SelectTrigger = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="5.d:wnb"
+    data-oid="14uv3x:"
   >
     {children}
-    <SelectPrimitive.Icon asChild data-oid="iiinrx3">
-      <ChevronDown className="h-4 w-4 opacity-50" data-oid="wj4ruav" />
+    <SelectPrimitive.Icon asChild data-oid="eb5q_9-">
+      <ChevronDown className="h-4 w-4 opacity-50" data-oid="k828w1z" />
     </SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
 ));
@@ -42,9 +42,9 @@ const SelectScrollUpButton = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="6zwsmkp"
+    data-oid="6ivo8sv"
   >
-    <ChevronUp className="h-4 w-4" data-oid="a5eoh4." />
+    <ChevronUp className="h-4 w-4" data-oid="6.2l8o1" />
   </SelectPrimitive.ScrollUpButton>
 ));
 SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName;
@@ -60,9 +60,9 @@ const SelectScrollDownButton = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="l1-890l"
+    data-oid="fg:f6sb"
   >
-    <ChevronDown className="h-4 w-4" data-oid="sv627lj" />
+    <ChevronDown className="h-4 w-4" data-oid="r89gm3n" />
   </SelectPrimitive.ScrollDownButton>
 ));
 SelectScrollDownButton.displayName =
@@ -72,7 +72,7 @@ const SelectContent = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
 >(({ className, children, position = "popper", ...props }, ref) => (
-  <SelectPrimitive.Portal data-oid="urtvg03">
+  <SelectPrimitive.Portal data-oid=":ymq7fg">
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
@@ -83,7 +83,7 @@ const SelectContent = React.forwardRef<
       )}
       position={position}
       {...props}
-      data-oid="l7v9mbg"
+      data-oid=":x.nqen"
     >
       <SelectPrimitive.Viewport
         className={cn(
@@ -91,7 +91,7 @@ const SelectContent = React.forwardRef<
           position === "popper" &&
             "w-full min-w-[var(--radix-select-trigger-width)]",
         )}
-        data-oid="1ym7ho0"
+        data-oid="lbz2lia"
       >
         {children}
       </SelectPrimitive.Viewport>
@@ -108,7 +108,7 @@ const SelectLabel = React.forwardRef<
     ref={ref}
     className={cn("py-1.5 pl-8 pr-2 text-sm font-semibold", className)}
     {...props}
-    data-oid=":rsaax_"
+    data-oid="u8pa7jn"
   />
 ));
 SelectLabel.displayName = SelectPrimitive.Label.displayName;
@@ -124,18 +124,18 @@ const SelectItem = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="-kqx43b"
+    data-oid="bt:j8yl"
   >
     <span
       className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center"
-      data-oid="71gr5lp"
+      data-oid="2aj.uby"
     >
-      <SelectPrimitive.ItemIndicator data-oid="aoeq.vq">
-        <Check className="h-4 w-4" data-oid="fh1wlw_" />
+      <SelectPrimitive.ItemIndicator data-oid="vvkb2-l">
+        <Check className="h-4 w-4" data-oid="_s:gvjd" />
       </SelectPrimitive.ItemIndicator>
     </span>
 
-    <SelectPrimitive.ItemText data-oid="pja-4.r">
+    <SelectPrimitive.ItemText data-oid="vktxas4">
       {children}
     </SelectPrimitive.ItemText>
   </SelectPrimitive.Item>
@@ -150,7 +150,7 @@ const SelectSeparator = React.forwardRef<
     ref={ref}
     className={cn("-mx-1 my-1 h-px bg-muted", className)}
     {...props}
-    data-oid="3r8p6ep"
+    data-oid=":30r9fu"
   />
 ));
 SelectSeparator.displayName = SelectPrimitive.Separator.displayName;

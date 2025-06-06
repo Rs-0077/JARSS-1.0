@@ -11,23 +11,23 @@ const Presupuestos = () => {
     // This will be handled by the form component
   };
   return (
-    <MainLayout data-oid="0.5jkik">
-      <div className="space-y-4" data-oid="6pq9fhi">
-        <div className="flex items-center justify-between" data-oid="othnvj:">
-          <h1 className="text-2xl font-bold" data-oid=":82c.z9">
+    <MainLayout data-oid="f9d_001">
+      <div className="space-y-4" data-oid="94ny3y5">
+        <div className="flex items-center justify-between" data-oid="7lc9.pa">
+          <h1 className="text-2xl font-bold" data-oid="f42qzv4">
             Control Presupuestario
           </h1>
-          <Button className="gap-1" data-oid="f1pvc4o">
-            <Plus className="h-4 w-4" data-oid="vl45qic" />
-            <span data-oid="ukg:0d0">Nuevo Presupuesto</span>
+          <Button className="gap-1" data-oid=":q:qczv">
+            <Plus className="h-4 w-4" data-oid="6vmk9q_" />
+            <span data-oid=":3w20xi">Nuevo Presupuesto</span>
           </Button>
         </div>
 
-        <BudgetSummary data-oid="_8rqqkm" />
+        <BudgetSummary data-oid="xwk9kpn" />
 
-        <ExecutionSummary data-oid=".5ynxoc" />
+        <ExecutionSummary data-oid="8g-_ywg" />
 
-        <BudgetTabs data-oid="g2qjdip" />
+        <BudgetTabs data-oid="woawe-t" />
       </div>
     </MainLayout>
   );

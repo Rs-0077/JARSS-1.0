@@ -113,106 +113,106 @@ const App = () => {
   };
 
   if (isLoading) {
-    return <AppLoader data-oid="2k4v:8b" />;
+    return <AppLoader data-oid="z2zr0-z" />;
   }
 
   return (
-    <QueryClientProvider client={queryClient} data-oid="8ei64t1">
+    <QueryClientProvider client={queryClient} data-oid="hwfge3y">
       <ThemeProvider
         defaultTheme="light"
         storageKey={STORAGE_KEYS.theme}
-        data-oid="yf9zhg6"
+        data-oid="oknz9:h"
       >
-        <LoadingProvider data-oid="0-gh561">
-          <TooltipProvider data-oid="xynksx4">
-            <Toaster data-oid="98xc571" />
-            <Sonner data-oid="s9rkl2f" />
-            <BrowserRouter data-oid="3zqm3uc">
-              <ScrollToTop data-oid="71y60xu" />
-              <RouteChangeLoader data-oid="1e4gmn1" />
-              <div className="animate-fade-in" data-oid="2ikxi4-">
+        <LoadingProvider data-oid=".bh-u9w">
+          <TooltipProvider data-oid="ette:u:">
+            <Toaster data-oid="rzs3lrt" />
+            <Sonner data-oid="hl3e8v7" />
+            <BrowserRouter data-oid="1dtu8i0">
+              <ScrollToTop data-oid="1mrdwy." />
+              <RouteChangeLoader data-oid="ds1lhuz" />
+              <div className="animate-fade-in" data-oid="4-rf4bz">
                 {/* Tour guiado */}
                 {showTour && (
                   <GuidedTour
                     steps={tourSteps}
                     onComplete={handleTourComplete}
                     onSkip={handleTourSkip}
-                    data-oid="b4yj-tn"
+                    data-oid="73:hkqs"
                   />
                 )}
 
-                <Routes data-oid="ea-pzfq">
+                <Routes data-oid="rm_m1rz">
                   <Route
                     path={ROUTES.home}
-                    element={<Index data-oid="lz6302:" />}
-                    data-oid="gt8z_68"
+                    element={<Index data-oid="iqanvg3" />}
+                    data-oid="wk0e3:8"
                   />
 
                   <Route
                     path={ROUTES.finanzas.index}
-                    element={<Finanzas data-oid="9it0_gf" />}
-                    data-oid="5bkh7g2"
+                    element={<Finanzas data-oid="3m3evkz" />}
+                    data-oid="8wxobz8"
                   />
 
                   <Route
                     path={ROUTES.finanzas.ingresos}
-                    element={<Ingresos data-oid="s10ntzx" />}
-                    data-oid="d:4hx.e"
+                    element={<Ingresos data-oid="9vx4_x0" />}
+                    data-oid="jfi0wtm"
                   />
 
                   <Route
                     path={ROUTES.finanzas.gastos}
-                    element={<Gastos data-oid="ykldq7o" />}
-                    data-oid="moimwj8"
+                    element={<Gastos data-oid="f0ybe_d" />}
+                    data-oid="hq8948."
                   />
 
                   <Route
                     path={ROUTES.finanzas.inversiones}
-                    element={<Inversiones data-oid="tkzte7b" />}
-                    data-oid="992.ns:"
+                    element={<Inversiones data-oid="vqty26:" />}
+                    data-oid="d6fmgfg"
                   />
 
                   <Route
                     path={ROUTES.reportes}
-                    element={<Reportes data-oid="0wosj4_" />}
-                    data-oid=":gulyl:"
+                    element={<Reportes data-oid="gn8h-yy" />}
+                    data-oid=".o..yno"
                   />
 
                   <Route
                     path={ROUTES.bankAccounts}
-                    element={<BankAccounts data-oid="h91mdzs" />}
-                    data-oid="5r618a5"
+                    element={<BankAccounts data-oid="t56fnyj" />}
+                    data-oid="p7e4:8m"
                   />
 
                   <Route
                     path={ROUTES.impuestos}
-                    element={<Impuestos data-oid="q.90j5k" />}
-                    data-oid="b86z62s"
+                    element={<Impuestos data-oid="4qyqgle" />}
+                    data-oid="misx1.q"
                   />
 
                   <Route
                     path={ROUTES.presupuestos}
-                    element={<Presupuestos data-oid="titnuyl" />}
-                    data-oid="ljod6i4"
+                    element={<Presupuestos data-oid="nnkamjm" />}
+                    data-oid="yamip18"
                   />
 
                   <Route
                     path={ROUTES.nomina}
-                    element={<Nomina data-oid="bkc:9js" />}
-                    data-oid="eh3b722"
+                    element={<Nomina data-oid="69ktqc9" />}
+                    data-oid="es9e5i_"
                   />
 
                   <Route
                     path={ROUTES.configuracion}
-                    element={<Configuracion data-oid="v.uvg3c" />}
-                    data-oid="tzuz8fv"
+                    element={<Configuracion data-oid="l7ndn16" />}
+                    data-oid="g_iow4s"
                   />
 
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route
                     path={ROUTES.notFound}
-                    element={<NotFound data-oid="8d2p2w6" />}
-                    data-oid="bcifyko"
+                    element={<NotFound data-oid="ji6c4cx" />}
+                    data-oid="l5_k0.u"
                   />
                 </Routes>
               </div>

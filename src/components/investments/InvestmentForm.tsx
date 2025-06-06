@@ -72,17 +72,17 @@ export const InvestmentForm = ({ onInvestmentAdded }: InvestmentFormProps) => {
   };
 
   return (
-    <Card className="glass-morphism" data-oid="vojpfum">
-      <CardHeader data-oid=":8ryc4a">
-        <CardTitle data-oid="0:h9f.1">Registrar Inversión</CardTitle>
-        <CardDescription data-oid="lj:ascx">
+    <Card className="glass-morphism" data-oid="7am8in3">
+      <CardHeader data-oid="1rzokk8">
+        <CardTitle data-oid="ifmbcvp">Registrar Inversión</CardTitle>
+        <CardDescription data-oid="yw32-fn">
           Ingrese los detalles de la inversión
         </CardDescription>
       </CardHeader>
-      <CardContent data-oid="e7wm9ca">
-        <form onSubmit={handleSubmit} className="space-y-4" data-oid="7_sv4qt">
-          <div className="space-y-2" data-oid="zxjsb8b">
-            <Label htmlFor="amount" data-oid="fjy9bt2">
+      <CardContent data-oid="odlbfjn">
+        <form onSubmit={handleSubmit} className="space-y-4" data-oid="y7i6q6v">
+          <div className="space-y-2" data-oid="wsvhv66">
+            <Label htmlFor="amount" data-oid="c-ysiw.">
               Monto
             </Label>
             <Input
@@ -93,50 +93,50 @@ export const InvestmentForm = ({ onInvestmentAdded }: InvestmentFormProps) => {
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               required
-              data-oid="hfas53_"
+              data-oid="-4mpo2g"
             />
           </div>
 
-          <div className="space-y-2" data-oid="d_om:sw">
-            <Label htmlFor="investmentType" data-oid="8p3eyr8">
+          <div className="space-y-2" data-oid="5yu5w4:">
+            <Label htmlFor="investmentType" data-oid="5:.jb5f">
               Tipo de Inversión
             </Label>
             <Select
               value={investmentType}
               onValueChange={setInvestmentType}
-              data-oid="6m:3zw0"
+              data-oid="n2uaju."
             >
-              <SelectTrigger data-oid="jn3lvyl">
-                <SelectValue placeholder="Seleccione tipo" data-oid="0934.pd" />
+              <SelectTrigger data-oid="unodpk4">
+                <SelectValue placeholder="Seleccione tipo" data-oid="ygekksl" />
               </SelectTrigger>
-              <SelectContent data-oid="eqcf33z">
-                <SelectItem value="acciones" data-oid="zx8qssh">
+              <SelectContent data-oid="iq9llla">
+                <SelectItem value="acciones" data-oid="zxhf6l-">
                   Acciones
                 </SelectItem>
-                <SelectItem value="bonos" data-oid="86ordon">
+                <SelectItem value="bonos" data-oid="g.e.cw:">
                   Bonos
                 </SelectItem>
-                <SelectItem value="fondos_inversion" data-oid="ziasuj-">
+                <SelectItem value="fondos_inversion" data-oid="bu-80tu">
                   Fondos de Inversión
                 </SelectItem>
-                <SelectItem value="bienes_raices" data-oid="1e:ajyp">
+                <SelectItem value="bienes_raices" data-oid="x32h.nn">
                   Bienes Raíces
                 </SelectItem>
-                <SelectItem value="criptomonedas" data-oid="m_41z9j">
+                <SelectItem value="criptomonedas" data-oid="qi426a.">
                   Criptomonedas
                 </SelectItem>
-                <SelectItem value="deposito_plazo" data-oid="k.wj3qc">
+                <SelectItem value="deposito_plazo" data-oid="4ob42l2">
                   Depósito a Plazo
                 </SelectItem>
-                <SelectItem value="otros" data-oid="8e17ir1">
+                <SelectItem value="otros" data-oid="bjb158k">
                   Otros
                 </SelectItem>
               </SelectContent>
             </Select>
           </div>
 
-          <div className="space-y-2" data-oid="tisg6l1">
-            <Label htmlFor="expectedReturn" data-oid="_dz.h6z">
+          <div className="space-y-2" data-oid="x5wxfyv">
+            <Label htmlFor="expectedReturn" data-oid="hshmw30">
               Rendimiento Esperado (%)
             </Label>
             <Input
@@ -146,12 +146,12 @@ export const InvestmentForm = ({ onInvestmentAdded }: InvestmentFormProps) => {
               step="0.01"
               value={expectedReturn}
               onChange={(e) => setExpectedReturn(e.target.value)}
-              data-oid="5y4ba9o"
+              data-oid="xo441ol"
             />
           </div>
 
-          <div className="space-y-2" data-oid="i5::ic7">
-            <Label htmlFor="description" data-oid="dtn4i1u">
+          <div className="space-y-2" data-oid="8:3s:9-">
+            <Label htmlFor="description" data-oid="osfziay">
               Descripción
             </Label>
             <Input
@@ -159,31 +159,31 @@ export const InvestmentForm = ({ onInvestmentAdded }: InvestmentFormProps) => {
               placeholder="Descripción de la inversión"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              data-oid="51-k8a9"
+              data-oid="2_pb_59"
             />
           </div>
 
-          <div className="space-y-2" data-oid="8rmawe1">
-            <Label htmlFor="date" data-oid="n5gd6no">
+          <div className="space-y-2" data-oid="_t91-.n">
+            <Label htmlFor="date" data-oid=".mw6gqv">
               Fecha
             </Label>
-            <div className="relative" data-oid="1825f.8">
+            <div className="relative" data-oid="ge.m6ps">
               <Input
                 id="date"
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                data-oid="r3k2m45"
+                data-oid="taglae."
               />
 
               <Calendar
                 className="absolute right-3 top-2.5 h-4 w-4 text-gray-500"
-                data-oid="j2lqh2:"
+                data-oid="2wchjlx"
               />
             </div>
           </div>
 
-          <Button type="submit" className="w-full" data-oid="mhzhbsm">
+          <Button type="submit" className="w-full" data-oid="hb7ksjb">
             Registrar Inversión
           </Button>
         </form>
