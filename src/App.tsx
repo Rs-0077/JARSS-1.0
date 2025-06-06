@@ -99,121 +99,54 @@ const App = () => {
     };
   }, []);
 
-  // Manejar la finalización del tour
   const handleTourComplete = () => {
-    setShowTour(false);
-    // Opcional: guardar que el tour se ha completado
     localStorage.setItem(STORAGE_KEYS.tourCompleted, "true");
+    setShowTour(false);
   };
 
-  // Manejar el salto del tour
   const handleTourSkip = () => {
+    localStorage.setItem(STORAGE_KEYS.tourCompleted, "true");
     setShowTour(false);
-    // No guardamos que se ha completado si se salta, para que pueda mostrarse en el futuro
   };
 
   if (isLoading) {
-    return <AppLoader data-oid="z2zr0-z" />;
+    return <AppLoader />;
   }
 
   return (
-    <QueryClientProvider client={queryClient} data-oid="hwfge3y">
-      <ThemeProvider
-        defaultTheme="light"
-        storageKey={STORAGE_KEYS.theme}
-        data-oid="oknz9:h"
-      >
-        <LoadingProvider data-oid=".bh-u9w">
-          <TooltipProvider data-oid="ette:u:">
-            <Toaster data-oid="rzs3lrt" />
-            <Sonner data-oid="hl3e8v7" />
-            <BrowserRouter data-oid="1dtu8i0">
-              <ScrollToTop data-oid="1mrdwy." />
-              <RouteChangeLoader data-oid="ds1lhuz" />
-              <div className="animate-fade-in" data-oid="4-rf4bz">
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider defaultTheme="light" storageKey="ui-theme">
+        <LoadingProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+
+            <BrowserRouter>
+              <ScrollToTop />
+              <RouteChangeLoader />
+              <div className="animate-fade-in">
                 {/* Tour guiado */}
                 {showTour && (
                   <GuidedTour
                     steps={tourSteps}
                     onComplete={handleTourComplete}
                     onSkip={handleTourSkip}
-                    data-oid="73:hkqs"
                   />
                 )}
 
-                <Routes data-oid="rm_m1rz">
-                  <Route
-                    path={ROUTES.home}
-                    element={<Index data-oid="iqanvg3" />}
-                    data-oid="wk0e3:8"
-                  />
-
-                  <Route
-                    path={ROUTES.finanzas.index}
-                    element={<Finanzas data-oid="3m3evkz" />}
-                    data-oid="8wxobz8"
-                  />
-
-                  <Route
-                    path={ROUTES.finanzas.ingresos}
-                    element={<Ingresos data-oid="9vx4_x0" />}
-                    data-oid="jfi0wtm"
-                  />
-
-                  <Route
-                    path={ROUTES.finanzas.gastos}
-                    element={<Gastos data-oid="f0ybe_d" />}
-                    data-oid="hq8948."
-                  />
-
-                  <Route
-                    path={ROUTES.finanzas.inversiones}
-                    element={<Inversiones data-oid="vqty26:" />}
-                    data-oid="d6fmgfg"
-                  />
-
-                  <Route
-                    path={ROUTES.reportes}
-                    element={<Reportes data-oid="gn8h-yy" />}
-                    data-oid=".o..yno"
-                  />
-
-                  <Route
-                    path={ROUTES.bankAccounts}
-                    element={<BankAccounts data-oid="t56fnyj" />}
-                    data-oid="p7e4:8m"
-                  />
-
-                  <Route
-                    path={ROUTES.impuestos}
-                    element={<Impuestos data-oid="4qyqgle" />}
-                    data-oid="misx1.q"
-                  />
-
-                  <Route
-                    path={ROUTES.presupuestos}
-                    element={<Presupuestos data-oid="nnkamjm" />}
-                    data-oid="yamip18"
-                  />
-
-                  <Route
-                    path={ROUTES.nomina}
-                    element={<Nomina data-oid="69ktqc9" />}
-                    data-oid="es9e5i_"
-                  />
-
-                  <Route
-                    path={ROUTES.configuracion}
-                    element={<Configuracion data-oid="l7ndn16" />}
-                    data-oid="g_iow4s"
-                  />
-
-                  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                  <Route
-                    path={ROUTES.notFound}
-                    element={<NotFound data-oid="ji6c4cx" />}
-                    data-oid="l5_k0.u"
-                  />
+                <Routes>
+                  <Route path={ROUTES.home} element={<Index />} />
+                  <Route path={ROUTES.finanzas.index} element={<Finanzas />} />
+                  <Route path={ROUTES.finanzas.ingresos} element={<Ingresos />} />
+                  <Route path={ROUTES.finanzas.gastos} element={<Gastos />} />
+                  <Route path={ROUTES.finanzas.inversiones} element={<Inversiones />} />
+                  <Route path={ROUTES.reportes} element={<Reportes />} />
+                  <Route path={ROUTES.bankAccounts} element={<BankAccounts />} />
+                  <Route path={ROUTES.impuestos} element={<Impuestos />} />
+                  <Route path={ROUTES.presupuestos} element={<Presupuestos />} />
+                  <Route path={ROUTES.nomina} element={<Nomina />} />
+                  <Route path={ROUTES.configuracion} element={<Configuracion />} />
+                  <Route path={ROUTES.notFound} element={<NotFound />} />
                 </Routes>
               </div>
             </BrowserRouter>

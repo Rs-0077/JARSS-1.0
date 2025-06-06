@@ -110,7 +110,12 @@ export function TransactionsChart() {
                 fontSize={12}
                 tickLine={false}
                 axisLine={{ stroke: "var(--border)" }}
-                data-oid="fz2tf:e"
+                tick={{
+                  fill: "var(--muted-foreground)",
+                  className: "dark:fill-white transition-colors"
+                }}
+                className="dark:text-white transition-colors"
+                data-oid="cpm741p"
               />
 
               <YAxis
