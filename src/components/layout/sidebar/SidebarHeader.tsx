@@ -19,8 +19,7 @@ export function SidebarHeader({ isIconOnly }: SidebarHeaderProps) {
         >
           <JarssLogo
             size={40}
-            color="currentColor"
-            className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+            className="text-sidebar-primary"
             data-oid="16_z51t"
           />
         </div>
@@ -37,7 +36,7 @@ export function SidebarHeader({ isIconOnly }: SidebarHeaderProps) {
             data-oid="n30_x0-"
           >
             <h1
-              className="text-xl font-bold text-white dark:text-gray-100 hover:text-gray-200 dark:hover:text-white transition-colors"
+              className="text-xl font-bold text-sidebar-primary"
               data-oid="q1noggi"
             >
               JARSS
