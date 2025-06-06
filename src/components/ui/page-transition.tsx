@@ -27,7 +27,7 @@ export function PageTransition({ children }: PageTransitionProps) {
     <div
       className={`transition-opacity duration-300 ${transitionStage === "fadeIn" ? "opacity-100" : "opacity-0"}`}
       onTransitionEnd={handleAnimationEnd}
-      data-oid="wtz8jck"
+      data-oid="9.dvjou"
     >
       {children}
     </div>

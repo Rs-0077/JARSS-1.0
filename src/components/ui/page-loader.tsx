@@ -17,16 +17,16 @@ export function PageLoader({
         "fixed inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm z-50",
         className,
       )}
-      data-oid=".7g6ey8"
+      data-oid=":c46afu"
     >
       <div
         className="flex flex-col items-center gap-4 p-6 rounded-lg bg-card shadow-lg"
-        data-oid="preq7by"
+        data-oid="i.intct"
       >
-        <Spinner size="xl" color="primary" data-oid="y8.ld:2" />
+        <Spinner size="xl" color="primary" data-oid="k2ir35b" />
         <p
           className="text-lg font-medium text-card-foreground"
-          data-oid="h:8dtzm"
+          data-oid="bhtcvjy"
         >
           {text}
         </p>

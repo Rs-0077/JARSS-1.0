@@ -13,18 +13,18 @@ export function TableLoader({
   columns = 4,
 }: TableLoaderProps) {
   return (
-    <div className={cn("w-full overflow-hidden", className)} data-oid="lz:-tf2">
-      <div className="grid gap-2" data-oid="y7see_0">
+    <div className={cn("w-full overflow-hidden", className)} data-oid="8up2han">
+      <div className="grid gap-2" data-oid="qwx6bmb">
         {/* Encabezado de la tabla */}
         <div
           className="grid grid-cols-1 md:grid-flow-col gap-2"
-          data-oid="eku.f.5"
+          data-oid="rxw1nvd"
         >
           {Array.from({ length: columns }).map((_, index) => (
             <div
               key={`header-${index}`}
               className="h-8 bg-muted/60 rounded animate-pulse"
-              data-oid=".digwp-"
+              data-oid="lvx20:v"
             />
           ))}
         </div>
@@ -34,7 +34,7 @@ export function TableLoader({
           <div
             key={`row-${rowIndex}`}
             className="grid grid-cols-1 md:grid-flow-col gap-2"
-            data-oid="z:zfeh8"
+            data-oid="-f_k.r2"
           >
             {Array.from({ length: columns }).map((_, colIndex) => (
               <div
@@ -43,7 +43,7 @@ export function TableLoader({
                 style={{
                   animationDelay: `${(rowIndex * columns + colIndex) * 0.05}s`,
                 }}
-                data-oid="_8w90yb"
+                data-oid="tv3t6c:"
               />
             ))}
           </div>

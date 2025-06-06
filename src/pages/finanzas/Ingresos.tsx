@@ -67,34 +67,34 @@ const Ingresos = () => {
   };
 
   return (
-    <MainLayout data-oid="13anhuf">
-      <div className="space-y-4" data-oid="nc._ckz">
-        <div className="flex items-center justify-between" data-oid="naxrj4l">
-          <h1 className="text-2xl font-bold" data-oid="3x6g5vl">
+    <MainLayout data-oid="e472z1t">
+      <div className="space-y-4" data-oid="_am7jh-">
+        <div className="flex items-center justify-between" data-oid="jo:_chd">
+          <h1 className="text-2xl font-bold" data-oid="iv:b2q4">
             Gestión de Ingresos
           </h1>
-          <Button className="gap-1" data-oid="z7xdpb_">
-            <Plus className="h-4 w-4" data-oid="xx7pzuo" />
-            <span data-oid="cbjj390">Nuevo Ingreso</span>
+          <Button className="gap-1" data-oid="lr8vvlf">
+            <Plus className="h-4 w-4" data-oid="q-:n7g9" />
+            <span data-oid="kpglpl7">Nuevo Ingreso</span>
           </Button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4" data-oid="wxo199i">
-          <Card className="glass-morphism" data-oid="zn9x-_l">
-            <CardHeader data-oid="x9kyxf5">
-              <CardTitle data-oid="2ha-pt4">Registrar Ingreso</CardTitle>
-              <CardDescription data-oid="m2ycy-3">
+        <div className="grid md:grid-cols-2 gap-4" data-oid="c7a4sp5">
+          <Card className="glass-morphism" data-oid="v0r1i9q">
+            <CardHeader data-oid="qg9-63i">
+              <CardTitle data-oid="fzcmqc8">Registrar Ingreso</CardTitle>
+              <CardDescription data-oid="_pqbpcs">
                 Ingrese los detalles del ingreso
               </CardDescription>
             </CardHeader>
-            <CardContent data-oid=".v:1a21">
+            <CardContent data-oid="crqpx71">
               <form
                 onSubmit={handleSubmit}
                 className="space-y-4"
-                data-oid="g8p1r4i"
+                data-oid="d_0q94h"
               >
-                <div className="space-y-2" data-oid="5q9hnyl">
-                  <Label htmlFor="amount" data-oid="5qo:z5l">
+                <div className="space-y-2" data-oid="q6dkjk1">
+                  <Label htmlFor="amount" data-oid="8fxwgqn">
                     Monto
                   </Label>
                   <Input
@@ -105,47 +105,47 @@ const Ingresos = () => {
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}
                     required
-                    data-oid="4:uibpe"
+                    data-oid="j8lmfrm"
                   />
                 </div>
 
-                <div className="space-y-2" data-oid="kd8zo20">
-                  <Label htmlFor="category" data-oid="d255-p-">
+                <div className="space-y-2" data-oid="2eeq.yl">
+                  <Label htmlFor="category" data-oid="t3.mses">
                     Categoría
                   </Label>
                   <Select
                     value={category}
                     onValueChange={setCategory}
-                    data-oid="z1:pn.n"
+                    data-oid=".ybxhk2"
                   >
-                    <SelectTrigger data-oid="v6db10y">
+                    <SelectTrigger data-oid="fln.8de">
                       <SelectValue
                         placeholder="Seleccione categoría"
-                        data-oid="7w9o4w5"
+                        data-oid="w2phbgt"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="yp3ddke">
-                      <SelectItem value="ventas" data-oid="yog6-6d">
+                    <SelectContent data-oid="z2_8zr0">
+                      <SelectItem value="ventas" data-oid="z5s-rlv">
                         Ventas
                       </SelectItem>
-                      <SelectItem value="servicios" data-oid="3n7j23x">
+                      <SelectItem value="servicios" data-oid="07z7upt">
                         Servicios
                       </SelectItem>
-                      <SelectItem value="comisiones" data-oid="6-cxp8f">
+                      <SelectItem value="comisiones" data-oid="tqy29u8">
                         Comisiones
                       </SelectItem>
-                      <SelectItem value="inversiones" data-oid="uz0qyil">
+                      <SelectItem value="inversiones" data-oid="n45y.35">
                         Rendimiento de Inversiones
                       </SelectItem>
-                      <SelectItem value="otros" data-oid="pf9ch8z">
+                      <SelectItem value="otros" data-oid=":4kg3xt">
                         Otros
                       </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
-                <div className="space-y-2" data-oid="npv_di8">
-                  <Label htmlFor="client" data-oid="_da4._w">
+                <div className="space-y-2" data-oid="otinrzc">
+                  <Label htmlFor="client" data-oid="8otd6tz">
                     Cliente
                   </Label>
                   <Input
@@ -153,12 +153,12 @@ const Ingresos = () => {
                     placeholder="Nombre del cliente"
                     value={client}
                     onChange={(e) => setClient(e.target.value)}
-                    data-oid="-oxom:z"
+                    data-oid="r.cxwzu"
                   />
                 </div>
 
-                <div className="space-y-2" data-oid="myea83d">
-                  <Label htmlFor="description" data-oid="6w8hos-">
+                <div className="space-y-2" data-oid="cirxtj.">
+                  <Label htmlFor="description" data-oid="nxzlfbt">
                     Descripción
                   </Label>
                   <Input
@@ -166,77 +166,77 @@ const Ingresos = () => {
                     placeholder="Descripción del ingreso"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    data-oid="nkpgie:"
+                    data-oid="hgy66r5"
                   />
                 </div>
 
-                <div className="space-y-2" data-oid="1d9x0n5">
-                  <Label htmlFor="date" data-oid="-tah_12">
+                <div className="space-y-2" data-oid="j88ob.p">
+                  <Label htmlFor="date" data-oid=".-jcxpd">
                     Fecha
                   </Label>
-                  <div className="relative" data-oid="b9o9inn">
+                  <div className="relative" data-oid="d.e_870">
                     <Input
                       id="date"
                       type="date"
                       value={date}
                       onChange={(e) => setDate(e.target.value)}
-                      data-oid="4sgpv7-"
+                      data-oid="lehf:-8"
                     />
 
                     <Calendar
                       className="absolute right-3 top-2.5 h-4 w-4 text-gray-500"
-                      data-oid="78a5:yt"
+                      data-oid="414nb77"
                     />
                   </div>
                 </div>
 
-                <Button type="submit" className="w-full" data-oid=":3q0vfs">
+                <Button type="submit" className="w-full" data-oid="3r7t8u8">
                   Registrar Ingreso
                 </Button>
               </form>
             </CardContent>
           </Card>
 
-          <Card className="glass-morphism" data-oid="uhuljz-">
-            <CardHeader data-oid="rjfaigt">
-              <CardTitle data-oid="qg4d0k_">Últimos Ingresos</CardTitle>
-              <CardDescription data-oid="-v7jbaa">
+          <Card className="glass-morphism" data-oid="8uu-561">
+            <CardHeader data-oid="sck8mv0">
+              <CardTitle data-oid="zlttljf">Últimos Ingresos</CardTitle>
+              <CardDescription data-oid="_.sviuw">
                 Movimientos de ingresos recientes
               </CardDescription>
             </CardHeader>
-            <CardContent data-oid="_4fvkjd">
-              <div className="space-y-4" data-oid="q8h1r5t">
+            <CardContent data-oid="m201e9i">
+              <div className="space-y-4" data-oid="8g_wdqd">
                 <div
                   className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                  data-oid="78ueya4"
+                  data-oid="52x6x7a"
                 >
-                  <div className="flex items-center gap-3" data-oid="c-qznds">
+                  <div className="flex items-center gap-3" data-oid="jah8fyh">
                     <div
                       className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center"
-                      data-oid="m4xxvc0"
+                      data-oid="3alhkyl"
                     >
                       <ArrowUp
                         className="h-4 w-4 text-green-600"
-                        data-oid="cbga_rd"
+                        data-oid="prn08sx"
                       />
                     </div>
-                    <div data-oid="pbi:rn-">
-                      <p className="font-medium" data-oid="cldo:3j">
+                    <div data-oid="bz78:sc">
+                      <p className="font-medium" data-oid="-4e1wxg">
                         Pago de Cliente XYZ
                       </p>
-                      <p className="text-sm text-gray-500" data-oid="5a:tq56">
+                      <p className="text-sm text-gray-500" data-oid="b8dvs62">
                         Factura #2023-156
                       </p>
                     </div>
                   </div>
-                  <div className="text-right" data-oid="jb7ympf">
+                  <div className="text-right" data-oid="f06liyu">
                     <p
                       className="font-medium text-green-600"
-                      data-oid="gvvv8.i"
+                      data-oid="pze:jz1"
                     >
                       +$5,200.00
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="99-y43j">
+                    <p className="text-sm text-gray-500" data-oid="odvgbnx">
                       Ayer
                     </p>
                   </div>
@@ -244,35 +244,35 @@ const Ingresos = () => {
 
                 <div
                   className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                  data-oid="c3xwn9_"
+                  data-oid="fzpysgk"
                 >
-                  <div className="flex items-center gap-3" data-oid="ajem851">
+                  <div className="flex items-center gap-3" data-oid="7yeiwmv">
                     <div
                       className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center"
-                      data-oid="_8h9bp1"
+                      data-oid="hxl40zg"
                     >
                       <ArrowUp
                         className="h-4 w-4 text-green-600"
-                        data-oid="n7-e6ys"
+                        data-oid="1nz4xmj"
                       />
                     </div>
-                    <div data-oid="1ea7x7-">
-                      <p className="font-medium" data-oid="vdmt33l">
+                    <div data-oid="zuumwop">
+                      <p className="font-medium" data-oid="ji_8e9u">
                         Consultoría Cliente DEF
                       </p>
-                      <p className="text-sm text-gray-500" data-oid="smv:6zz">
+                      <p className="text-sm text-gray-500" data-oid="39g0y:m">
                         Proyecto anual
                       </p>
                     </div>
                   </div>
-                  <div className="text-right" data-oid="o7pj:nc">
+                  <div className="text-right" data-oid="9vmi.84">
                     <p
                       className="font-medium text-green-600"
-                      data-oid="tzcnpkr"
+                      data-oid="kqdjvyt"
                     >
                       +$12,000.00
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="cfm3_5j">
+                    <p className="text-sm text-gray-500" data-oid="nqxq.6o">
                       27/03/2025
                     </p>
                   </div>
@@ -280,35 +280,35 @@ const Ingresos = () => {
 
                 <div
                   className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                  data-oid="t86dv3:"
+                  data-oid="pm4rg3-"
                 >
-                  <div className="flex items-center gap-3" data-oid="xahgfac">
+                  <div className="flex items-center gap-3" data-oid="lys-28o">
                     <div
                       className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center"
-                      data-oid="n0:y0ie"
+                      data-oid="d2f03i3"
                     >
                       <FileText
                         className="h-4 w-4 text-green-600"
-                        data-oid="u6jhe-g"
+                        data-oid="ym7q2dm"
                       />
                     </div>
-                    <div data-oid="16z26zy">
-                      <p className="font-medium" data-oid="p3z_va.">
+                    <div data-oid="ska7zoo">
+                      <p className="font-medium" data-oid="31qxww.">
                         Venta de Productos
                       </p>
-                      <p className="text-sm text-gray-500" data-oid=".pwks3y">
+                      <p className="text-sm text-gray-500" data-oid="aw1cz3h">
                         Cliente ABC
                       </p>
                     </div>
                   </div>
-                  <div className="text-right" data-oid=":ci-aqf">
+                  <div className="text-right" data-oid="wau00_n">
                     <p
                       className="font-medium text-green-600"
-                      data-oid="ox5x814"
+                      data-oid="1milfe8"
                     >
                       +$3,450.00
                     </p>
-                    <p className="text-sm text-gray-500" data-oid=".z1wcm8">
+                    <p className="text-sm text-gray-500" data-oid="70lam:.">
                       25/03/2025
                     </p>
                   </div>

@@ -19,143 +19,143 @@ export const ExecutionSummary = () => {
   const [selectedPeriod, setSelectedPeriod] = useState("2025-Q2");
 
   return (
-    <Card className="glass-morphism" data-oid="2.3g8-e">
+    <Card className="glass-morphism" data-oid="305-x_u">
       <CardHeader
         className="flex flex-row items-center justify-between space-y-0 pb-2"
-        data-oid="q.lj..q"
+        data-oid="qg5.5bt"
       >
-        <div data-oid="lzkm-s5">
-          <CardTitle data-oid="-t-v-sr">
+        <div data-oid=".az5nb_">
+          <CardTitle data-oid="eykkex_">
             Resumen de Ejecución Presupuestaria
           </CardTitle>
-          <CardDescription data-oid="wpdvtg0">
+          <CardDescription data-oid="02xc4v.">
             Seguimiento en tiempo real del gasto actual vs. presupuesto
           </CardDescription>
         </div>
         <Select
           value={selectedPeriod}
           onValueChange={setSelectedPeriod}
-          data-oid="_k7jwxx"
+          data-oid="qk:ir6o"
         >
-          <SelectTrigger className="w-[180px]" data-oid=".p2uea3">
-            <SelectValue placeholder="Seleccionar período" data-oid="kljq1ls" />
+          <SelectTrigger className="w-[180px]" data-oid="nzipajz">
+            <SelectValue placeholder="Seleccionar período" data-oid="7mwa0gl" />
           </SelectTrigger>
-          <SelectContent data-oid="8x-ol:7">
-            <SelectItem value="2025-Q1" data-oid="ou7rg29">
+          <SelectContent data-oid="24f_yi9">
+            <SelectItem value="2025-Q1" data-oid="374j1_n">
               1er Trimestre 2025
             </SelectItem>
-            <SelectItem value="2025-Q2" data-oid="bm56oj8">
+            <SelectItem value="2025-Q2" data-oid="8mu-vbx">
               2do Trimestre 2025
             </SelectItem>
-            <SelectItem value="2025-Q3" data-oid="wnvsjbf">
+            <SelectItem value="2025-Q3" data-oid="qcu0zge">
               3er Trimestre 2025
             </SelectItem>
-            <SelectItem value="2025-Q4" data-oid="i:yvrwt">
+            <SelectItem value="2025-Q4" data-oid="9re4b:8">
               4to Trimestre 2025
             </SelectItem>
           </SelectContent>
         </Select>
       </CardHeader>
-      <CardContent data-oid="6q8g.zs">
-        <div className="space-y-6" data-oid="o0q_8n1">
-          <div className="space-y-3" data-oid="nzt4nww">
+      <CardContent data-oid="mkw4a-y">
+        <div className="space-y-6" data-oid="r:.vw_a">
+          <div className="space-y-3" data-oid="-ygpn9q">
             <div
               className="flex justify-between items-center"
-              data-oid="gd5zapk"
+              data-oid="7cgmq7z"
             >
-              <div data-oid="siqhetc">
-                <h3 className="font-medium" data-oid="c-6ff4z">
+              <div data-oid="-0360co">
+                <h3 className="font-medium" data-oid="szec8nc">
                   Departamento de Marketing
                 </h3>
-                <p className="text-sm text-gray-500" data-oid="7omzfn2">
+                <p className="text-sm text-gray-500" data-oid="fac4k0k">
                   Presupuesto: $65,000.00
                 </p>
               </div>
-              <div className="text-right" data-oid="89y5qi5">
-                <p className="font-medium" data-oid=".mkl39s">
+              <div className="text-right" data-oid=":yu-p9q">
+                <p className="font-medium" data-oid="fzl7mv8">
                   $52,780.00
                 </p>
-                <p className="text-sm text-amber-500" data-oid="ejlj6:6">
+                <p className="text-sm text-amber-500" data-oid="1cmw_-f">
                   81.2% utilizado
                 </p>
               </div>
             </div>
-            <Progress value={81.2} className="h-2" data-oid="rb99c0h" />
+            <Progress value={81.2} className="h-2" data-oid="-slf8cr" />
           </div>
 
-          <div className="space-y-3" data-oid="c1m:iiu">
+          <div className="space-y-3" data-oid=":99_fsk">
             <div
               className="flex justify-between items-center"
-              data-oid="ra4idua"
+              data-oid="8t5kbgv"
             >
-              <div data-oid="onu2sc0">
-                <h3 className="font-medium" data-oid="vwoa.8z">
+              <div data-oid="9armvov">
+                <h3 className="font-medium" data-oid=":rhevyi">
                   Departamento de Tecnología
                 </h3>
-                <p className="text-sm text-gray-500" data-oid="jboy0vw">
+                <p className="text-sm text-gray-500" data-oid="v88dovc">
                   Presupuesto: $85,000.00
                 </p>
               </div>
-              <div className="text-right" data-oid=".bq_9y2">
-                <p className="font-medium" data-oid="o0zjzkr">
+              <div className="text-right" data-oid="1on6pqr">
+                <p className="font-medium" data-oid="1_h4bqx">
                   $48,450.00
                 </p>
-                <p className="text-sm text-green-500" data-oid="2i5n.w4">
+                <p className="text-sm text-green-500" data-oid=".3-39a2">
                   57.0% utilizado
                 </p>
               </div>
             </div>
-            <Progress value={57} className="h-2" data-oid="olej8mh" />
+            <Progress value={57} className="h-2" data-oid="g5:6wwp" />
           </div>
 
-          <div className="space-y-3" data-oid="epq8bvo">
+          <div className="space-y-3" data-oid="8553qzu">
             <div
               className="flex justify-between items-center"
-              data-oid="iwah0vb"
+              data-oid="btchm_o"
             >
-              <div data-oid="qzf.s3_">
-                <h3 className="font-medium" data-oid=":6ds3ze">
+              <div data-oid="9ihu9.h">
+                <h3 className="font-medium" data-oid="xmp-62r">
                   Departamento de Ventas
                 </h3>
-                <p className="text-sm text-gray-500" data-oid="v4lslt2">
+                <p className="text-sm text-gray-500" data-oid="in3zqfp">
                   Presupuesto: $55,000.00
                 </p>
               </div>
-              <div className="text-right" data-oid="mkykzmk">
-                <p className="font-medium" data-oid="e8-7bic">
+              <div className="text-right" data-oid="je2uajb">
+                <p className="font-medium" data-oid="c87z3ku">
                   $25,450.00
                 </p>
-                <p className="text-sm text-green-500" data-oid="sabfl_w">
+                <p className="text-sm text-green-500" data-oid="tbv3izs">
                   46.3% utilizado
                 </p>
               </div>
             </div>
-            <Progress value={46.3} className="h-2" data-oid="-ah7gch" />
+            <Progress value={46.3} className="h-2" data-oid="qtuzs:6" />
           </div>
 
-          <div className="space-y-3" data-oid="-pj1neg">
+          <div className="space-y-3" data-oid="84sup1:">
             <div
               className="flex justify-between items-center"
-              data-oid="-6i7l8j"
+              data-oid="ch6bwfs"
             >
-              <div data-oid=".h0dj59">
-                <h3 className="font-medium" data-oid="5uwi:55">
+              <div data-oid="u:l59s:">
+                <h3 className="font-medium" data-oid="9efy9h1">
                   Administración y Finanzas
                 </h3>
-                <p className="text-sm text-gray-500" data-oid="e-lor2g">
+                <p className="text-sm text-gray-500" data-oid="-l1nlbj">
                   Presupuesto: $43,500.00
                 </p>
               </div>
-              <div className="text-right" data-oid="46c:gg_">
-                <p className="font-medium" data-oid="s4jtnrd">
+              <div className="text-right" data-oid="hb4a_7w">
+                <p className="font-medium" data-oid="tu0o1kv">
                   $15,695.00
                 </p>
-                <p className="text-sm text-green-500" data-oid="o2bl5-x">
+                <p className="text-sm text-green-500" data-oid="uxh:8uz">
                   36.1% utilizado
                 </p>
               </div>
             </div>
-            <Progress value={36.1} className="h-2" data-oid="xb-_.r:" />
+            <Progress value={36.1} className="h-2" data-oid="ta-37ou" />
           </div>
         </div>
       </CardContent>

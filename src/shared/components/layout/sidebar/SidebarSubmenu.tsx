@@ -41,9 +41,9 @@ export function SidebarSubmenu({
 
   return (
     <>
-      <TooltipProvider data-oid="4gf6un6">
-        <Tooltip data-oid="3tgoa5x">
-          <TooltipTrigger asChild data-oid="znfchi5">
+      <TooltipProvider data-oid="ey_wwus">
+        <Tooltip data-oid=":t77vwx">
+          <TooltipTrigger asChild data-oid="3lioc9b">
             <button
               onClick={handleToggle}
               className={cn(
@@ -52,9 +52,9 @@ export function SidebarSubmenu({
                   ? "bg-contable-primary text-white font-medium"
                   : "text-gray-700 hover:bg-gray-100 hover:text-contable-primary dark:text-gray-300 dark:hover:bg-gray-800",
               )}
-              data-oid="yxqz-ss"
+              data-oid="iv-ph.5"
             >
-              <div className="flex items-center" data-oid="hrvlwb:">
+              <div className="flex items-center" data-oid="3stzw17">
                 <Icon
                   className={cn(
                     "h-5 w-5",
@@ -62,25 +62,25 @@ export function SidebarSubmenu({
                       ? ""
                       : "text-gray-500 group-hover:text-contable-primary",
                   )}
-                  data-oid=":.n7tk7"
+                  data-oid="37aczy3"
                 />
 
                 {!isIconOnly && (
-                  <span className="ml-3 text-sm" data-oid="mve7nka">
+                  <span className="ml-3 text-sm" data-oid="weh99df">
                     {name}
                   </span>
                 )}
               </div>
               {!isIconOnly &&
                 (isOpen ? (
-                  <ChevronUp className="w-4 h-4" data-oid="55::jxc" />
+                  <ChevronUp className="w-4 h-4" data-oid="cpd8ppc" />
                 ) : (
-                  <ChevronDown className="w-4 h-4" data-oid="nf3pk0v" />
+                  <ChevronDown className="w-4 h-4" data-oid="pkvzbyh" />
                 ))}
             </button>
           </TooltipTrigger>
           {isIconOnly && (
-            <TooltipContent side="right" data-oid="wo-g:hk">
+            <TooltipContent side="right" data-oid="baxwn5t">
               {name}
             </TooltipContent>
           )}
@@ -95,7 +95,7 @@ export function SidebarSubmenu({
               ? "ml-0"
               : "ml-7 border-l border-gray-200 dark:border-gray-700",
           )}
-          data-oid="g9y1pb-"
+          data-oid="206l38-"
         >
           {submenu.map((subitem) => (
             <SubmenuItem
@@ -104,7 +104,7 @@ export function SidebarSubmenu({
               href={subitem.href}
               isActive={currentPath === subitem.href}
               isIconOnly={isIconOnly}
-              data-oid="_7ivt_g"
+              data-oid=":t68sjl"
             />
           ))}
         </div>
@@ -122,9 +122,9 @@ type SubmenuItemProps = {
 
 function SubmenuItem({ name, href, isActive, isIconOnly }: SubmenuItemProps) {
   return (
-    <TooltipProvider data-oid="p:9qmru">
-      <Tooltip data-oid="v8pnjrp">
-        <TooltipTrigger asChild data-oid="xj._lkl">
+    <TooltipProvider data-oid="-iqhpi7">
+      <Tooltip data-oid="k8:3rzk">
+        <TooltipTrigger asChild data-oid="-acc.5x">
           <Link
             to={href}
             className={cn(
@@ -134,7 +134,7 @@ function SubmenuItem({ name, href, isActive, isIconOnly }: SubmenuItemProps) {
                 : "text-gray-600 dark:text-gray-400",
               isIconOnly ? "justify-center" : "",
             )}
-            data-oid="ckn57i5"
+            data-oid="7j2v643"
           >
             {isIconOnly ? (
               <span
@@ -142,15 +142,15 @@ function SubmenuItem({ name, href, isActive, isIconOnly }: SubmenuItemProps) {
                   "w-2 h-2 rounded-full",
                   isActive ? "bg-contable-primary" : "bg-gray-400",
                 )}
-                data-oid="f8cvor3"
+                data-oid="ena0zx."
               ></span>
             ) : (
-              <span data-oid="kwyu7ip">{name}</span>
+              <span data-oid="p2qalex">{name}</span>
             )}
           </Link>
         </TooltipTrigger>
         {isIconOnly && (
-          <TooltipContent side="right" data-oid="2fv0u8y">
+          <TooltipContent side="right" data-oid="b603u7j">
             {name}
           </TooltipContent>
         )}

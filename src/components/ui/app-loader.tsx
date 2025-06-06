@@ -27,43 +27,43 @@ export function AppLoader({ className, maxDuration = 3000 }: AppLoaderProps) {
         "fixed inset-0 flex flex-col items-center justify-center bg-background z-50",
         className,
       )}
-      data-oid="euw.onf"
+      data-oid="5j1mrel"
     >
-      <div className="flex flex-col items-center gap-4" data-oid=".vnb3rg">
-        <div className="relative" data-oid="y:j3nie">
-          <JarssLogo size={70} className="text-primary" data-oid="woq6g66" />
+      <div className="flex flex-col items-center gap-4" data-oid="ej58a6w">
+        <div className="relative" data-oid="mfocklp">
+          <JarssLogo size={70} className="text-primary" data-oid="cu5rmov" />
           <div
             className="absolute inset-0 flex items-center justify-center"
-            data-oid="z5mco_3"
+            data-oid="hp1q1_o"
           >
             <div
               className="w-10 h-10 border-3 border-primary/20 border-t-primary rounded-full animate-spin"
-              data-oid=".-a:zkz"
+              data-oid="v7p3mk6"
             />
           </div>
         </div>
 
-        <div className="flex flex-col items-center" data-oid="nndb-kc">
-          <h1 className="text-xl font-bold text-foreground" data-oid="kt54auu">
+        <div className="flex flex-col items-center" data-oid="rkh46cq">
+          <h1 className="text-xl font-bold text-foreground" data-oid="atv-0pa">
             JARSS
           </h1>
-          <p className="text-xs text-muted-foreground" data-oid="3rxgaa4">
+          <p className="text-xs text-muted-foreground" data-oid=":74n2di">
             Inventory
           </p>
         </div>
 
         <div
           className="w-40 h-1 bg-muted rounded-full overflow-hidden"
-          data-oid="qed:qfd"
+          data-oid="f6byp4:"
         >
           <div
             className="h-full bg-primary animate-progress-bar"
-            data-oid="tz2c2z7"
+            data-oid="ub-35g."
           />
         </div>
       </div>
 
-      <style jsx global data-oid="s0u1djr">{`
+      <style jsx global data-oid="bx:rflf">{`
         @keyframes progress-bar {
           0% {
             width: 0%;

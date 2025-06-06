@@ -28,16 +28,16 @@ export function ImageLoader({
   };
 
   return (
-    <div className={cn("relative", className)} data-oid="29d0xun">
+    <div className={cn("relative", className)} data-oid="s1:p-4e">
       {isLoading && (
         <div
           className={cn(
             "absolute inset-0 flex items-center justify-center bg-muted/20",
             loaderClassName,
           )}
-          data-oid="gsbsy0h"
+          data-oid="iqs.zag"
         >
-          <Spinner size="md" data-oid="-mvbgxa" />
+          <Spinner size="md" data-oid="ioy507g" />
         </div>
       )}
 
@@ -45,7 +45,7 @@ export function ImageLoader({
         fallback || (
           <div
             className="flex items-center justify-center w-full h-full bg-muted/30 rounded-md"
-            data-oid="mazdusx"
+            data-oid=":z0md67"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export function ImageLoader({
               strokeLinecap="round"
               strokeLinejoin="round"
               className="h-12 w-12 text-muted-foreground/50"
-              data-oid="vdxpwpx"
+              data-oid=".wg3n0v"
             >
               <rect
                 width="18"
@@ -65,13 +65,13 @@ export function ImageLoader({
                 y="3"
                 rx="2"
                 ry="2"
-                data-oid="a.3bj09"
+                data-oid="a2:uu_2"
               />
 
-              <circle cx="9" cy="9" r="2" data-oid="bs.z-66" />
+              <circle cx="9" cy="9" r="2" data-oid="sefmniv" />
               <path
                 d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"
-                data-oid="go47ehu"
+                data-oid="p9f3fnt"
               />
             </svg>
           </div>
@@ -86,7 +86,7 @@ export function ImageLoader({
           onLoad={handleLoad}
           onError={handleError}
           {...props}
-          data-oid=".7mt-6z"
+          data-oid="n8ju4g5"
         />
       )}
     </div>

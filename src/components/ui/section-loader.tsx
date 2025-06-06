@@ -28,19 +28,19 @@ export function SectionLoader({
           "absolute inset-0 flex flex-col items-center justify-center bg-background/60 backdrop-blur-[1px] z-10 rounded-md",
           className,
         )}
-        data-oid="rlw5jld"
+        data-oid="1ln7-_9"
       >
-        <div className="flex flex-col items-center gap-2" data-oid="ri54_si">
+        <div className="flex flex-col items-center gap-2" data-oid="7pj9j3u">
           <Spinner
             size={spinnerSize[size]}
             color="primary"
-            data-oid="ai5_l:y"
+            data-oid="_3c8wa-"
           />
 
           {text && (
             <p
               className="text-sm font-medium text-foreground"
-              data-oid="dikxh7s"
+              data-oid="c4x7l2l"
             >
               {text}
             </p>
@@ -56,12 +56,12 @@ export function SectionLoader({
         "flex flex-col items-center justify-center py-8",
         className,
       )}
-      data-oid="1bk3xhm"
+      data-oid="5mf0eug"
     >
-      <div className="flex flex-col items-center gap-2" data-oid="e.xx0zf">
-        <Spinner size={spinnerSize[size]} color="primary" data-oid="mm9s2sf" />
+      <div className="flex flex-col items-center gap-2" data-oid="_5y.bn9">
+        <Spinner size={spinnerSize[size]} color="primary" data-oid="p15vshk" />
         {text && (
-          <p className="text-sm font-medium text-foreground" data-oid="jiy:prw">
+          <p className="text-sm font-medium text-foreground" data-oid="7p0rvwj">
             {text}
           </p>
         )}

@@ -1,0 +1,467 @@
+diff --git a/src/types/index.ts b/src/types/index.ts
+new file mode 100644
+index 0000000..1234567
+--- /dev/null
++++ b/src/types/index.ts
+@@ -0,0 +1,189 @@
++// User and Authentication Types
++export interface User {
++  id: string;
++  name: string;
++  email: string;
++  role: 'admin' | 'user' | 'accountant';
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface AuthState {
++  user: User | null;
++  token: string | null;
++  isAuthenticated: boolean;
++  isLoading: boolean;
++}
++
++// Financial Transaction Types
++export interface Transaction {
++  id: string;
++  type: 'income' | 'expense';
++  amount: number;
++  category: string;
++  description: string;
++  date: Date;
++  accountId: string;
++  status: 'pending' | 'completed' | 'cancelled';
++  createdBy: string;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface BankAccount {
++  id: string;
++  name: string;
++  accountNumber: string;
++  bankName: string;
++  balance: number;
++  currency: string;
++  type: 'checking' | 'savings' | 'credit';
++  isActive: boolean;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++// Tax and Compliance Types
++export interface TaxObligation {
++  id: string;
++  type: 'ITBIS' | 'ISR' | 'TSS' | 'OTHER';
++  description: string;
++  amount: number;
++  dueDate: Date;
++  status: 'pending' | 'paid' | 'overdue';
++  period: string;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface TaxDeclaration {
++  id: string;
++  formType: '606' | '607' | 'IR-1' | 'IR-2' | 'OTHER';
++  period: string;
++  totalAmount: number;
++  status: 'draft' | 'submitted' | 'accepted' | 'rejected';
++  submittedDate?: Date;
++  dueDate: Date;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++// Budget Types
++export interface Budget {
++  id: string;
++  name: string;
++  year: number;
++  totalIncome: number;
++  totalExpenses: number;
++  categories: BudgetCategory[];
++  status: 'draft' | 'active' | 'closed';
++  createdBy: string;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface BudgetCategory {
++  id: string;
++  budgetId: string;
++  name: string;
++  type: 'income' | 'expense';
++  plannedAmount: number;
++  actualAmount: number;
++  variance: number;
++  percentage: number;
++}
++
++// Payroll Types
++export interface Employee {
++  id: string;
++  employeeCode: string;
++  firstName: string;
++  lastName: string;
++  email: string;
++  phone: string;
++  position: string;
++  department: string;
++  salary: number;
++  startDate: Date;
++  endDate?: Date;
++  isActive: boolean;
++  vacationDays: number;
++  usedVacationDays: number;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface PayrollRecord {
++  id: string;
++  employeeId: string;
++  period: string;
++  baseSalary: number;
++  bonuses: number;
++  deductions: PayrollDeduction[];
++  netPay: number;
++  status: 'draft' | 'approved' | 'paid';
++  paymentDate?: Date;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface PayrollDeduction {
++  type: 'AFP' | 'SFS' | 'ISR' | 'OTHER';
++  amount: number;
++  percentage?: number;
++  description?: string;
++}
++
++// Vacation Management Types
++export interface VacationRequest {
++  id: string;
++  employeeId: string;
++  startDate: Date;
++  endDate: Date;
++  days: number;
++  reason: string;
++  status: 'pending' | 'approved' | 'rejected' | 'cancelled';
++  approvedBy?: string;
++  approvedDate?: Date;
++  comments?: string;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++// Supplier and Provider Types
++export interface Supplier {
++  id: string;
++  name: string;
++  rnc: string;
++  email: string;
++  phone: string;
++  address: string;
++  contactPerson: string;
++  paymentTerms: number; // days
++  isActive: boolean;
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface Invoice {
++  id: string;
++  type: 'payable' | 'receivable';
++  invoiceNumber: string;
++  supplierId?: string;
++  customerId?: string;
++  amount: number;
++  tax: number;
++  total: number;
++  dueDate: Date;
++  status: 'draft' | 'sent' | 'paid' | 'overdue' | 'cancelled';
++  items: InvoiceItem[];
++  createdAt: Date;
++  updatedAt: Date;
++}
++
++export interface InvoiceItem {
++  description: string;
++  quantity: number;
++  unitPrice: number;
++  tax: number;
++  total: number;
++}
+diff --git a/src/services/auth.service.ts b/src/services/auth.service.ts
+new file mode 100644
+index 0000000..89abcde
+--- /dev/null
++++ b/src/services/auth.service.ts
+@@ -0,0 +1,89 @@
++import { User } from '@/types';
++
++const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
++
++interface LoginCredentials {
++  email: string;
++  password: string;
++}
++
++interface AuthResponse {
++  user: User;
++  token: string;
++}
++
++class AuthService {
++  private static instance: AuthService;
++  private token: string | null = null;
++
++  private constructor() {
++    this.token = localStorage.getItem('authToken');
++  }
++
++  static getInstance(): AuthService {
++    if (!AuthService.instance) {
++      AuthService.instance = new AuthService();
++    }
++    return AuthService.instance;
++  }
++
++  async login(credentials: LoginCredentials): Promise<AuthResponse> {
++    try {
++      // For development, check against test credentials
++      if (credentials.email === 'admin@jarss.com' && credentials.password === 'admin1234') {
++        const mockUser: User = {
++          id: '1',
++          name: 'Admin Jarss',
++          email: 'admin@jarss.com',
++          role: 'admin',
++          createdAt: new Date(),
++          updatedAt: new Date()
++        };
++        const mockToken = 'mock-jwt-token-' + Date.now();
++        
++        this.setToken(mockToken);
++        localStorage.setItem('user', JSON.stringify(mockUser));
++        
++        return { user: mockUser, token: mockToken };
++      }
++
++      const response = await fetch(`${API_URL}/auth/login`, {
++        method: 'POST',
++        headers: {
++          'Content-Type': 'application/json',
++        },
++        body: JSON.stringify(credentials),
++      });
++
++      if (!response.ok) {
++        throw new Error('Invalid credentials');
++      }
++
++      const data: AuthResponse = await response.json();
++      this.setToken(data.token);
++      localStorage.setItem('user', JSON.stringify(data.user));
++      
++      return data;
++    } catch (error) {
++      console.error('Login error:', error);
++      throw error;
++    }
++  }
++
++  logout(): void {
++    this.token = null;
++    localStorage.removeItem('authToken');
++    localStorage.removeItem('user');
++  }
++
++  getToken(): string | null {
++    return this.token;
++  }
++
++  private setToken(token: string): void {
++    this.token = token;
++    localStorage.setItem('authToken', token);
++  }
++}
++
++export default AuthService.getInstance();
+diff --git a/src/services/api.service.ts b/src/services/api.service.ts
+new file mode 100644
+index 0000000..abcdef0
+--- /dev/null
++++ b/src/services/api.service.ts
+@@ -0,0 +1,78 @@
++import authService from './auth.service';
++
++const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
++
++interface RequestOptions extends RequestInit {
++  params?: Record<string, string>;
++}
++
++class ApiService {
++  private static instance: ApiService;
++
++  private constructor() {}
++
++  static getInstance(): ApiService {
++    if (!ApiService.instance) {
++      ApiService.instance = new ApiService();
++    }
++    return ApiService.instance;
++  }
++
++  private async request<T>(
++    endpoint: string,
++    options: RequestOptions = {}
++  ): Promise<T> {
++    const { params, ...fetchOptions } = options;
++    const token = authService.getToken();
++
++    const headers: HeadersInit = {
++      'Content-Type': 'application/json',
++      ...options.headers,
++    };
++
++    if (token) {
++      headers['Authorization'] = `Bearer ${token}`;
++    }
++
++    let url = `${API_URL}${endpoint}`;
++    if (params) {
++      const searchParams = new URLSearchParams(params);
++      url += `?${searchParams.toString()}`;
++    }
++
++    try {
++      const response = await fetch(url, {
++        ...fetchOptions,
++        headers,
++      });
++
++      if (!response.ok) {
++        if (response.status === 401) {
++          authService.logout();
++          window.location.href = '/login';
++        }
++        throw new Error(`API Error: ${response.statusText}`);
++      }
++
++      return await response.json();
++    } catch (error) {
++      console.error('API request failed:', error);
++      throw error;
++    }
++  }
++
++  get<T>(endpoint: string, params?: Record<string, string>): Promise<T> {
++    return this.request<T>(endpoint, { method: 'GET', params });
++  }
++
++  post<T>(endpoint: string, data?: any): Promise<T> {
++    return this.request<T>(endpoint, {
++      method: 'POST',
++      body: JSON.stringify(data),
++    });
++  }
++
++  put<T>(endpoint: string, data?: any): Promise<T> {
++    return this.request<T>(endpoint, {
++      method: 'PUT',
++      body: JSON.stringify(data),
++    });
++  }
++
++  delete<T>(endpoint: string): Promise<T> {
++    return this.request<T>(endpoint, { method: 'DELETE' });
++  }
++}
++
++export default ApiService.getInstance();
+diff --git a/src/services/financial.service.ts b/src/services/financial.service.ts
+new file mode 100644
+index 0000000..1234567
+--- /dev/null
++++ b/src/services/financial.service.ts
+@@ -0,0 +1,134 @@
++import apiService from './api.service';
++import { Transaction, BankAccount } from '@/types';
++
++interface FinancialSummary {
++  totalIncome: number;
++  totalExpenses: number;
++  netBalance: number;
++  cashFlow: number;
++  accountsBalance: number;
++}
++
++interface FinancialReport {
++  type: 'balance_sheet' | 'income_statement' | 'cash_flow';
++  period: string;
++  data: any;
++  generatedAt: Date;
++}
++
++class FinancialService {
++  private static instance: FinancialService;
++
++  private constructor() {}
++
++  static getInstance(): FinancialService {
++    if (!FinancialService.instance) {
++      FinancialService.instance = new FinancialService();
++    }
++    return FinancialService.instance;
++  }
++
++  // Transaction Management
++  async getTransactions(filters?: {
++    startDate?: Date;
++    endDate?: Date;
++    type?: 'income' | 'expense';
++    category?: string;
++    accountId?: string;
++  }): Promise<Transaction[]> {
++    const params: Record<string, string> = {};
++    
++    if (filters?.startDate) {
++      params.startDate = filters.startDate.toISOString();
++    }
++    if (filters?.endDate) {
++      params.endDate = filters.endDate.toISOString();
++    }
++    if (filters?.type) {
++      params.type = filters.type;
++    }
++    if (filters?.category) {
++      params.category = filters.category;
++    }
++    if (filters?.accountId) {
++      params.accountId = filters.accountId;
++    }
++
++    return apiService.get<Transaction[]>('/transactions', params);
++  }
++
++  async createTransaction(transaction: Omit<Transaction, 'id' | 'createdAt' | 'updatedAt'>): Promise<Transaction> {
++    return apiService.post<Transaction>('/transactions', transaction);
++  }
++
++  async updateTransaction(id: string, updates: Partial<Transaction>): Promise<Transaction> {
++    return apiService.put<Transaction>(`/transactions/${id}`, updates);
++  }
++
++  async deleteTransaction(id: string): Promise<void> {
++    return apiService.delete(`/transactions/${id}`);
++  }
++
++  // Bank Account Management
++  async getBankAccounts(): Promise<BankAccount[]> {
++    return apiService.get<BankAccount[]>('/bank-accounts');
++  }
++
++  async createBankAccount(account: Omit<BankAccount, 'id' | 'createdAt' | 'updatedAt'>

@@ -13,66 +13,66 @@ export function CardLoader({ className, count = 1 }: CardLoaderProps) {
         "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
         className,
       )}
-      data-oid="d:p5c-8"
+      data-oid="ynpj0y8"
     >
       {Array.from({ length: count }).map((_, index) => (
         <div
           key={`card-${index}`}
           className="bg-card rounded-lg shadow-sm overflow-hidden"
-          data-oid="460e_3q"
+          data-oid="wx18utf"
         >
           {/* Imagen de la tarjeta */}
           <div
             className="w-full h-40 bg-muted/40 animate-pulse"
             style={{ animationDelay: `${index * 0.1}s` }}
-            data-oid="9_4yp4x"
+            data-oid="rgw0uwc"
           />
 
           {/* Contenido de la tarjeta */}
-          <div className="p-4 space-y-3" data-oid="2wg81lx">
+          <div className="p-4 space-y-3" data-oid="o7i_3-2">
             {/* Título */}
             <div
               className="h-6 bg-muted/60 rounded animate-pulse w-3/4"
               style={{ animationDelay: `${index * 0.1 + 0.1}s` }}
-              data-oid="2lbj.tm"
+              data-oid="j4gvvht"
             />
 
             {/* Descripción */}
-            <div className="space-y-2" data-oid="5nw._.r">
+            <div className="space-y-2" data-oid="5o:-8ar">
               <div
                 className="h-4 bg-muted/40 rounded animate-pulse"
                 style={{ animationDelay: `${index * 0.1 + 0.2}s` }}
-                data-oid="4cn3yvn"
+                data-oid="0.j9ggk"
               />
 
               <div
                 className="h-4 bg-muted/40 rounded animate-pulse w-5/6"
                 style={{ animationDelay: `${index * 0.1 + 0.3}s` }}
-                data-oid="mkfi.7k"
+                data-oid="nqh_d08"
               />
 
               <div
                 className="h-4 bg-muted/40 rounded animate-pulse w-4/6"
                 style={{ animationDelay: `${index * 0.1 + 0.4}s` }}
-                data-oid="z_7f6wx"
+                data-oid="kwdtm62"
               />
             </div>
 
             {/* Pie de tarjeta */}
             <div
               className="pt-2 flex justify-between items-center"
-              data-oid="7m1uxqt"
+              data-oid="pz6x.f2"
             >
               <div
                 className="h-8 bg-muted/60 rounded animate-pulse w-1/4"
                 style={{ animationDelay: `${index * 0.1 + 0.5}s` }}
-                data-oid="imcbm.c"
+                data-oid="onb1pe5"
               />
 
               <div
                 className="h-8 bg-muted/60 rounded animate-pulse w-1/4"
                 style={{ animationDelay: `${index * 0.1 + 0.6}s` }}
-                data-oid="y3q1rhc"
+                data-oid="cqnzplt"
               />
             </div>
           </div>
