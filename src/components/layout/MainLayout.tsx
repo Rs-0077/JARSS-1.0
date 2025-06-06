@@ -16,19 +16,19 @@ export function MainLayout({ children }: MainLayoutProps) {
   }, []);
 
   return (
-    <div className="flex min-h-screen w-full bg-background" data-oid="3c02e4t">
-      <Sidebar data-oid="wboxjw8" />
+    <div className="flex min-h-screen w-full bg-background" data-oid="p2674j4">
+      <Sidebar data-oid="x0f57hd" />
       <div
         className={`flex-1 min-w-0 w-full ml-16 transition-all duration-300 ${mounted ? "opacity-100" : "opacity-0"}`}
-        data-oid="3g6h0:r"
+        data-oid=":si..n6"
       >
-        <Header data-oid="hj92dfu" />
+        <Header data-oid="9w3dvf6" />
         <main
           className="p-4 md:p-6 w-full max-w-full overflow-x-hidden"
-          data-oid="y40lhux"
+          data-oid="1:est:4"
         >
-          <PageTransition data-oid="w47__r1">
-            <div className="space-y-6" data-oid="7h-ykrp">
+          <PageTransition data-oid="jb45959">
+            <div className="space-y-6" data-oid="bulpqx:">
               {children}
             </div>
           </PageTransition>

@@ -3,14 +3,14 @@ import { FileText, PieChart, AlertTriangle } from "lucide-react";
 
 export const BudgetSummary = () => {
   return (
-    <div className="grid gap-4 md:grid-cols-3" data-oid="f:kw3sx">
+    <div className="grid gap-4 md:grid-cols-3" data-oid="_fhober">
       <StatCard
         title="Presupuesto Actual"
         value="$248,500.00"
         icon={FileText}
         trend="neutral"
         trendValue="2do Trimestre 2025"
-        data-oid="j6xc-ua"
+        data-oid="0l6amhp"
       />
 
       <StatCard
@@ -19,7 +19,7 @@ export const BudgetSummary = () => {
         icon={PieChart}
         trend="up"
         trendValue="57.3% del presupuesto"
-        data-oid=".-_4-xn"
+        data-oid="pfd-ox."
       />
 
       <StatCard
@@ -28,7 +28,7 @@ export const BudgetSummary = () => {
         icon={AlertTriangle}
         trend="down"
         trendValue="Exceden 70% del presupuesto"
-        data-oid="k.k9wb9"
+        data-oid="6-xdmcb"
       />
     </div>
   );

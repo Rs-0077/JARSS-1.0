@@ -117,8 +117,8 @@ export function MultiStepForm({
   // Render step indicator
   const renderStepIndicator = () => {
     return (
-      <div className="mb-8" data-oid="nw3i0hy">
-        <div className="flex items-center justify-between" data-oid="uenlur6">
+      <div className="mb-8" data-oid="xp3bt21">
+        <div className="flex items-center justify-between" data-oid="-xo:37e">
           {steps.map((step, index) => {
             const isActive = index === currentStepIndex && !showingSummary;
             const isCompleted = stepsCompleted[step.id];
@@ -141,31 +141,31 @@ export function MultiStepForm({
                       : "cursor-not-allowed opacity-70",
                   )}
                   onClick={() => isClickable && handleStepClick(index)}
-                  data-oid="uosrfii"
+                  data-oid="27pyo7u"
                 >
                   {isCompleted ? (
-                    <Check className="h-5 w-5" data-oid="fcmz1ly" />
+                    <Check className="h-5 w-5" data-oid="t-lcdeq" />
                   ) : (
-                    <span data-oid="poiq:ho">{index + 1}</span>
+                    <span data-oid="gxoiqq0">{index + 1}</span>
                   )}
 
                   {/* Step label */}
                   <div
                     className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
-                    data-oid="f2fkd52"
+                    data-oid="dxumfdl"
                   >
                     <span
                       className={cn(
                         "text-xs font-medium",
                         isActive ? "text-primary" : "text-muted-foreground",
                       )}
-                      data-oid="2e1l-_l"
+                      data-oid="xnv_-8_"
                     >
                       {step.title}
                       {step.isOptional && (
                         <span
                           className="ml-1 text-muted-foreground"
-                          data-oid="9:ga9ot"
+                          data-oid="wgm0j0d"
                         >
                           (Opcional)
                         </span>
@@ -184,7 +184,7 @@ export function MultiStepForm({
                         ? "bg-primary"
                         : "bg-muted",
                     )}
-                    data-oid="0dn-cy4"
+                    data-oid="2jvrbp5"
                   />
                 )}
               </React.Fragment>
@@ -201,7 +201,7 @@ export function MultiStepForm({
                     ? "bg-primary"
                     : "bg-muted",
                 )}
-                data-oid="3gvvfso"
+                data-oid="fftcseh"
               />
 
               <div
@@ -221,20 +221,20 @@ export function MultiStepForm({
                     setShowingSummary(true);
                   }
                 }}
-                data-oid="b5flit_"
+                data-oid="273c6dx"
               >
-                <span data-oid="j1yfcgd">{steps.length + 1}</span>
+                <span data-oid="cl4bypp">{steps.length + 1}</span>
 
                 <div
                   className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
-                  data-oid="3onqmgp"
+                  data-oid="dvo02e8"
                 >
                   <span
                     className={cn(
                       "text-xs font-medium",
                       showingSummary ? "text-primary" : "text-muted-foreground",
                     )}
-                    data-oid="4-3lftn"
+                    data-oid="lrkpjuo"
                   >
                     Resumen
                   </span>
@@ -250,19 +250,19 @@ export function MultiStepForm({
   // Render summary
   const renderSummary = () => {
     return (
-      <div className="space-y-6" data-oid="cvr1ntg">
-        <h3 className="text-lg font-medium" data-oid="70ilaz9">
+      <div className="space-y-6" data-oid="0-__mgz">
+        <h3 className="text-lg font-medium" data-oid="rjoef2r">
           Resumen de la información
         </h3>
 
         {steps.map((step) => (
-          <Card key={step.id} className="overflow-hidden" data-oid="o5f967m">
-            <CardHeader className="py-3 px-4 bg-muted/30" data-oid="ssaaugh">
+          <Card key={step.id} className="overflow-hidden" data-oid="5yr2n2q">
+            <CardHeader className="py-3 px-4 bg-muted/30" data-oid="2rusihr">
               <div
                 className="flex justify-between items-center"
-                data-oid="snb4til"
+                data-oid="p3w5ey7"
               >
-                <CardTitle className="text-base" data-oid="1ondqj:">
+                <CardTitle className="text-base" data-oid="ls0vt0m">
                   {step.title}
                 </CardTitle>
                 <Button
@@ -273,17 +273,17 @@ export function MultiStepForm({
                     setCurrentStepIndex(stepIndex);
                     setShowingSummary(false);
                   }}
-                  data-oid="vh.an:2"
+                  data-oid="2r7ejtv"
                 >
                   Editar
                 </Button>
               </div>
             </CardHeader>
-            <CardContent className="py-3 px-4" data-oid="ma2eit-">
+            <CardContent className="py-3 px-4" data-oid="y4o8za:">
               {/* This would typically be a custom summary renderer for each step */}
               <pre
                 className="text-sm whitespace-pre-wrap bg-muted/20 p-2 rounded"
-                data-oid="w:_nfxr"
+                data-oid="ba8pqz_"
               >
                 {JSON.stringify(formData[step.id] || {}, null, 2)}
               </pre>
@@ -295,17 +295,17 @@ export function MultiStepForm({
   };
 
   return (
-    <div className={cn("w-full", className)} data-oid="-36grz:">
+    <div className={cn("w-full", className)} data-oid="2i_e1.2">
       {showStepIndicator && renderStepIndicator()}
 
-      <Card className="mt-8 w-full" data-oid="n0ytm9h">
-        <CardHeader data-oid="n.xpju-">
-          <CardTitle data-oid="fqkvsdm">
+      <Card className="mt-8 w-full" data-oid="kko:x9g">
+        <CardHeader data-oid="0k8e.pm">
+          <CardTitle data-oid="dsg8xm:">
             {showingSummary ? "Confirmar información" : currentStep.title}
           </CardTitle>
         </CardHeader>
 
-        <CardContent data-oid="t:1uw-l">
+        <CardContent data-oid="27xm2ll">
           {showingSummary
             ? renderSummary()
             : React.cloneElement(currentStep.component as React.ReactElement, {
@@ -315,18 +315,18 @@ export function MultiStepForm({
               })}
         </CardContent>
 
-        <CardFooter className="flex justify-between" data-oid="q3p87rd">
+        <CardFooter className="flex justify-between" data-oid=":v3r1c9">
           <Button
             variant="outline"
             onClick={isFirstStep ? onCancel : handlePrevious}
             disabled={isSubmitting}
-            data-oid="zzsyz7o"
+            data-oid="4oepf76"
           >
             {isFirstStep ? (
               "Cancelar"
             ) : (
               <>
-                <ChevronLeft className="mr-2 h-4 w-4" data-oid="awfjhsu" />
+                <ChevronLeft className="mr-2 h-4 w-4" data-oid="gy_cta-" />
                 Anterior
               </>
             )}
@@ -335,7 +335,7 @@ export function MultiStepForm({
           <Button
             onClick={showingSummary ? handleComplete : handleNext}
             disabled={isSubmitting}
-            data-oid="oc0sv-p"
+            data-oid="qi.lwm1"
           >
             {isSubmitting ? (
               "Procesando..."
@@ -350,7 +350,7 @@ export function MultiStepForm({
             ) : (
               <>
                 Siguiente
-                <ChevronRight className="ml-2 h-4 w-4" data-oid="y1n4190" />
+                <ChevronRight className="ml-2 h-4 w-4" data-oid="-.rzddx" />
               </>
             )}
           </Button>

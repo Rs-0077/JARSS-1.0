@@ -33,7 +33,7 @@ export const Sidebar = React.forwardRef<
           )}
           ref={ref}
           {...props}
-          data-oid="n2cd34o"
+          data-oid="7q795w."
         >
           {children}
         </div>
@@ -46,7 +46,7 @@ export const Sidebar = React.forwardRef<
           open={openMobile}
           onOpenChange={setOpenMobile}
           {...props}
-          data-oid="0yi_kvs"
+          data-oid="s15kzav"
         >
           <SheetContent
             data-sidebar="sidebar"
@@ -58,9 +58,9 @@ export const Sidebar = React.forwardRef<
               } as React.CSSProperties
             }
             side={side}
-            data-oid="5-9kgrx"
+            data-oid="i_u3vm2"
           >
-            <div className="flex h-full w-full flex-col" data-oid="75_r3j:">
+            <div className="flex h-full w-full flex-col" data-oid="q4-uw0s">
               {children}
             </div>
           </SheetContent>
@@ -76,7 +76,7 @@ export const Sidebar = React.forwardRef<
         data-collapsible={state === "collapsed" ? collapsible : ""}
         data-variant={variant}
         data-side={side}
-        data-oid="yyy2-lc"
+        data-oid="l9hidbo"
       >
         {/* This is what handles the sidebar gap on desktop */}
         <div
@@ -88,7 +88,7 @@ export const Sidebar = React.forwardRef<
               ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4))]"
               : "group-data-[collapsible=icon]:w-[--sidebar-width-icon]",
           )}
-          data-oid="p_nj5f7"
+          data-oid=":n-pu9f"
         />
 
         <div
@@ -104,12 +104,12 @@ export const Sidebar = React.forwardRef<
             className,
           )}
           {...props}
-          data-oid="8zws5k8"
+          data-oid="o-.20pa"
         >
           <div
             data-sidebar="sidebar"
             className="flex h-full w-full flex-col bg-sidebar group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:border-sidebar-border group-data-[variant=floating]:shadow"
-            data-oid="h30pp_k"
+            data-oid="ck3u-r4"
           >
             {children}
           </div>
@@ -138,10 +138,10 @@ export const SidebarTrigger = React.forwardRef<
         toggleSidebar();
       }}
       {...props}
-      data-oid="9998:cp"
+      data-oid="vvh-o40"
     >
-      <PanelLeft data-oid="h9_4a92" />
-      <span className="sr-only" data-oid="v81irxk">
+      <PanelLeft data-oid="a_:80it" />
+      <span className="sr-only" data-oid="al_kt1_">
         Toggle Sidebar
       </span>
     </Button>
@@ -173,7 +173,7 @@ export const SidebarRail = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="8pje44f"
+      data-oid="sp_kbc:"
     />
   );
 });
@@ -192,7 +192,7 @@ export const SidebarInset = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="8gffmof"
+      data-oid="yzre6nt"
     />
   );
 });

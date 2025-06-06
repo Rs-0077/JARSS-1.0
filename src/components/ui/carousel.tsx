@@ -131,7 +131,7 @@ const Carousel = React.forwardRef<
           canScrollPrev,
           canScrollNext,
         }}
-        data-oid="bizbanw"
+        data-oid="j11tn2g"
       >
         <div
           ref={ref}
@@ -140,7 +140,7 @@ const Carousel = React.forwardRef<
           role="region"
           aria-roledescription="carousel"
           {...props}
-          data-oid="89yg20x"
+          data-oid="7w:o.:-"
         >
           {children}
         </div>
@@ -157,7 +157,7 @@ const CarouselContent = React.forwardRef<
   const { carouselRef, orientation } = useCarousel();
 
   return (
-    <div ref={carouselRef} className="overflow-hidden" data-oid="7.8awr6">
+    <div ref={carouselRef} className="overflow-hidden" data-oid="untpd13">
       <div
         ref={ref}
         className={cn(
@@ -166,7 +166,7 @@ const CarouselContent = React.forwardRef<
           className,
         )}
         {...props}
-        data-oid="8dwjcei"
+        data-oid="0rozn::"
       />
     </div>
   );
@@ -190,7 +190,7 @@ const CarouselItem = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="i--3l8k"
+      data-oid="429iap_"
     />
   );
 });
@@ -217,10 +217,10 @@ const CarouselPrevious = React.forwardRef<
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
-      data-oid="klpij4_"
+      data-oid="16ak:iw"
     >
-      <ArrowLeft className="h-4 w-4" data-oid="fa:v3i-" />
-      <span className="sr-only" data-oid="zrvjuh.">
+      <ArrowLeft className="h-4 w-4" data-oid="ewxr46m" />
+      <span className="sr-only" data-oid="qciths3">
         Previous slide
       </span>
     </Button>
@@ -249,10 +249,10 @@ const CarouselNext = React.forwardRef<
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
-      data-oid="nvt0fca"
+      data-oid="6-:p5i5"
     >
-      <ArrowRight className="h-4 w-4" data-oid="qvbr-qj" />
-      <span className="sr-only" data-oid=".t.18av">
+      <ArrowRight className="h-4 w-4" data-oid=".abc2cq" />
+      <span className="sr-only" data-oid=".1kozr8">
         Next slide
       </span>
     </Button>

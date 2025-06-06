@@ -16,14 +16,14 @@ import {
 
 const Index = () => {
   return (
-    <MainLayout data-oid="an8vv-r">
-      <div className="space-y-6" data-oid="h_4nbdy">
-        <div className="flex items-center justify-between" data-oid="71-10_1">
-          <h1 className="text-3xl font-bold" data-oid="gsspj-u">
+    <MainLayout data-oid="9-l02w.">
+      <div className="space-y-6" data-oid="_ndk278">
+        <div className="flex items-center justify-between" data-oid="ehbhqse">
+          <h1 className="text-3xl font-bold" data-oid="3y54wk4">
             Panel
           </h1>
-          <div className="flex items-center gap-2" data-oid="l9hc.y:">
-            <span className="text-sm text-gray-500" data-oid="15:y:v.">
+          <div className="flex items-center gap-2" data-oid="jbbr3:v">
+            <span className="text-sm text-gray-500" data-oid="t.v:x-i">
               Última actualización: 06 Abr, 2025
             </span>
           </div>
@@ -31,7 +31,7 @@ const Index = () => {
 
         <div
           className="grid gap-6 md:grid-cols-2 lg:grid-cols-4"
-          data-oid="4m70nko"
+          data-oid="oop3b3c"
         >
           <StatCard
             title="Balance Total"
@@ -40,7 +40,7 @@ const Index = () => {
             description="Balance actual en todas las cuentas"
             trend="up"
             trendValue="+8.2% desde el mes pasado"
-            data-oid="vmjg1j4"
+            data-oid="3_rktl-"
           />
 
           <StatCard
@@ -50,7 +50,7 @@ const Index = () => {
             description="Ingresos del mes en curso"
             trend="up"
             trendValue="+12.5% desde el mes pasado"
-            data-oid="h0dd96r"
+            data-oid="v1w9_z4"
           />
 
           <StatCard
@@ -60,7 +60,7 @@ const Index = () => {
             description="Gastos del mes en curso"
             trend="down"
             trendValue="-5.3% desde el mes pasado"
-            data-oid="k4r1373"
+            data-oid="9h:4qa4"
           />
 
           <StatCard
@@ -70,21 +70,21 @@ const Index = () => {
             description="Total impuestos por pagar"
             trend="neutral"
             trendValue="Próximo vencimiento: 17/04"
-            data-oid="sbjn34q"
+            data-oid="e65rjio"
           />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3" data-oid="tk3ecy_">
-          <TransactionsChart data-oid="j5uzgpi" />
+        <div className="grid gap-6 md:grid-cols-3" data-oid="l.a_aye">
+          <TransactionsChart data-oid="zwwx:ty" />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3" data-oid="o3mtkqq">
-          <RecentTransactions data-oid="8l706z:" />
+        <div className="grid gap-6 md:grid-cols-3" data-oid="1h8s1ot">
+          <RecentTransactions data-oid="0yv5.du" />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2" data-oid=":kmxhyw">
-          <TaxObligations data-oid="g8-_lxg" />
-          <Reminders data-oid="whagel3" />
+        <div className="grid gap-6 md:grid-cols-2" data-oid=".cbo7i:">
+          <TaxObligations data-oid="6gou98m" />
+          <Reminders data-oid="ix742uw" />
         </div>
       </div>
     </MainLayout>

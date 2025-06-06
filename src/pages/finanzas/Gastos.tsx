@@ -67,34 +67,34 @@ const Gastos = () => {
   };
 
   return (
-    <MainLayout data-oid="ok4r_gv">
-      <div className="space-y-4" data-oid="bfny6pv">
-        <div className="flex items-center justify-between" data-oid="5d1omwx">
-          <h1 className="text-2xl font-bold" data-oid="zmg3:a_">
+    <MainLayout data-oid="lwm-y1p">
+      <div className="space-y-4" data-oid="n32u6ou">
+        <div className="flex items-center justify-between" data-oid="tyn-3.w">
+          <h1 className="text-2xl font-bold" data-oid="k92tla5">
             Gestión de Gastos
           </h1>
-          <Button className="gap-1" data-oid="_v5kx3w">
-            <Plus className="h-4 w-4" data-oid="xtjoue1" />
-            <span data-oid="ih6hgfd">Nuevo Gasto</span>
+          <Button className="gap-1" data-oid="0rdizvf">
+            <Plus className="h-4 w-4" data-oid="qinda1-" />
+            <span data-oid="e_kfjp:">Nuevo Gasto</span>
           </Button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4" data-oid="4jfae_d">
-          <Card className="glass-morphism" data-oid="y6fiymr">
-            <CardHeader data-oid="25_0704">
-              <CardTitle data-oid="t0yp1xm">Registrar Gasto</CardTitle>
-              <CardDescription data-oid="h:7kfn6">
+        <div className="grid md:grid-cols-2 gap-4" data-oid="-me_rpq">
+          <Card className="glass-morphism" data-oid="v:ut4mh">
+            <CardHeader data-oid="0xx8sno">
+              <CardTitle data-oid="eqot3u1">Registrar Gasto</CardTitle>
+              <CardDescription data-oid="lub0mtf">
                 Ingrese los detalles del gasto
               </CardDescription>
             </CardHeader>
-            <CardContent data-oid="b_w5iwm">
+            <CardContent data-oid="7uemegv">
               <form
                 onSubmit={handleSubmit}
                 className="space-y-4"
-                data-oid="ff.3tan"
+                data-oid="0r.0:e3"
               >
-                <div className="space-y-2" data-oid="ija8qqq">
-                  <Label htmlFor="amount" data-oid="3:ha9dw">
+                <div className="space-y-2" data-oid="vj2x.np">
+                  <Label htmlFor="amount" data-oid="4zdcjub">
                     Monto
                   </Label>
                   <Input
@@ -105,56 +105,56 @@ const Gastos = () => {
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}
                     required
-                    data-oid="3tqt:-6"
+                    data-oid="-cno8nu"
                   />
                 </div>
 
-                <div className="space-y-2" data-oid=".8lyaif">
-                  <Label htmlFor="category" data-oid="wefs_hi">
+                <div className="space-y-2" data-oid="uugte-.">
+                  <Label htmlFor="category" data-oid="u72r6m6">
                     Categoría
                   </Label>
                   <Select
                     value={category}
                     onValueChange={setCategory}
-                    data-oid="1fw5drt"
+                    data-oid="gg_z1xi"
                   >
-                    <SelectTrigger data-oid="5ie10k7">
+                    <SelectTrigger data-oid="zcneund">
                       <SelectValue
                         placeholder="Seleccione categoría"
-                        data-oid="jc352-_"
+                        data-oid="0q1pqjf"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="807e8_7">
-                      <SelectItem value="compras" data-oid="lq6n7:r">
+                    <SelectContent data-oid="oehfm80">
+                      <SelectItem value="compras" data-oid="7m67ex3">
                         Compras
                       </SelectItem>
-                      <SelectItem value="servicios" data-oid="e3mu74t">
+                      <SelectItem value="servicios" data-oid="jn3xrel">
                         Servicios
                       </SelectItem>
-                      <SelectItem value="nomina" data-oid="rriq4pg">
+                      <SelectItem value="nomina" data-oid=".fk8r.8">
                         Nómina
                       </SelectItem>
-                      <SelectItem value="impuestos" data-oid="u415vd3">
+                      <SelectItem value="impuestos" data-oid="p5:xsaw">
                         Impuestos
                       </SelectItem>
-                      <SelectItem value="alquiler" data-oid="tu0t-7q">
+                      <SelectItem value="alquiler" data-oid="2-s:-og">
                         Alquiler
                       </SelectItem>
-                      <SelectItem value="servicios_publicos" data-oid="6bu79:w">
+                      <SelectItem value="servicios_publicos" data-oid="osl7rk-">
                         Servicios Públicos
                       </SelectItem>
-                      <SelectItem value="marketing" data-oid=":_kv9qf">
+                      <SelectItem value="marketing" data-oid="vsbqlz8">
                         Marketing
                       </SelectItem>
-                      <SelectItem value="otros" data-oid="61rsqw4">
+                      <SelectItem value="otros" data-oid="p85rzhq">
                         Otros
                       </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
-                <div className="space-y-2" data-oid="olpng9x">
-                  <Label htmlFor="supplier" data-oid="bjy17kd">
+                <div className="space-y-2" data-oid="oxw_vip">
+                  <Label htmlFor="supplier" data-oid="b1f4k96">
                     Proveedor
                   </Label>
                   <Input
@@ -162,12 +162,12 @@ const Gastos = () => {
                     placeholder="Nombre del proveedor"
                     value={supplier}
                     onChange={(e) => setSupplier(e.target.value)}
-                    data-oid="9x7983d"
+                    data-oid="90_4j30"
                   />
                 </div>
 
-                <div className="space-y-2" data-oid="mjjul94">
-                  <Label htmlFor="description" data-oid="_iw3fg5">
+                <div className="space-y-2" data-oid="ulceuzi">
+                  <Label htmlFor="description" data-oid="o48tyql">
                     Descripción
                   </Label>
                   <Input
@@ -175,74 +175,74 @@ const Gastos = () => {
                     placeholder="Descripción del gasto"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    data-oid="v46f3tb"
+                    data-oid="43tevij"
                   />
                 </div>
 
-                <div className="space-y-2" data-oid="jsr0c3u">
-                  <Label htmlFor="date" data-oid="w2d6s-w">
+                <div className="space-y-2" data-oid="-r6e-.j">
+                  <Label htmlFor="date" data-oid="3xlq25l">
                     Fecha
                   </Label>
-                  <div className="relative" data-oid="ypx:766">
+                  <div className="relative" data-oid="ko2.07s">
                     <Input
                       id="date"
                       type="date"
                       value={date}
                       onChange={(e) => setDate(e.target.value)}
-                      data-oid="870tl85"
+                      data-oid="ebcl8dw"
                     />
 
                     <Calendar
                       className="absolute right-3 top-2.5 h-4 w-4 text-gray-500"
-                      data-oid="mklqjli"
+                      data-oid="az6o6g6"
                     />
                   </div>
                 </div>
 
-                <Button type="submit" className="w-full" data-oid="5:wnw1i">
+                <Button type="submit" className="w-full" data-oid="k3yfrkv">
                   Registrar Gasto
                 </Button>
               </form>
             </CardContent>
           </Card>
 
-          <Card className="glass-morphism" data-oid="w4mw7h8">
-            <CardHeader data-oid="k_ynxdz">
-              <CardTitle data-oid="8i2jy_h">Últimos Gastos</CardTitle>
-              <CardDescription data-oid="_znsh5y">
+          <Card className="glass-morphism" data-oid="tct9z7p">
+            <CardHeader data-oid="18uf:l5">
+              <CardTitle data-oid="58lpvwn">Últimos Gastos</CardTitle>
+              <CardDescription data-oid="bo-mq:9">
                 Movimientos de gastos recientes
               </CardDescription>
             </CardHeader>
-            <CardContent data-oid="i7bw5ar">
-              <div className="space-y-4" data-oid="fnl6ut-">
+            <CardContent data-oid="wi70hod">
+              <div className="space-y-4" data-oid=":pnc4x2">
                 <div
                   className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                  data-oid="d-wys:n"
+                  data-oid="_otpi9k"
                 >
-                  <div className="flex items-center gap-3" data-oid="f5qli9_">
+                  <div className="flex items-center gap-3" data-oid="-9w7g.p">
                     <div
                       className="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center"
-                      data-oid="nd0vfik"
+                      data-oid="acx2h-j"
                     >
                       <ArrowDown
                         className="h-4 w-4 text-red-600"
-                        data-oid=".38z6dt"
+                        data-oid="-cr_y93"
                       />
                     </div>
-                    <div data-oid="1bmijw6">
-                      <p className="font-medium" data-oid="gxsje5w">
+                    <div data-oid="w9h6d94">
+                      <p className="font-medium" data-oid="q30opm:">
                         Pago a Proveedor ABC
                       </p>
-                      <p className="text-sm text-gray-500" data-oid="77txiwc">
+                      <p className="text-sm text-gray-500" data-oid="ufbp5x1">
                         Materiales
                       </p>
                     </div>
                   </div>
-                  <div className="text-right" data-oid="a7krkj6">
-                    <p className="font-medium text-red-600" data-oid="acamc57">
+                  <div className="text-right" data-oid="2tea4z:">
+                    <p className="font-medium text-red-600" data-oid="7y.9p_s">
                       -$1,840.00
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="gnd8yoo">
+                    <p className="text-sm text-gray-500" data-oid="jfp:fd9">
                       29/03/2025
                     </p>
                   </div>
@@ -250,32 +250,32 @@ const Gastos = () => {
 
                 <div
                   className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                  data-oid="t8orv3k"
+                  data-oid="476t3wi"
                 >
-                  <div className="flex items-center gap-3" data-oid="i_n3_8h">
+                  <div className="flex items-center gap-3" data-oid="1uupmbx">
                     <div
                       className="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center"
-                      data-oid="kh1ibeu"
+                      data-oid="m0nkmru"
                     >
                       <ArrowDown
                         className="h-4 w-4 text-red-600"
-                        data-oid="a8xbg7u"
+                        data-oid="xg84gab"
                       />
                     </div>
-                    <div data-oid="uo172v4">
-                      <p className="font-medium" data-oid="424n5_.">
+                    <div data-oid="6d85.9.">
+                      <p className="font-medium" data-oid="u_4q58m">
                         Pago de Servicios
                       </p>
-                      <p className="text-sm text-gray-500" data-oid="y36biwz">
+                      <p className="text-sm text-gray-500" data-oid="dow1b7e">
                         Electricidad y agua
                       </p>
                     </div>
                   </div>
-                  <div className="text-right" data-oid="kyri14d">
-                    <p className="font-medium text-red-600" data-oid="stzh1:.">
+                  <div className="text-right" data-oid="g-bsqqd">
+                    <p className="font-medium text-red-600" data-oid="4u1bdv2">
                       -$450.00
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="ot3:ofx">
+                    <p className="text-sm text-gray-500" data-oid="a5wmy:.">
                       28/03/2025
                     </p>
                   </div>
@@ -283,32 +283,32 @@ const Gastos = () => {
 
                 <div
                   className="flex justify-between items-center p-3 bg-white/10 rounded-lg border border-gray-200/10"
-                  data-oid="58k4p6j"
+                  data-oid="9wdnzu."
                 >
-                  <div className="flex items-center gap-3" data-oid="kz2rms8">
+                  <div className="flex items-center gap-3" data-oid="3h5x5w0">
                     <div
                       className="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center"
-                      data-oid="sjg_90-"
+                      data-oid="xwwul8a"
                     >
                       <FileText
                         className="h-4 w-4 text-red-600"
-                        data-oid="m1vz5zw"
+                        data-oid="94950ap"
                       />
                     </div>
-                    <div data-oid="wo9p_2t">
-                      <p className="font-medium" data-oid="4bjat93">
+                    <div data-oid="uprv2k.">
+                      <p className="font-medium" data-oid="t9kkpww">
                         Alquiler Oficina
                       </p>
-                      <p className="text-sm text-gray-500" data-oid="y7jarwo">
+                      <p className="text-sm text-gray-500" data-oid="6ah7zar">
                         Mes de abril
                       </p>
                     </div>
                   </div>
-                  <div className="text-right" data-oid="r:.pym.">
-                    <p className="font-medium text-red-600" data-oid="j97vbmp">
+                  <div className="text-right" data-oid="8rm2.y3">
+                    <p className="font-medium text-red-600" data-oid="3-6c3fj">
                       -$2,500.00
                     </p>
-                    <p className="text-sm text-gray-500" data-oid="eet_63c">
+                    <p className="text-sm text-gray-500" data-oid="k2m807l">
                       26/03/2025
                     </p>
                   </div>

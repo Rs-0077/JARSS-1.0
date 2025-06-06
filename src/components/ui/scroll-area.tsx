@@ -11,16 +11,16 @@ const ScrollArea = React.forwardRef<
     ref={ref}
     className={cn("relative overflow-hidden", className)}
     {...props}
-    data-oid="-ncw7j_"
+    data-oid="jkzfg98"
   >
     <ScrollAreaPrimitive.Viewport
       className="h-full w-full rounded-[inherit]"
-      data-oid="262:ejq"
+      data-oid="ulto8m1"
     >
       {children}
     </ScrollAreaPrimitive.Viewport>
-    <ScrollBar data-oid="153ehav" />
-    <ScrollAreaPrimitive.Corner data-oid="6g383mx" />
+    <ScrollBar data-oid="wvz3793" />
+    <ScrollAreaPrimitive.Corner data-oid="o0jo980" />
   </ScrollAreaPrimitive.Root>
 ));
 ScrollArea.displayName = ScrollAreaPrimitive.Root.displayName;
@@ -41,11 +41,11 @@ const ScrollBar = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid=":oo.1ug"
+    data-oid="9g2z1_2"
   >
     <ScrollAreaPrimitive.ScrollAreaThumb
       className="relative flex-1 rounded-full bg-border"
-      data-oid="4_kitk-"
+      data-oid="7efsadh"
     />
   </ScrollAreaPrimitive.ScrollAreaScrollbar>
 ));

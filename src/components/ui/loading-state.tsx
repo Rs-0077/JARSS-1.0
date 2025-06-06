@@ -51,18 +51,18 @@ export function LoadingState({
       {...props}
       role="status"
       aria-live="polite"
-      data-oid="hrq3u5x"
+      data-oid="rsbz:7."
     >
       {showSpinner && (
         <Loader2
           className={cn("animate-spin", spinnerClassName)}
           size={spinnerSize}
           aria-hidden="true"
-          data-oid="snp0btw"
+          data-oid="w13xhlh"
         />
       )}
-      {text && <span data-oid="df97eu3">{text}</span>}
-      <span className="sr-only" data-oid="pecmmg1">
+      {text && <span data-oid="matp_jr">{text}</span>}
+      <span className="sr-only" data-oid="q9mp3ja">
         Cargando, por favor espere
       </span>
     </div>
@@ -73,13 +73,13 @@ export function SkeletonCard({ className }: { className?: string }) {
   return (
     <div
       className={cn("rounded-lg border p-4 animate-pulse", className)}
-      data-oid="-:ukujm"
+      data-oid="804zg.-"
     >
-      <div className="h-4 w-1/2 bg-muted rounded mb-4" data-oid="3-dpzn3"></div>
-      <div className="space-y-2" data-oid=":letv-.">
-        <div className="h-3 w-full bg-muted rounded" data-oid="43d2dcc"></div>
-        <div className="h-3 w-4/5 bg-muted rounded" data-oid="fm7rl-d"></div>
-        <div className="h-3 w-3/5 bg-muted rounded" data-oid="rfuoxkn"></div>
+      <div className="h-4 w-1/2 bg-muted rounded mb-4" data-oid="b.q2319"></div>
+      <div className="space-y-2" data-oid="ajj40ss">
+        <div className="h-3 w-full bg-muted rounded" data-oid=":wixzsb"></div>
+        <div className="h-3 w-4/5 bg-muted rounded" data-oid="2vjpt6:"></div>
+        <div className="h-3 w-3/5 bg-muted rounded" data-oid=".eq_7cn"></div>
       </div>
     </div>
   );
@@ -93,27 +93,27 @@ export function SkeletonList({
   className?: string;
 }) {
   return (
-    <div className={cn("space-y-3", className)} data-oid="u9-e-1s">
+    <div className={cn("space-y-3", className)} data-oid="zez0oqi">
       {Array(count)
         .fill(0)
         .map((_, i) => (
           <div
             key={i}
             className="flex items-center space-x-4 animate-pulse"
-            data-oid="v8--bft"
+            data-oid="bgkbjlg"
           >
             <div
               className="h-10 w-10 rounded-full bg-muted"
-              data-oid="nbh9y2n"
+              data-oid="u14wm:_"
             ></div>
-            <div className="space-y-2 flex-1" data-oid="7ijwn68">
+            <div className="space-y-2 flex-1" data-oid="xfyv3x3">
               <div
                 className="h-3 w-3/4 bg-muted rounded"
-                data-oid="2h:a6.k"
+                data-oid="tv2yy:g"
               ></div>
               <div
                 className="h-3 w-1/2 bg-muted rounded"
-                data-oid="8ne2d2q"
+                data-oid="l1uf793"
               ></div>
             </div>
           </div>
@@ -132,30 +132,30 @@ export function SkeletonTable({
   className?: string;
 }) {
   return (
-    <div className={cn("w-full animate-pulse", className)} data-oid="nipb-t5">
-      <div className="flex border-b pb-2 mb-4" data-oid="mv4puuc">
+    <div className={cn("w-full animate-pulse", className)} data-oid="ltw0es0">
+      <div className="flex border-b pb-2 mb-4" data-oid="6mhx9vv">
         {Array(columns)
           .fill(0)
           .map((_, i) => (
             <div
               key={i}
               className="flex-1 h-4 bg-muted rounded mx-2"
-              data-oid="oek_1u4"
+              data-oid="d93j79g"
             ></div>
           ))}
       </div>
-      <div className="space-y-3" data-oid="-f-0_:s">
+      <div className="space-y-3" data-oid="2m0n002">
         {Array(rows)
           .fill(0)
           .map((_, i) => (
-            <div key={i} className="flex border-b pb-2" data-oid="ab_:tvz">
+            <div key={i} className="flex border-b pb-2" data-oid="fl743ed">
               {Array(columns)
                 .fill(0)
                 .map((_, j) => (
                   <div
                     key={j}
                     className="flex-1 h-3 bg-muted rounded mx-2 my-1"
-                    data-oid="c9mn2-o"
+                    data-oid="1j85.i5"
                   ></div>
                 ))}
             </div>

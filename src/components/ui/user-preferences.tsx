@@ -136,43 +136,43 @@ export function UserPreferencesPanel({
   };
 
   return (
-    <div className={cn("space-y-6", className)} data-oid="yxsd5z8">
-      <div className="flex justify-between items-center" data-oid="mu5-bqe">
-        <h2 className="text-2xl font-semibold" data-oid="dj21.wp">
+    <div className={cn("space-y-6", className)} data-oid="zrugt__">
+      <div className="flex justify-between items-center" data-oid="yktld15">
+        <h2 className="text-2xl font-semibold" data-oid="o8i.80d">
           Preferencias de usuario
         </h2>
-        <div className="flex space-x-2" data-oid="z48eysq">
+        <div className="flex space-x-2" data-oid="3-blp1o">
           <Button
             variant="outline"
             size="sm"
             onClick={handleReset}
             disabled={!hasChanges}
-            data-oid="m_1-8yl"
+            data-oid="2fwv_t_"
           >
-            <RotateCcw className="mr-2 h-4 w-4" data-oid="nh41bwj" />
+            <RotateCcw className="mr-2 h-4 w-4" data-oid="mm.u_h6" />
             Restablecer
           </Button>
           <Button
             size="sm"
             onClick={handleSave}
             disabled={!hasChanges}
-            data-oid="gitl:hb"
+            data-oid="s27jb58"
           >
-            <Save className="mr-2 h-4 w-4" data-oid="3vrfx2-" />
+            <Save className="mr-2 h-4 w-4" data-oid="r8c7djx" />
             Guardar cambios
           </Button>
         </div>
       </div>
 
-      <Tabs defaultValue="general" className="w-full" data-oid="1xgak-7">
-        <TabsList className="grid w-full grid-cols-3" data-oid="t14g:oa">
-          <TabsTrigger value="general" data-oid="1v51kfu">
+      <Tabs defaultValue="general" className="w-full" data-oid="a9.jz:f">
+        <TabsList className="grid w-full grid-cols-3" data-oid="p2-twux">
+          <TabsTrigger value="general" data-oid="-tjvjdm">
             General
           </TabsTrigger>
-          <TabsTrigger value="notifications" data-oid="_c3:hdb">
+          <TabsTrigger value="notifications" data-oid="dsw5c8e">
             Notificaciones
           </TabsTrigger>
-          <TabsTrigger value="accessibility" data-oid="wj.wt5p">
+          <TabsTrigger value="accessibility" data-oid="20a3p1m">
             Accesibilidad
           </TabsTrigger>
         </TabsList>
@@ -180,14 +180,14 @@ export function UserPreferencesPanel({
         <TabsContent
           value="general"
           className="space-y-4 pt-4"
-          data-oid="2z767hx"
+          data-oid="yga7t8g"
         >
-          <div className="space-y-4" data-oid="uf310n-">
-            <div data-oid="zuv-pur">
-              <h3 className="text-lg font-medium mb-2" data-oid="jp-aqy_">
+          <div className="space-y-4" data-oid="rxadm:e">
+            <div data-oid="kbws:j_">
+              <h3 className="text-lg font-medium mb-2" data-oid="v_eon8u">
                 Tema
               </h3>
-              <div className="grid grid-cols-3 gap-4" data-oid="nvj8lm-">
+              <div className="grid grid-cols-3 gap-4" data-oid="5ato5xa">
                 <div
                   className={cn(
                     "flex flex-col items-center justify-center p-4 rounded-lg border-2 cursor-pointer transition-all",
@@ -196,14 +196,14 @@ export function UserPreferencesPanel({
                       : "border-muted hover:border-primary/50",
                   )}
                   onClick={() => handleChange(["theme"], "light")}
-                  data-oid="u0lh5tp"
+                  data-oid="wlm8m-e"
                 >
                   <Sun
                     className="h-8 w-8 mb-2 text-yellow-500"
-                    data-oid="fe_-jti"
+                    data-oid="2id-.9n"
                   />
 
-                  <span data-oid="-gj-oyu">Claro</span>
+                  <span data-oid="0s67smw">Claro</span>
                 </div>
 
                 <div
@@ -214,14 +214,14 @@ export function UserPreferencesPanel({
                       : "border-muted hover:border-primary/50",
                   )}
                   onClick={() => handleChange(["theme"], "dark")}
-                  data-oid="vq6524y"
+                  data-oid="cnddir9"
                 >
                   <Moon
                     className="h-8 w-8 mb-2 text-indigo-400"
-                    data-oid="uwplc9:"
+                    data-oid="h20q9bv"
                   />
 
-                  <span data-oid="xle7mkb">Oscuro</span>
+                  <span data-oid=".:eo9rr">Oscuro</span>
                 </div>
 
                 <div
@@ -232,40 +232,40 @@ export function UserPreferencesPanel({
                       : "border-muted hover:border-primary/50",
                   )}
                   onClick={() => handleChange(["theme"], "system")}
-                  data-oid="73a0:-o"
+                  data-oid="dcrc:l2"
                 >
-                  <div className="h-8 w-8 mb-2 flex" data-oid="oal0.an">
+                  <div className="h-8 w-8 mb-2 flex" data-oid="817mu7i">
                     <Sun
                       className="h-8 w-4 text-yellow-500"
-                      data-oid="iiu5rj2"
+                      data-oid="hsvahqn"
                     />
 
                     <Moon
                       className="h-8 w-4 text-indigo-400"
-                      data-oid="_8iz:tw"
+                      data-oid="m2.jrkh"
                     />
                   </div>
-                  <span data-oid="9yhfrw:">Sistema</span>
+                  <span data-oid="5xnbf23">Sistema</span>
                 </div>
               </div>
             </div>
 
-            <div className="space-y-2" data-oid="72lwvn1">
-              <h3 className="text-lg font-medium mb-2" data-oid="3m0h1-8">
+            <div className="space-y-2" data-oid=".7_hrwu">
+              <h3 className="text-lg font-medium mb-2" data-oid="3dt:9kv">
                 Visualización
               </h3>
 
               <div
                 className="flex items-center justify-between"
-                data-oid="hvwqh2r"
+                data-oid=".sah62w"
               >
-                <div className="space-y-0.5" data-oid="q7suukq">
-                  <Label htmlFor="compact-mode" data-oid="v:fq-s5">
+                <div className="space-y-0.5" data-oid="ix9tf3h">
+                  <Label htmlFor="compact-mode" data-oid="5ger_bg">
                     Modo compacto
                   </Label>
                   <p
                     className="text-sm text-muted-foreground"
-                    data-oid="pg9wlwz"
+                    data-oid="hstsx:z"
                   >
                     Reduce el espaciado y tamaño de los elementos
                   </p>
@@ -276,21 +276,21 @@ export function UserPreferencesPanel({
                   onCheckedChange={(checked) =>
                     handleChange(["display", "compactMode"], checked)
                   }
-                  data-oid="7_0:pw8"
+                  data-oid="_bvo539"
                 />
               </div>
 
               <div
                 className="flex items-center justify-between"
-                data-oid="6xr5vkf"
+                data-oid="-cnbgob"
               >
-                <div className="space-y-0.5" data-oid="x4boi_.">
-                  <Label htmlFor="show-tips" data-oid="t7.megi">
+                <div className="space-y-0.5" data-oid="zbkytux">
+                  <Label htmlFor="show-tips" data-oid="_5zok-.">
                     Mostrar consejos
                   </Label>
                   <p
                     className="text-sm text-muted-foreground"
-                    data-oid="cp7-8xe"
+                    data-oid="s_9ng-t"
                   >
                     Muestra consejos y sugerencias mientras usas la aplicación
                   </p>
@@ -301,21 +301,21 @@ export function UserPreferencesPanel({
                   onCheckedChange={(checked) =>
                     handleChange(["display", "showTips"], checked)
                   }
-                  data-oid="wbr-nzg"
+                  data-oid="4ihx38i"
                 />
               </div>
 
               <div
                 className="flex items-center justify-between"
-                data-oid="fa0p89j"
+                data-oid="a55bq3c"
               >
-                <div className="space-y-0.5" data-oid="qhxefy9">
-                  <Label htmlFor="welcome-screen" data-oid="-_2:kfq">
+                <div className="space-y-0.5" data-oid="226440x">
+                  <Label htmlFor="welcome-screen" data-oid="ua7i_dz">
                     Pantalla de bienvenida
                   </Label>
                   <p
                     className="text-sm text-muted-foreground"
-                    data-oid="js3vqla"
+                    data-oid="p26a2jh"
                   >
                     Muestra la pantalla de bienvenida al iniciar la aplicación
                   </p>
@@ -326,7 +326,7 @@ export function UserPreferencesPanel({
                   onCheckedChange={(checked) =>
                     handleChange(["display", "showWelcomeScreen"], checked)
                   }
-                  data-oid="4ki2cyo"
+                  data-oid="laazc06"
                 />
               </div>
             </div>
@@ -336,32 +336,32 @@ export function UserPreferencesPanel({
         <TabsContent
           value="notifications"
           className="space-y-4 pt-4"
-          data-oid="wuo5nv3"
+          data-oid="2z-jckq"
         >
-          <div className="space-y-4" data-oid="246nane">
+          <div className="space-y-4" data-oid="a3-8m8y">
             <div
               className="flex items-center justify-between"
-              data-oid="5__llzy"
+              data-oid="posn6os"
             >
-              <div className="space-y-0.5" data-oid="4tijymq">
+              <div className="space-y-0.5" data-oid="du0xe_7">
                 <Label
                   htmlFor="notifications-enabled"
                   className="text-base font-medium"
-                  data-oid="yy9-:e7"
+                  data-oid="d6sb3lr"
                 >
                   Notificaciones
                 </Label>
-                <p className="text-sm text-muted-foreground" data-oid="o4bt1n:">
+                <p className="text-sm text-muted-foreground" data-oid="co1-dlt">
                   Habilitar o deshabilitar todas las notificaciones
                 </p>
               </div>
-              <div className="flex items-center space-x-2" data-oid="ltqjbsc">
+              <div className="flex items-center space-x-2" data-oid="kcq8c5t">
                 {preferences.notifications.enabled ? (
-                  <Bell className="h-4 w-4 text-primary" data-oid="ebreiq0" />
+                  <Bell className="h-4 w-4 text-primary" data-oid="-o5ryzf" />
                 ) : (
                   <BellOff
                     className="h-4 w-4 text-muted-foreground"
-                    data-oid="njhg7vu"
+                    data-oid="_e_8d24"
                   />
                 )}
                 <Switch
@@ -370,23 +370,23 @@ export function UserPreferencesPanel({
                   onCheckedChange={(checked) =>
                     handleChange(["notifications", "enabled"], checked)
                   }
-                  data-oid="8ej0gr3"
+                  data-oid="u84ymd-"
                 />
               </div>
             </div>
 
             <div
               className="space-y-2 pl-2 border-l-2 border-muted"
-              data-oid="oai95l3"
+              data-oid="mp-d5-5"
             >
               <div
                 className="flex items-center justify-between"
-                data-oid="mbidmay"
+                data-oid=":kud.4q"
               >
                 <Label
                   htmlFor="email-notifications"
                   className="flex-1"
-                  data-oid="-tecyqy"
+                  data-oid=":m6-4wa"
                 >
                   Notificaciones por correo electrónico
                 </Label>
@@ -400,18 +400,18 @@ export function UserPreferencesPanel({
                     handleChange(["notifications", "email"], checked)
                   }
                   disabled={!preferences.notifications.enabled}
-                  data-oid="6_7:t15"
+                  data-oid=":_n2nbs"
                 />
               </div>
 
               <div
                 className="flex items-center justify-between"
-                data-oid="en6hlcq"
+                data-oid="psfe014"
               >
                 <Label
                   htmlFor="app-notifications"
                   className="flex-1"
-                  data-oid="-qmgc2j"
+                  data-oid="-puz_2r"
                 >
                   Notificaciones en la aplicación
                 </Label>
@@ -425,18 +425,18 @@ export function UserPreferencesPanel({
                     handleChange(["notifications", "app"], checked)
                   }
                   disabled={!preferences.notifications.enabled}
-                  data-oid="v1yzi5m"
+                  data-oid="sza4fz9"
                 />
               </div>
 
               <div
                 className="flex items-center justify-between"
-                data-oid="ktjsedg"
+                data-oid="7dumd.l"
               >
                 <Label
                   htmlFor="sound-notifications"
                   className="flex-1"
-                  data-oid="dsuykc."
+                  data-oid="-xst.dh"
                 >
                   Sonidos de notificación
                 </Label>
@@ -450,7 +450,7 @@ export function UserPreferencesPanel({
                     handleChange(["notifications", "sound"], checked)
                   }
                   disabled={!preferences.notifications.enabled}
-                  data-oid="dr81o7o"
+                  data-oid="fb2iqcm"
                 />
               </div>
             </div>
@@ -460,18 +460,18 @@ export function UserPreferencesPanel({
         <TabsContent
           value="accessibility"
           className="space-y-4 pt-4"
-          data-oid="6q37387"
+          data-oid="q60afui"
         >
-          <div className="space-y-6" data-oid="_uayy13">
-            <div className="space-y-2" data-oid="lbve6i-">
+          <div className="space-y-6" data-oid="votb84q">
+            <div className="space-y-2" data-oid="xlty9wx">
               <div
                 className="flex justify-between items-center"
-                data-oid="211259v"
+                data-oid="sj-evea"
               >
                 <Label
                   htmlFor="font-size"
                   className="text-base font-medium"
-                  data-oid="93txrkc"
+                  data-oid=":fh.vq5"
                 >
                   Tamaño de fuente: {preferences.accessibility.fontSize}%
                 </Label>
@@ -482,7 +482,7 @@ export function UserPreferencesPanel({
                     handleChange(["accessibility", "fontSize"], 100)
                   }
                   disabled={preferences.accessibility.fontSize === 100}
-                  data-oid="j0x:wv4"
+                  data-oid="f7-e7aa"
                 >
                   Restablecer
                 </Button>
@@ -496,31 +496,31 @@ export function UserPreferencesPanel({
                 onValueChange={(value) =>
                   handleChange(["accessibility", "fontSize"], value[0])
                 }
-                data-oid=":dwsz4l"
+                data-oid="t:lpq7w"
               />
 
               <div
                 className="flex justify-between text-xs text-muted-foreground"
-                data-oid="28q76ru"
+                data-oid="pw25a87"
               >
-                <span data-oid=":_ws.mk">Pequeño</span>
-                <span data-oid="eav_l4g">Normal</span>
-                <span data-oid="347i-wk">Grande</span>
+                <span data-oid="29ej97w">Pequeño</span>
+                <span data-oid="5_hq1fa">Normal</span>
+                <span data-oid="4jnf3at">Grande</span>
               </div>
             </div>
 
-            <div className="space-y-2" data-oid="riwfrmx">
+            <div className="space-y-2" data-oid="m5-t9d.">
               <div
                 className="flex items-center justify-between"
-                data-oid="_ee9e94"
+                data-oid="lg.7xjm"
               >
-                <div className="space-y-0.5" data-oid=".c0tto:">
-                  <Label htmlFor="contrast-mode" data-oid="6a7n3qj">
+                <div className="space-y-0.5" data-oid="wjfdg2t">
+                  <Label htmlFor="contrast-mode" data-oid="-.g8:ir">
                     Modo de alto contraste
                   </Label>
                   <p
                     className="text-sm text-muted-foreground"
-                    data-oid="p6451j5"
+                    data-oid="5l64oo8"
                   >
                     Aumenta el contraste para mejorar la legibilidad
                   </p>
@@ -531,21 +531,21 @@ export function UserPreferencesPanel({
                   onCheckedChange={(checked) =>
                     handleChange(["accessibility", "contrastMode"], checked)
                   }
-                  data-oid="4yy560n"
+                  data-oid="td7j5-j"
                 />
               </div>
 
               <div
                 className="flex items-center justify-between"
-                data-oid="m.pa_1z"
+                data-oid="flu_nc-"
               >
-                <div className="space-y-0.5" data-oid="udehkdt">
-                  <Label htmlFor="reduced-motion" data-oid="e7xphot">
+                <div className="space-y-0.5" data-oid="2s6vhiz">
+                  <Label htmlFor="reduced-motion" data-oid="9n1w0ez">
                     Movimiento reducido
                   </Label>
                   <p
                     className="text-sm text-muted-foreground"
-                    data-oid=":9bez.q"
+                    data-oid="zf97ke3"
                   >
                     Reduce o elimina las animaciones y transiciones
                   </p>
@@ -556,7 +556,7 @@ export function UserPreferencesPanel({
                   onCheckedChange={(checked) =>
                     handleChange(["accessibility", "reducedMotion"], checked)
                   }
-                  data-oid="kmx8xj1"
+                  data-oid="53nvhpl"
                 />
               </div>
             </div>

@@ -32,16 +32,16 @@ const reminders = [
 
 export function Reminders() {
   return (
-    <Card className="glass-morphism" data-oid="z7obiwj">
+    <Card className="glass-morphism" data-oid="box50zx">
       <CardHeader
         className="flex flex-row items-center justify-between pb-2"
-        data-oid="rj0486y"
+        data-oid="k3zjvym"
       >
-        <div data-oid="6fgzmm2">
-          <CardTitle className="text-xl" data-oid="i_xse15">
+        <div data-oid="9rbm1m2">
+          <CardTitle className="text-xl" data-oid="-t36h67">
             Recordatorios
           </CardTitle>
-          <CardDescription data-oid="-9piw:g">
+          <CardDescription data-oid="2bj2wjr">
             Tareas pendientes
           </CardDescription>
         </div>
@@ -49,45 +49,45 @@ export function Reminders() {
           size="sm"
           variant="outline"
           className="h-8 gap-1 rounded-full bg-white/50 hover:bg-white/70"
-          data-oid="a9ad3ng"
+          data-oid="847p128"
         >
-          <Plus className="h-3.5 w-3.5" data-oid="cr9eu7r" />
-          <span data-oid="rma4.z5">Añadir</span>
+          <Plus className="h-3.5 w-3.5" data-oid="ri954fn" />
+          <span data-oid=":1v952:">Añadir</span>
         </Button>
       </CardHeader>
-      <CardContent data-oid="v8tdhsn">
-        <div className="space-y-2" data-oid="-eisb4f">
+      <CardContent data-oid="oow6oz.">
+        <div className="space-y-2" data-oid="yurkzgk">
           {reminders.map((reminder) => (
             <div
               key={reminder.id}
               className="flex items-start gap-3 rounded-md border border-white/30 bg-white/30 backdrop-blur-sm p-3 hover:bg-white/50 transition-colors"
-              data-oid="g-kmaf6"
+              data-oid="p7bq65w"
             >
               <Button
                 size="sm"
                 variant="outline"
                 className="mt-0.5 h-5 w-5 rounded-full p-0 text-contable-primary bg-white/50"
-                data-oid="yn0lo1j"
+                data-oid="9w7.-ak"
               >
-                <Check className="h-3 w-3" data-oid="5qg_rf1" />
-                <span className="sr-only" data-oid="nbc2qe-">
+                <Check className="h-3 w-3" data-oid="v5bth8i" />
+                <span className="sr-only" data-oid=":iez3nj">
                   Marcar como completado
                 </span>
               </Button>
-              <div className="grid gap-1" data-oid="3jct771">
+              <div className="grid gap-1" data-oid="4ackwnd">
                 <p
                   className="text-sm font-medium leading-none"
-                  data-oid="unu.jc."
+                  data-oid="e_dgfkv"
                 >
                   {reminder.title}
                 </p>
-                <div className="flex items-center gap-2" data-oid="tno1_ed">
+                <div className="flex items-center gap-2" data-oid="100ll88">
                   <div
                     className="flex items-center gap-1 text-xs text-gray-500"
-                    data-oid="1kqjurc"
+                    data-oid="f3fl9r7"
                   >
-                    <Clock className="h-3 w-3" data-oid="xtmqj0u" />
-                    <span data-oid="yfhtv8-">{reminder.dueDate}</span>
+                    <Clock className="h-3 w-3" data-oid="sxgts.-" />
+                    <span data-oid="kovc2j3">{reminder.dueDate}</span>
                   </div>
                   <div
                     className={`rounded-full px-2 py-0.5 text-xs font-medium ${
@@ -97,7 +97,7 @@ export function Reminders() {
                           ? "bg-yellow-100 text-yellow-800"
                           : "bg-green-100 text-green-800"
                     }`}
-                    data-oid="ad0qy8m"
+                    data-oid="4prhrw0"
                   >
                     {reminder.priority === "alta"
                       ? "Prioridad alta"

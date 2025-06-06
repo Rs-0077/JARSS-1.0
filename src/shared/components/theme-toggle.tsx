@@ -11,19 +11,19 @@ export function ThemeToggle() {
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="transition-all duration-300 hover:bg-primary/10"
-      data-oid="y:d6bj0"
+      data-oid="ek3ga8m"
     >
       <Sun
         className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-        data-oid="jkndesc"
+        data-oid=":tkt371"
       />
 
       <Moon
         className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-        data-oid="gdxq4.v"
+        data-oid="cggz1xk"
       />
 
-      <span className="sr-only" data-oid="czb6k4t">
+      <span className="sr-only" data-oid="n8:9uru">
         Toggle theme
       </span>
     </Button>

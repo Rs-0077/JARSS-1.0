@@ -40,18 +40,18 @@ const taxData = [
 
 export function TaxObligations() {
   return (
-    <Card className="glass-morphism" data-oid="7m5zi0s">
-      <CardHeader data-oid="rkq7xha">
-        <CardTitle className="text-xl" data-oid="cki4m_t">
+    <Card className="glass-morphism" data-oid="xrhtw4d">
+      <CardHeader data-oid="_f7f5p0">
+        <CardTitle className="text-xl" data-oid="cqdov_g">
           Obligaciones Fiscales
         </CardTitle>
-        <CardDescription data-oid="f5coe9e">
+        <CardDescription data-oid="b3at6x.">
           Impuestos pendientes de pago
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4" data-oid="7xh4yix">
-        <div className="h-[180px]" data-oid="bdx419t">
-          <ResponsiveContainer width="100%" height="100%" data-oid="k5cf_b6">
+      <CardContent className="space-y-4" data-oid="aj67:x4">
+        <div className="h-[180px]" data-oid="s.a_43v">
+          <ResponsiveContainer width="100%" height="100%" data-oid="bdh._az">
             <BarChart
               data={taxData}
               margin={{
@@ -60,40 +60,40 @@ export function TaxObligations() {
                 left: 0,
                 bottom: 5,
               }}
-              data-oid="i339n4f"
+              data-oid="p3acn5a"
             >
-              <defs data-oid="doo5gyp">
+              <defs data-oid="d1g010e">
                 <linearGradient
                   id="barGradient"
                   x1="0"
                   y1="0"
                   x2="0"
                   y2="1"
-                  data-oid="8.4882-"
+                  data-oid="m7y6re3"
                 >
                   <stop
                     offset="0%"
                     stopColor="#0C4DA2"
                     stopOpacity={0.8}
-                    data-oid="5rqcnwc"
+                    data-oid="yo.ffet"
                   />
 
                   <stop
                     offset="100%"
                     stopColor="#0C4DA2"
                     stopOpacity={0.4}
-                    data-oid="luurf0o"
+                    data-oid="b80qman"
                   />
                 </linearGradient>
               </defs>
               <CartesianGrid
                 strokeDasharray="3 3"
                 vertical={false}
-                data-oid="1plj.2e"
+                data-oid="u-r4j2m"
               />
 
-              <XAxis dataKey="name" data-oid="_9ogm7k" />
-              <YAxis data-oid="zjjho9m" />
+              <XAxis dataKey="name" data-oid="q-32ug0" />
+              <YAxis data-oid="6ejxss3" />
               <Tooltip
                 formatter={(value) => [
                   `$${value.toLocaleString("es-MX")}`,
@@ -104,39 +104,39 @@ export function TaxObligations() {
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   backdropFilter: "blur(8px)",
                 }}
-                data-oid="qbqgfy8"
+                data-oid="p.i0jkr"
               />
 
               <Bar
                 dataKey="amount"
                 fill="url(#barGradient)"
                 radius={[4, 4, 0, 0]}
-                data-oid="5d4ia.r"
+                data-oid="s-aa1e8"
               />
             </BarChart>
           </ResponsiveContainer>
         </div>
 
-        <div className="space-y-2" data-oid="-h5ui:w">
+        <div className="space-y-2" data-oid="ty:d6w.">
           {taxData.map((tax) => (
             <div
               key={tax.name}
               className="flex items-center justify-between p-3 rounded-md bg-white/30 backdrop-blur-sm hover:bg-white/50 transition-colors"
-              data-oid="e0mndph"
+              data-oid="ylq4i_n"
             >
-              <div data-oid="21yn8gw">
-                <p className="font-medium" data-oid="b-k1c:i">
+              <div data-oid="d6:uev.">
+                <p className="font-medium" data-oid="gmz4i34">
                   {tax.name}
                 </p>
                 <div
                   className="flex items-center text-xs text-gray-500"
-                  data-oid="8sfdyu8"
+                  data-oid="7zh4cg4"
                 >
-                  <Calendar className="mr-1 h-3 w-3" data-oid="6jpxew:" />
+                  <Calendar className="mr-1 h-3 w-3" data-oid="wpx62qd" />
                   Vence: {tax.dueDate}
                 </div>
               </div>
-              <p className="font-semibold" data-oid="3ams654">
+              <p className="font-semibold" data-oid="modsbto">
                 ${tax.amount.toLocaleString("es-MX")}
               </p>
             </div>

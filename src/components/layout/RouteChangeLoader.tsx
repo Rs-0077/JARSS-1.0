@@ -44,5 +44,5 @@ export function RouteChangeLoader() {
   // Solo mostrar el loader si isLoading es true Y showLoader es true
   if (!isLoading || !showLoader) return null;
 
-  return <PageLoader text="Cargando página..." data-oid="7u-wh2q" />;
+  return <PageLoader text="Cargando página..." data-oid="ava:ipz" />;
 }

@@ -41,11 +41,11 @@ export function SidebarSubmenu({
 
   return (
     <>
-      <TooltipProvider data-oid="h_w84op">
-        <Tooltip data-oid="yxj3b5y">
-          <div className="flex items-center relative" data-oid="ixou9zf">
+      <TooltipProvider data-oid="qcmbz1b">
+        <Tooltip data-oid="92onok3">
+          <div className="flex items-center relative" data-oid="uxyzngn">
             {/* Contenedor del icono (siempre visible y estático) */}
-            <TooltipTrigger asChild data-oid=".3gux87">
+            <TooltipTrigger asChild data-oid="pmiok1n">
               <button
                 onClick={handleToggle}
                 className={cn(
@@ -54,9 +54,9 @@ export function SidebarSubmenu({
                     ? "bg-sidebar-primary text-sidebar-primary-foreground"
                     : "text-sidebar-foreground hover:text-sidebar-accent-foreground",
                 )}
-                data-oid="pg.--qr"
+                data-oid="8to1acu"
               >
-                <Icon className="h-5 w-5" data-oid="-_c2lor" />
+                <Icon className="h-5 w-5" data-oid="uf_hhwb" />
               </button>
             </TooltipTrigger>
 
@@ -77,23 +77,23 @@ export function SidebarSubmenu({
                   whiteSpace: "nowrap",
                   flex: 1,
                 }}
-                data-oid="o5b0sob"
+                data-oid="7q-x7c9"
               >
-                <span className="text-sm" data-oid="mvpowdu">
+                <span className="text-sm" data-oid="seft3lb">
                   {name}
                 </span>
-                <div data-oid="_5y_pa5">
+                <div data-oid="hl3n4ar">
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4" data-oid="4e038rk" />
+                    <ChevronUp className="w-4 h-4" data-oid="99dd3aa" />
                   ) : (
-                    <ChevronDown className="w-4 h-4" data-oid="g18:own" />
+                    <ChevronDown className="w-4 h-4" data-oid="zy8j_dt" />
                   )}
                 </div>
               </button>
             )}
           </div>
           {isIconOnly && (
-            <TooltipContent side="right" data-oid="jj86f-6">
+            <TooltipContent side="right" data-oid="7nanpm7">
               {name}
             </TooltipContent>
           )}
@@ -111,7 +111,7 @@ export function SidebarSubmenu({
           top: "100%",
           width: isIconOnly ? "200px" : "240px",
         }}
-        data-oid="51i1ttc"
+        data-oid="a0gj8qz"
       >
         <div
           className={cn(
@@ -119,7 +119,7 @@ export function SidebarSubmenu({
             "p-2 mt-1 w-full",
             isIconOnly ? "ml-0" : "",
           )}
-          data-oid="-l26zt1"
+          data-oid="k4u_j_s"
         >
           {submenu.map((subitem, index) => (
             <div
@@ -128,14 +128,14 @@ export function SidebarSubmenu({
                 "transition-opacity duration-300",
                 isOpen ? "opacity-100" : "opacity-0",
               )}
-              data-oid="ul4qlhb"
+              data-oid="vi9mk1n"
             >
               <SubmenuItem
                 name={subitem.name}
                 href={subitem.href}
                 isActive={currentPath === subitem.href}
                 isIconOnly={isIconOnly}
-                data-oid="ezv1_5t"
+                data-oid="qng91q6"
               />
             </div>
           ))}
@@ -154,14 +154,14 @@ type SubmenuItemProps = {
 
 function SubmenuItem({ name, href, isActive, isIconOnly }: SubmenuItemProps) {
   return (
-    <TooltipProvider data-oid="x93uli2">
-      <Tooltip data-oid="esug319">
+    <TooltipProvider data-oid="1.z9ywl">
+      <Tooltip data-oid="nx9wn5e">
         <div
           className="flex items-center my-1 px-2 rounded-md hover:bg-sidebar-accent/10"
-          data-oid="z6tnr01"
+          data-oid="s0emchz"
         >
           {/* Indicador visual (siempre visible y estático) */}
-          <TooltipTrigger asChild data-oid="nl_ewen">
+          <TooltipTrigger asChild data-oid="-:1ncdu">
             <Link
               to={href}
               className={cn(
@@ -170,14 +170,14 @@ function SubmenuItem({ name, href, isActive, isIconOnly }: SubmenuItemProps) {
                   ? "text-sidebar-primary"
                   : "text-sidebar-foreground/60 hover:text-sidebar-accent-foreground",
               )}
-              data-oid="jh.3gtl"
+              data-oid="a.fkmre"
             >
               <span
                 className={cn(
                   "w-2 h-2 rounded-full",
                   isActive ? "bg-sidebar-primary" : "bg-sidebar-foreground/40",
                 )}
-                data-oid="gwuqrb8"
+                data-oid="zwyg0kr"
               ></span>
             </Link>
           </TooltipTrigger>
@@ -197,15 +197,15 @@ function SubmenuItem({ name, href, isActive, isIconOnly }: SubmenuItemProps) {
               display: "flex",
               alignItems: "center",
             }}
-            data-oid="k-kkv07"
+            data-oid="fc_3eh7"
           >
-            <span className="text-sm" data-oid="sba9vfo">
+            <span className="text-sm" data-oid="tkgvnkf">
               {name}
             </span>
           </Link>
         </div>
         {isIconOnly && (
-          <TooltipContent side="right" data-oid="55so4ty">
+          <TooltipContent side="right" data-oid="u65oibl">
             {name}
           </TooltipContent>
         )}

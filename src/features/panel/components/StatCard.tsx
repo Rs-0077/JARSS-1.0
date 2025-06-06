@@ -46,15 +46,15 @@ export function StatCard({
   return (
     <Card
       className={cn("overflow-hidden stat-card", className)}
-      data-oid="e2mtrt5"
+      data-oid="zk:rr8a"
     >
       <CardHeader
         className="flex flex-row items-center justify-between pb-2"
-        data-oid="kgy4_9b"
+        data-oid="msl7-yj"
       >
         <CardTitle
           className="text-sm font-medium text-muted-foreground"
-          data-oid="59u8w5s"
+          data-oid="5fot8jj"
         >
           {title}
         </CardTitle>
@@ -63,31 +63,31 @@ export function StatCard({
             "h-9 w-9 rounded-full flex items-center justify-center transition-all duration-300",
             getIconBgClass(),
           )}
-          data-oid="fkpv9-j"
+          data-oid="-byw3:q"
         >
           <Icon
             className={cn(
               "h-5 w-5 transition-all duration-300",
               getIconColorClass(),
             )}
-            data-oid="lpl6rr5"
+            data-oid="a78ch-z"
           />
         </div>
       </CardHeader>
-      <CardContent data-oid="8myt6gx">
+      <CardContent data-oid="jt99_rm">
         <div
           className="text-2xl font-bold transition-all duration-300"
-          data-oid="xbd96k1"
+          data-oid="n6s_-no"
         >
           {value}
         </div>
         {description && (
-          <p className="text-xs text-muted-foreground mt-1" data-oid="qtwews_">
+          <p className="text-xs text-muted-foreground mt-1" data-oid="fqww2cf">
             {description}
           </p>
         )}
         {trend && (
-          <div className="flex items-center mt-2" data-oid="kkwxkjd">
+          <div className="flex items-center mt-2" data-oid="ap4r0v3">
             <span
               className={cn("text-xs font-medium px-2 py-1 rounded-full", {
                 "bg-contable-success/10 text-contable-success": trend === "up",
@@ -95,7 +95,7 @@ export function StatCard({
                 "bg-contable-warning/10 text-contable-warning":
                   trend === "neutral",
               })}
-              data-oid="w3u-oag"
+              data-oid="_0i8u6m"
             >
               {trendValue}
             </span>

@@ -20,7 +20,7 @@ const HoverCardContent = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="kpj0hyr"
+    data-oid="237iu5v"
   />
 ));
 HoverCardContent.displayName = HoverCardPrimitive.Content.displayName;

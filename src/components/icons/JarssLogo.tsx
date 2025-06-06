@@ -19,14 +19,14 @@ export function JarssLogo({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      data-oid="wqgro-f"
+      data-oid="quap117"
     >
       {/* Rombo exterior */}
       <path
         d="M250 50L450 250L250 450L50 250L250 50Z"
         fill={color}
         stroke="none"
-        data-oid="z2v9ubu"
+        data-oid="wssdcgp"
       />
 
       {/* Rombo interior */}
@@ -35,7 +35,7 @@ export function JarssLogo({
         fill="currentColor"
         className="text-background dark:text-sidebar"
         stroke="none"
-        data-oid="80h.qky"
+        data-oid="4uis1q6"
       />
 
       {/* Detalles internos */}
@@ -43,7 +43,7 @@ export function JarssLogo({
         d="M250 150L350 250L250 350L150 250L250 150Z"
         fill={color}
         stroke="none"
-        data-oid="_axnzn0"
+        data-oid="9kq67q8"
       />
 
       {/* Círculo central */}
